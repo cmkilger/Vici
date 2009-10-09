@@ -1,5 +1,5 @@
 //
-//  main.m
+//  ViciDocument.h
 //  Vici
 //
 //  Created by Dave DeLong on 10/9/09.
@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-int main(int argc, char *argv[])
-{
-    return NSApplicationMain(argc, (const char **) argv);
+@interface ViciDocument : NSPersistentDocument {
 }
+
+@end
