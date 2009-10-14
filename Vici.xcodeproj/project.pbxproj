@@ -42,6 +42,10 @@
 		5589A8EB108590830042A130 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */; };
 		5589A8EE108590860042A130 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7788DA0506752A1600599AAD /* CoreData.framework */; };
 		5589A91D108591650042A130 /* ViciCore.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 5589A7F9108578130042A130 /* ViciCore.framework */; };
+		5589A942108593B30042A130 /* ViciCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5589A7F9108578130042A130 /* ViciCore.framework */; };
+		5589A94F108593B60042A130 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */; };
+		5589A95A108597170042A130 /* ViciPlayerPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 5589A958108597170042A130 /* ViciPlayerPlugin.h */; };
+		5589A95B108597170042A130 /* ViciPlayerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 5589A959108597170042A130 /* ViciPlayerPlugin.m */; };
 		775BDEF1067A8BF0009058FE /* ViciDocument.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 775BDEF0067A8BF0009058FE /* ViciDocument.xcdatamodel */; };
 		775DFF38067A968500C5B868 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
 		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
@@ -121,6 +125,8 @@
 		5589A84810858F1F0042A130 /* ViciMapPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViciMapPlugin.h; sourceTree = "<group>"; };
 		5589A84910858F1F0042A130 /* ViciMapPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViciMapPlugin.m; sourceTree = "<group>"; };
 		5589A84C10858F340042A130 /* ViciCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViciCore.h; sourceTree = "<group>"; };
+		5589A958108597170042A130 /* ViciPlayerPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViciPlayerPlugin.h; sourceTree = "<group>"; };
+		5589A959108597170042A130 /* ViciPlayerPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViciPlayerPlugin.m; sourceTree = "<group>"; };
 		775BDEF0067A8BF0009058FE /* ViciDocument.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = ViciDocument.xcdatamodel; sourceTree = "<group>"; };
 		7788DA0506752A1600599AAD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		8D15AC360486D014006FF6A4 /* Vici-Info.plist */ = {isa = PBXFileReference; explicitFileType = text.plist.xml; fileEncoding = 4; path = "Vici-Info.plist"; sourceTree = "<group>"; };
@@ -132,6 +138,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5589A94F108593B60042A130 /* Foundation.framework in Frameworks */,
+				5589A942108593B30042A130 /* ViciCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +316,8 @@
 				5589A84510858F1A0042A130 /* ViciGamePlugin.m */,
 				5589A84810858F1F0042A130 /* ViciMapPlugin.h */,
 				5589A84910858F1F0042A130 /* ViciMapPlugin.m */,
+				5589A958108597170042A130 /* ViciPlayerPlugin.h */,
+				5589A959108597170042A130 /* ViciPlayerPlugin.m */,
 			);
 			name = "Plugin Templates";
 			sourceTree = "<group>";
@@ -346,6 +356,7 @@
 				5589A84610858F1A0042A130 /* ViciGamePlugin.h in Headers */,
 				5589A84A10858F200042A130 /* ViciMapPlugin.h in Headers */,
 				5589A84D10858F340042A130 /* ViciCore.h in Headers */,
+				5589A95A108597170042A130 /* ViciPlayerPlugin.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +490,7 @@
 				5589A813108578230042A130 /* Army.m in Sources */,
 				5589A84710858F1A0042A130 /* ViciGamePlugin.m in Sources */,
 				5589A84B10858F200042A130 /* ViciMapPlugin.m in Sources */,
+				5589A95B108597170042A130 /* ViciPlayerPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

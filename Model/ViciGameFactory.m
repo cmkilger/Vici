@@ -12,10 +12,12 @@
 #import "ViciGameFactory.h"
 #import "ViciCore.h"
 
-NSString * kViciGameTypeID = @"kViciGameTypeID";
-NSString * kViciGameTypeDisplayName = @"kViciGameTypeDisplayName";
-NSString * kViciMapID = @"kViciMapID";
-NSString * kViciMapDisplayName = @"kViciMapDisplayName";
+NSString * kViciGameTypeID				= @"kViciGameTypeID";
+NSString * kViciGameTypeDisplayName		= @"kViciGameTypeDisplayName";
+NSString * kViciMapID					= @"kViciMapID";
+NSString * kViciMapDisplayName			= @"kViciMapDisplayName";
+NSString * kViciPlayerID				= @"kViciPlayerID";
+NSString * kViciPlayerDisplayName		= @"kViciPlayerDisplayName";
 
 static ViciGameFactory *sharedFactory = nil;
 
@@ -62,6 +64,7 @@ static ViciGameFactory *sharedFactory = nil;
 			
 			gameTypes = [[NSMutableArray alloc] init];
 			maps = [[NSMutableArray alloc] init];
+			players = [[NSMutableArray alloc] init];
 			[self findPlugins];
 			
         }
@@ -85,8 +88,12 @@ static ViciGameFactory *sharedFactory = nil;
 	for (NSBundle * plugin in maps) {
 		[plugin unload];
 	}
+	for (NSBundle * plugin in players) {
+		[plugin unload];
+	}
 	[gameTypes removeAllObjects];
 	[maps removeAllObjects];
+	[players removeAllObjects];
 }
 
 - (void) findPlugins {
@@ -113,6 +120,8 @@ static ViciGameFactory *sharedFactory = nil;
 				[gameTypes addObject:plugin];
 			} else if ([class isKindOfClass:[ViciMapPlugin class]]) {
 				[maps addObject:plugin];
+			} else if ([class isKindOfClass:[ViciPlayerPlugin class]]) {
+				[players addObject:plugin];
 			} else {
 				//the plugin is neither a game plugin nor a map plugin.  skip it.
 				[plugin unload];

@@ -10,6 +10,7 @@
 
 #import "ViciGamePlugin.h"
 #import "ViciMapPlugin.h"
+#import "ViciPlayerPlugin.h"
 
 #import "Trigger.h"
 #import "Action.h"

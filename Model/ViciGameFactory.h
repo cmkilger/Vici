@@ -14,9 +14,13 @@ extern NSString * kViciGameTypeDisplayName;
 extern NSString * kViciMapID;
 extern NSString * kViciMapDisplayName;
 
+extern NSString * kViciPlayerID;
+extern NSString * kViciPlayerDisplayName;
+
 @interface ViciGameFactory : NSObject {
 	NSMutableArray * gameTypes;
 	NSMutableArray * maps;
+	NSMutableArray * players;
 }
 
 + (ViciGameFactory *) sharedFactory;
@@ -34,5 +38,12 @@ extern NSString * kViciMapDisplayName;
  kViciMapDisplayName - a localized string for displaying to the user.  Example: BYU Campus
  */
 - (NSArray *) availableMaps;
+
+/**
+ return an array of NSDictionaries.  Each NSDictionary should have at least two keys:
+ kViciPlayerID - a reverse-DNS-style string indicating the developer of the map.  Example: edu.byu.cocoaheads.Human
+ kViciPlayerDisplayName - a localized string for displaying to the user.  Example: Human
+ */
+- (NSArray *) availablePlayers;
 
 @end
