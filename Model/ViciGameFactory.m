@@ -10,17 +10,18 @@
 // http://boredzo.org/blog/archives/2009-06-17/doing-it-wrong
 
 #import "ViciGameFactory.h"
-#import <dispatch/dispatch.h>
+#import "ViciCore.h"
 
-static NSString * kViciGameTypeID = @"kViciGameTypeID";
-static NSString * kViciGameTypeDisplayName = @"kViciGameTypeDisplayName";
-static NSString * kViciMapID = @"kViciMapID";
-static NSString * kViciMapDisplayName = @"kViciMapDisplayName";
+NSString * kViciGameTypeID = @"kViciGameTypeID";
+NSString * kViciGameTypeDisplayName = @"kViciGameTypeDisplayName";
+NSString * kViciMapID = @"kViciMapID";
+NSString * kViciMapDisplayName = @"kViciMapDisplayName";
 
 static ViciGameFactory *sharedFactory = nil;
 
 @interface ViciGameFactory ()
 
+- (void) clearPlugins;
 - (void) findPlugins;
 
 @end
@@ -30,12 +31,9 @@ static ViciGameFactory *sharedFactory = nil;
 
 + (void) initialize {
 	//+initialize can get called multiple times, but we only want to create a single instance of ViciGameFactory
-    if (!sharedFactory) {
-		static dispatch_once_t singleton;
-		dispatch_once(&singleton, ^{
-			//init will assign sharedInstance for us.
-			[[ViciGameFactory alloc] init];
-		});
+    if (!sharedFactory && self == [ViciGameFactory class]) {
+		//init will assign sharedInstance for us.
+		[[ViciGameFactory alloc] init];
     }
 }
 
@@ -79,17 +77,47 @@ static ViciGameFactory *sharedFactory = nil;
     return self;
 }
 
-- (void) findPlugins {
+
+- (void) clearPlugins {
+	for (NSBundle * plugin in gameTypes) {
+		[plugin unload];
+	}
+	for (NSBundle * plugin in maps) {
+		[plugin unload];
+	}
 	[gameTypes removeAllObjects];
 	[maps removeAllObjects];
+}
+
+- (void) findPlugins {
+	[self clearPlugins];
 	
 	NSURL * internalPluginsDirectory = [[NSBundle mainBundle] builtInPlugInsURL];
+	NSError * error = nil;
 	NSArray * internalPlugins = [[NSFileManager defaultManager] contentsOfDirectoryAtURL:internalPluginsDirectory
 															  includingPropertiesForKeys:nil 
 																				 options:NSDirectoryEnumerationSkipsSubdirectoryDescendants 
-																				   error:nil];
+																				   error:&error];
+	if (error != nil) { /* something bad happened */ }
 	for (NSURL * foundPlugin in internalPlugins) {
 		NSBundle * plugin = [NSBundle bundleWithURL:foundPlugin];
+		if (plugin != nil) {
+			//this url points to a valid plugin
+			[plugin load];
+			
+			//do some more validation on the bundle
+			Class principalClass = [plugin principalClass];
+			NSObject * class = [[principalClass alloc] init];
+			
+			if ([class isKindOfClass:[ViciGamePlugin class]]) {
+				[gameTypes addObject:plugin];
+			} else if ([class isKindOfClass:[ViciMapPlugin class]]) {
+				[maps addObject:plugin];
+			} else {
+				//the plugin is neither a game plugin nor a map plugin.  skip it.
+				[plugin unload];
+			}
+		}
 	}
 }
 
