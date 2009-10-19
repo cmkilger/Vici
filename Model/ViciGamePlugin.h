@@ -13,4 +13,6 @@
 
 }
 
+- (void) configureGameWithManagedObjectContext:(NSManagedObjectContext *)context;
+
 @end

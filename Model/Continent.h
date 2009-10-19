@@ -19,6 +19,8 @@
 @property (nonatomic, retain) Planet * planet;
 @property (nonatomic, retain) NSSet* countries;
 
+- (id) initWithManagedObjectContext:(NSManagedObjectContext *)context;
+
 @end
 
 

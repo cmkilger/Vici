@@ -16,4 +16,9 @@
 @dynamic country;
 @dynamic player;
 
+- (id) initWithManagedObjectContext:(NSManagedObjectContext *)context {
+	NSEntityDescription * card = [NSEntityDescription entityForName:@"Card" inManagedObjectContext:context];
+	return [self initWithEntity:card insertIntoManagedObjectContext:context];
+}
+
 @end

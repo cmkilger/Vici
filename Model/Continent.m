@@ -17,4 +17,9 @@
 @dynamic planet;
 @dynamic countries;
 
+- (id) initWithManagedObjectContext:(NSManagedObjectContext *)context {
+	NSEntityDescription * continent = [NSEntityDescription entityForName:@"Continent" inManagedObjectContext:context];
+	return [self initWithEntity:continent insertIntoManagedObjectContext:context];
+}
+
 @end

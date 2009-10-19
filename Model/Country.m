@@ -20,4 +20,9 @@
 @dynamic armies;
 @dynamic card;
 
+- (id) initWithManagedObjectContext:(NSManagedObjectContext *)context {
+	NSEntityDescription * country = [NSEntityDescription entityForName:@"Country" inManagedObjectContext:context];
+	return [self initWithEntity:country insertIntoManagedObjectContext:context];
+}
+
 @end

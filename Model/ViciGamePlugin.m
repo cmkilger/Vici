@@ -11,4 +11,8 @@
 
 @implementation ViciGamePlugin
 
+- (void) configureGameWithManagedObjectContext:(NSManagedObjectContext *)context {
+	return;
+}
+
 @end

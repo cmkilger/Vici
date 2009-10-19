@@ -16,6 +16,8 @@
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSSet* continents;
 
+- (id) initWithManagedObjectContext:(NSManagedObjectContext *)context;
+
 @end
 
 
