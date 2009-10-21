@@ -83,28 +83,28 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9A9587A0108F809A0075941D /* ViciUSAMap */;
+			remoteGlobalIDString = 9A9587A0108F809A0075941D;
 			remoteInfo = ViciUSAMap;
 		};
 		9A9587B6108F81490075941D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5589A7F8108578130042A130 /* ViciCore */;
+			remoteGlobalIDString = 5589A7F8108578130042A130;
 			remoteInfo = ViciCore;
 		};
 		9A9587B8108F814F0075941D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5589A7F8108578130042A130 /* ViciCore */;
+			remoteGlobalIDString = 5589A7F8108578130042A130;
 			remoteInfo = ViciCore;
 		};
 		9A9587BA108F81550075941D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5589A7F8108578130042A130 /* ViciCore */;
+			remoteGlobalIDString = 5589A7F8108578130042A130;
 			remoteInfo = ViciCore;
 		};
 		9AF05D33108ED4F00003548B /* PBXContainerItemProxy */ = {
@@ -183,7 +183,6 @@
 		9A958795108F80690075941D /* ViciUSAMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViciUSAMap.h; sourceTree = "<group>"; };
 		9A958796108F80690075941D /* ViciUSAMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViciUSAMap.m; sourceTree = "<group>"; };
 		9A9587A1108F809A0075941D /* ViciUSAMap.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViciUSAMap.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A9587A2108F809A0075941D /* ViciUSA-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ViciUSA-Info.plist"; sourceTree = "<group>"; };
 		9A9BA29D108EAD110095DFF2 /* ActionParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionParameter.h; sourceTree = "<group>"; };
 		9A9BA29E108EAD110095DFF2 /* ActionParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionParameter.m; sourceTree = "<group>"; };
 		9A9BA2A1108EAD3D0095DFF2 /* Action.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Action.h; sourceTree = "<group>"; };
@@ -286,7 +285,6 @@
 				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
 				19C28FB0FE9D524F11CA2CBB /* Products */,
 				5589A7FA108578130042A130 /* ViciCore-Info.plist */,
-				9A9587A2108F809A0075941D /* ViciUSA-Info.plist */,
 			);
 			name = Vici;
 			sourceTree = "<group>";
