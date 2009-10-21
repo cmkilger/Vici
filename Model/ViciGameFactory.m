@@ -12,19 +12,13 @@
 #import "ViciGameFactory.h"
 #import "ViciCore.h"
 
-NSString * kViciGameTypeID				= @"kViciGameTypeID";
-NSString * kViciGameTypeDisplayName		= @"kViciGameTypeDisplayName";
-NSString * kViciMapID					= @"kViciMapID";
-NSString * kViciMapDisplayName			= @"kViciMapDisplayName";
-NSString * kViciPlayerID				= @"kViciPlayerID";
-NSString * kViciPlayerDisplayName		= @"kViciPlayerDisplayName";
-
 static ViciGameFactory *sharedFactory = nil;
 
 @interface ViciGameFactory ()
 
 - (void) clearPlugins;
 - (void) findPlugins;
+- (NSArray *) descriptionsOfPlugins:(NSArray *)plugins;
 
 @end
 
@@ -114,13 +108,14 @@ static ViciGameFactory *sharedFactory = nil;
 			
 			//do some more validation on the bundle
 			Class principalClass = [plugin principalClass];
-			NSObject * class = [[principalClass alloc] init];
+			NSDictionary * pluginDescription = [principalClass pluginDescription];
+			NSString * pluginType = [pluginDescription objectForKey:kViciPluginType];
 			
-			if ([class isKindOfClass:[ViciGamePlugin class]]) {
+			if ([pluginType isEqual:kViciPluginTypeGame]) {
 				[gameTypes addObject:plugin];
-			} else if ([class isKindOfClass:[ViciMapPlugin class]]) {
+			} else if ([pluginType isEqual:kViciPluginTypeMap]) {
 				[maps addObject:plugin];
-			} else if ([class isKindOfClass:[ViciPlayerPlugin class]]) {
+			} else if ([pluginType isEqual:kViciPluginTypePlayer]) {
 				[players addObject:plugin];
 			} else {
 				//the plugin is neither a game plugin, player plugin nor a map plugin.  skip it.
@@ -128,6 +123,27 @@ static ViciGameFactory *sharedFactory = nil;
 			}
 		}
 	}
+}
+
+- (NSArray *) descriptionsOfPlugins:(NSArray *)plugins {
+	NSMutableArray * types = [NSMutableArray array];
+	for (NSBundle * plugin in plugins) {
+		Class principalClass = [plugin principalClass];
+		[types addObject:[principalClass pluginDescription]];
+	}
+	return types;
+}
+
+- (NSArray *) availableGameTypes {
+	return [self descriptionsOfPlugins:gameTypes];
+}
+
+- (NSArray *) availableMaps {
+	return [self descriptionsOfPlugins:maps];
+}
+
+- (NSArray *) availablePlayers {
+	return [self descriptionsOfPlugins:players];
 }
 
 @end

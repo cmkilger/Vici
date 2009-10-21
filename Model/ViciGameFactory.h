@@ -8,15 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-extern NSString * kViciGameTypeID;
-extern NSString * kViciGameTypeDisplayName;
-
-extern NSString * kViciMapID;
-extern NSString * kViciMapDisplayName;
-
-extern NSString * kViciPlayerID;
-extern NSString * kViciPlayerDisplayName;
-
 @interface ViciGameFactory : NSObject {
 	NSMutableArray * gameTypes;
 	NSMutableArray * maps;
@@ -26,23 +17,26 @@ extern NSString * kViciPlayerDisplayName;
 + (ViciGameFactory *) sharedFactory;
 
 /**
- return an array of NSDictionaries.  Each NSDictionary should have at least two keys:
- kViciGameTypeID - a reverse-DNS-style string indicating the developer of the game type.  Example: edu.byu.cocoaheads.Risk
- kViciGameTypeDisplayName - a localized string for displaying to the user.  Example: Risk
+ return an array of NSDictionaries.  Each NSDictionary should have at least three keys:
+ kViciPluginType - kViciPluginTypeGame.
+ kViciPluginID - a reverse-DNS-style string uniquely identifying the plugin.  Example: edu.byu.cocoaheads.Game.ClassicRisk
+ kViciPluginDisplayName - a localized string for displaying to the user.  Example: Classic Risk
  */
 - (NSArray *) availableGameTypes;
 
 /**
- return an array of NSDictionaries.  Each NSDictionary should have at least two keys:
- kViciMapID - a reverse-DNS-style string indicating the developer of the map.  Example: edu.byu.cocoaheads.BYUCampus
- kViciMapDisplayName - a localized string for displaying to the user.  Example: BYU Campus
+ return an array of NSDictionaries.  Each NSDictionary should have at least three keys:
+ kViciPluginType - kViciPluginTypeMap.
+ kViciPluginID - a reverse-DNS-style string uniquely identifying the plugin.  Example: edu.byu.cocoaheads.Map.Risk
+ kViciPluginDisplayName - a localized string for displaying to the user.  Example: Risk
  */
 - (NSArray *) availableMaps;
 
 /**
- return an array of NSDictionaries.  Each NSDictionary should have at least two keys:
- kViciPlayerID - a reverse-DNS-style string indicating the developer of the map.  Example: edu.byu.cocoaheads.Human
- kViciPlayerDisplayName - a localized string for displaying to the user.  Example: Human
+ return an array of NSDictionaries.  Each NSDictionary should have at least three keys:
+ kViciPluginType - kViciPluginTypePlayer.
+ kViciPluginID - a reverse-DNS-style string uniquely identifying the plugin.  Example: edu.byu.cocoaheads.Player.Human
+ kViciPluginDisplayName - a localized string for displaying to the user.  Example: Human
  */
 - (NSArray *) availablePlayers;
 

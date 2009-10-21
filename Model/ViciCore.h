@@ -8,9 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-#import "ViciGamePlugin.h"
-#import "ViciMapPlugin.h"
-#import "ViciPlayerPlugin.h"
+extern NSString * kViciPluginType;
+extern NSString * kViciPluginTypeMap;
+extern NSString * kViciPluginTypeGame;
+extern NSString * kViciPluginTypePlayer;
+
+extern NSString * kViciPluginID;
+extern NSString * kViciPluginDisplayName;
+
+#import "ViciPlugin.h"
 
 #import "Trigger.h"
 #import "Action.h"

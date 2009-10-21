@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
-	<string>edu.byu.cocoaheads.Risk</string>
+	<string>edu.byu.cocoaheads.Game.Risk</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>
@@ -18,5 +18,7 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>ViciGameRequiresMap</key>
+	<string>edu.byu.cocoaheads.Map.Earth</string>
 </dict>
 </plist>

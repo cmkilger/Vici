@@ -10,6 +10,18 @@
 
 @implementation ViciRiskGame
 
++ (NSDictionary *) pluginDescription {
+	NSBundle * pluginBundle = [NSBundle bundleForClass:self];
+	if (pluginBundle == nil) { return nil; }
+	
+	NSString * localizedName = NSLocalizedStringWithDefaultValue(kViciPluginDisplayName, nil, pluginBundle, @"Classic Risk", nil);
+	
+	return [NSDictionary dictionaryWithObjectsAndKeys:kViciPluginTypeMap, kViciPluginType,
+			[pluginBundle bundleIdentifier], kViciPluginID,
+			localizedName, kViciPluginDisplayName,
+			nil];
+}
+
 - (id) init {
 	if (self = [super init]) {
 		
@@ -17,7 +29,7 @@
 	return self;
 }
 
-- (void) configureGameWithManagedObjectContext:(NSManagedObjectContext *)context {
+- (void) configureWithManagedObjectContext:(NSManagedObjectContext *)context {
 	
 }
 
