@@ -9,6 +9,7 @@
 #import <CoreData/CoreData.h>
 
 @class Trigger;
+@class ViciGame;
 
 @interface Condition :  NSManagedObject  
 {

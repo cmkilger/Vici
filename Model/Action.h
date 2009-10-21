@@ -10,6 +10,7 @@
 
 @class ActionParameter;
 @class Trigger;
+@class ViciGame;
 
 @interface Action :  NSManagedObject  
 {

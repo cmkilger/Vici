@@ -9,6 +9,8 @@
 #import "Trigger.h"
 
 #import "Action.h"
+#import "Condition.h"
+#import "NSArray+ViciAdditions.h"
 
 @implementation Trigger 
 

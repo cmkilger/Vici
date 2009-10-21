@@ -10,6 +10,8 @@
 
 #import "ActionParameter.h"
 #import "Trigger.h"
+#import "ViciGame.h"
+#import "NSArray+ViciAdditions.h"
 
 @implementation Action 
 
@@ -20,14 +22,14 @@
 
 - (void) evaluateWithGame:(ViciGame *)game {
 	SEL gameMethod = NSSelectorFromString([self selector]);
-	NSMethodSignature * gameMethodSignature = [game methodForSelector:gameMethod];
+	NSMethodSignature * gameMethodSignature = [game methodSignatureForSelector:gameMethod];
 	
 	NSInvocation * invocation = [NSInvocation invocationWithMethodSignature:gameMethodSignature];
 	[invocation setTarget:game];
 	[invocation setSelector:gameMethod];
 	
 	NSSortDescriptor * sortByIndex = [NSSortDescriptor sortDescriptorWithKey:@"index" ascending:YES];
-	NSArray * parameters = [[self actionParameters] sortedArrayUsingDescriptor:sortByIndex];
+	NSArray * parameters = [[self parameters] sortedArrayUsingDescriptor:sortByIndex];
 	for (NSUInteger index = 0; index < [parameters count]; ++index) {
 		NSString * keyPath = [parameters objectAtIndex:index];
 		id parameterValue = [game valueForKeyPath:keyPath];

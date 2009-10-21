@@ -94,7 +94,7 @@ NSString * westernAustralia = @"Western Australia";
 		Continent * thisContinent = [continentsCache objectForKey:[continents objectAtIndex:i]];
 		for (NSString * countryName in continent) {
 			//create the country
-			Country * c = [[Country alloc] initWithManagedObjectContext:context]
+			Country * c = [[Country alloc] initWithManagedObjectContext:context];
 			[c setName:countryName];
 			[c setContinent:thisContinent];
 			[countriesCache setObject:c forKey:countryName];
