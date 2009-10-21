@@ -26,3 +26,5 @@
 
 #import "Player.h"
 #import "Army.h"
+
+#import "NSArray+ViciAdditions.h"

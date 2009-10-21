@@ -13,8 +13,6 @@
 		553D5F46108CC9AD00CB88D5 /* ViciRiskGame.h in Headers */ = {isa = PBXBuildFile; fileRef = 553D5F44108CC9AD00CB88D5 /* ViciRiskGame.h */; };
 		553D5F47108CC9AD00CB88D5 /* ViciRiskGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 553D5F45108CC9AD00CB88D5 /* ViciRiskGame.m */; };
 		553E38161083BA850071E012 /* ViciGameFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 553E38151083BA850071E012 /* ViciGameFactory.m */; };
-		5589A7FE108578230042A130 /* Action.h in Headers */ = {isa = PBXBuildFile; fileRef = 5589A7A9108564B80042A130 /* Action.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5589A7FF108578230042A130 /* Action.m in Sources */ = {isa = PBXBuildFile; fileRef = 5589A7AA108564B80042A130 /* Action.m */; };
 		5589A800108578230042A130 /* Battle.h in Headers */ = {isa = PBXBuildFile; fileRef = 5589A7AB108564B80042A130 /* Battle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5589A801108578230042A130 /* Battle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5589A7AC108564B80042A130 /* Battle.m */; };
 		5589A802108578230042A130 /* Trigger.h in Headers */ = {isa = PBXBuildFile; fileRef = 5589A7AD108564B80042A130 /* Trigger.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -54,6 +52,12 @@
 		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
 		8D15AC310486D014006FF6A4 /* ViciDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4ACFDCFA73011CA2CEA /* ViciDocument.m */; settings = {ATTRIBUTES = (); }; };
 		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		9A9BA29F108EAD110095DFF2 /* ActionParameter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A9BA29D108EAD110095DFF2 /* ActionParameter.h */; };
+		9A9BA2A0108EAD110095DFF2 /* ActionParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9BA29E108EAD110095DFF2 /* ActionParameter.m */; };
+		9A9BA2A3108EAD3D0095DFF2 /* Action.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A9BA2A1108EAD3D0095DFF2 /* Action.h */; };
+		9A9BA2A4108EAD3D0095DFF2 /* Action.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9BA2A2108EAD3D0095DFF2 /* Action.m */; };
+		9A9BA2A8108EAEC10095DFF2 /* NSArray+ViciAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A9BA2A6108EAEC10095DFF2 /* NSArray+ViciAdditions.h */; };
+		9A9BA2A9108EAEC10095DFF2 /* NSArray+ViciAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9BA2A7108EAEC10095DFF2 /* NSArray+ViciAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,8 +102,6 @@
 		553D5F45108CC9AD00CB88D5 /* ViciRiskGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViciRiskGame.m; sourceTree = "<group>"; };
 		553E38141083BA850071E012 /* ViciGameFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViciGameFactory.h; sourceTree = "<group>"; };
 		553E38151083BA850071E012 /* ViciGameFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViciGameFactory.m; sourceTree = "<group>"; };
-		5589A7A9108564B80042A130 /* Action.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Action.h; sourceTree = "<group>"; };
-		5589A7AA108564B80042A130 /* Action.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Action.m; sourceTree = "<group>"; };
 		5589A7AB108564B80042A130 /* Battle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Battle.h; sourceTree = "<group>"; };
 		5589A7AC108564B80042A130 /* Battle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Battle.m; sourceTree = "<group>"; };
 		5589A7AD108564B80042A130 /* Trigger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trigger.h; sourceTree = "<group>"; };
@@ -135,6 +137,12 @@
 		7788DA0506752A1600599AAD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		8D15AC360486D014006FF6A4 /* Vici-Info.plist */ = {isa = PBXFileReference; explicitFileType = text.plist.xml; fileEncoding = 4; path = "Vici-Info.plist"; sourceTree = "<group>"; };
 		8D15AC370486D014006FF6A4 /* Vici.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vici.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A9BA29D108EAD110095DFF2 /* ActionParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionParameter.h; sourceTree = "<group>"; };
+		9A9BA29E108EAD110095DFF2 /* ActionParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionParameter.m; sourceTree = "<group>"; };
+		9A9BA2A1108EAD3D0095DFF2 /* Action.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Action.h; sourceTree = "<group>"; };
+		9A9BA2A2108EAD3D0095DFF2 /* Action.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Action.m; sourceTree = "<group>"; };
+		9A9BA2A6108EAEC10095DFF2 /* NSArray+ViciAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+ViciAdditions.h"; path = "../NSArray+ViciAdditions.h"; sourceTree = "<group>"; };
+		9A9BA2A7108EAEC10095DFF2 /* NSArray+ViciAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+ViciAdditions.m"; path = "../NSArray+ViciAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,12 +283,14 @@
 		5589A84E10858F570042A130 /* Triggers */ = {
 			isa = PBXGroup;
 			children = (
-				5589A7A9108564B80042A130 /* Action.h */,
-				5589A7AA108564B80042A130 /* Action.m */,
 				5589A7AD108564B80042A130 /* Trigger.h */,
 				5589A7AE108564B80042A130 /* Trigger.m */,
 				5589A7B5108564B80042A130 /* Condition.h */,
 				5589A7B6108564B80042A130 /* Condition.m */,
+				9A9BA2A1108EAD3D0095DFF2 /* Action.h */,
+				9A9BA2A2108EAD3D0095DFF2 /* Action.m */,
+				9A9BA29D108EAD110095DFF2 /* ActionParameter.h */,
+				9A9BA29E108EAD110095DFF2 /* ActionParameter.m */,
 			);
 			name = Triggers;
 			sourceTree = "<group>";
@@ -344,6 +354,8 @@
 				553E38141083BA850071E012 /* ViciGameFactory.h */,
 				553E38151083BA850071E012 /* ViciGameFactory.m */,
 				775BDEF0067A8BF0009058FE /* ViciDocument.xcdatamodel */,
+				9A9BA2A6108EAEC10095DFF2 /* NSArray+ViciAdditions.h */,
+				9A9BA2A7108EAEC10095DFF2 /* NSArray+ViciAdditions.m */,
 				553D5F49108CC9B100CB88D5 /* ViciRisk */,
 			);
 			path = Model;
@@ -356,7 +368,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5589A7FE108578230042A130 /* Action.h in Headers */,
 				5589A800108578230042A130 /* Battle.h in Headers */,
 				5589A802108578230042A130 /* Trigger.h in Headers */,
 				5589A804108578230042A130 /* Player.h in Headers */,
@@ -372,6 +383,9 @@
 				5589A84D10858F340042A130 /* ViciCore.h in Headers */,
 				5589A95A108597170042A130 /* ViciPlayerPlugin.h in Headers */,
 				553D5F46108CC9AD00CB88D5 /* ViciRiskGame.h in Headers */,
+				9A9BA29F108EAD110095DFF2 /* ActionParameter.h in Headers */,
+				9A9BA2A3108EAD3D0095DFF2 /* Action.h in Headers */,
+				9A9BA2A8108EAEC10095DFF2 /* NSArray+ViciAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,7 +506,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5589A7FF108578230042A130 /* Action.m in Sources */,
 				5589A801108578230042A130 /* Battle.m in Sources */,
 				5589A803108578230042A130 /* Trigger.m in Sources */,
 				5589A805108578230042A130 /* Player.m in Sources */,
@@ -507,6 +520,9 @@
 				5589A84B10858F200042A130 /* ViciMapPlugin.m in Sources */,
 				5589A95B108597170042A130 /* ViciPlayerPlugin.m in Sources */,
 				553D5F47108CC9AD00CB88D5 /* ViciRiskGame.m in Sources */,
+				9A9BA2A0108EAD110095DFF2 /* ActionParameter.m in Sources */,
+				9A9BA2A4108EAD3D0095DFF2 /* Action.m in Sources */,
+				9A9BA2A9108EAEC10095DFF2 /* NSArray+ViciAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,6 +12,12 @@
 
 @implementation Condition 
 
+@dynamic predicate;
 @dynamic trigger;
+
+- (BOOL) evaluateWithGame:(ViciGame *)game {
+	NSPredicate * p = [NSPredicate predicateWithFormat:@"%@", [self predicate]];
+	return [p evaluateWithObject:game];
+}
 
 @end

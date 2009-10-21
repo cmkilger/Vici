@@ -14,8 +14,11 @@
 {
 }
 
+@property (nonatomic, retain) NSString* event;
 @property (nonatomic, retain) NSSet* actions;
 @property (nonatomic, retain) NSSet* conditions;
+
+- (void) evaluateWithGame:(ViciGame *)game;
 
 @end
 

@@ -2,15 +2,38 @@
 //  Action.m
 //  Vici
 //
-//  Created by Dave DeLong on 10/13/09.
-//  Copyright 2009 Home. All rights reserved.
+//  Created by Cory Kilger on 10/20/09.
+//  Copyright 2009 Cory Kilger. All rights reserved.
 //
 
 #import "Action.h"
 
+#import "ActionParameter.h"
+#import "Trigger.h"
 
 @implementation Action 
 
+@dynamic selector;
+@dynamic index;
 @dynamic trigger;
+@dynamic parameters;
+
+- (void) evaluateWithGame:(ViciGame *)game {
+	SEL gameMethod = NSSelectorFromString([self selector]);
+	NSMethodSignature * gameMethodSignature = [game methodForSelector:gameMethod];
+	
+	NSInvocation * invocation = [NSInvocation invocationWithMethodSignature:gameMethodSignature];
+	[invocation setTarget:game];
+	[invocation setSelector:gameMethod];
+	
+	NSSortDescriptor * sortByIndex = [NSSortDescriptor sortDescriptorWithKey:@"index" ascending:YES];
+	NSArray * parameters = [[self actionParameters] sortedArrayUsingDescriptor:sortByIndex];
+	for (NSUInteger index = 0; index < [parameters count]; ++index) {
+		NSString * keyPath = [parameters objectAtIndex:index];
+		id parameterValue = [game valueForKeyPath:keyPath];
+		[invocation setArgument:&parameterValue atIndex:(index+2)];
+	}
+	[invocation invoke];
+}
 
 @end

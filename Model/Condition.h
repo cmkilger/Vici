@@ -14,7 +14,10 @@
 {
 }
 
+@property (nonatomic, retain) NSString * predicate;
 @property (nonatomic, retain) Trigger * trigger;
+
+- (BOOL) evaluateWithGame:(ViciGame *)game;
 
 @end
 
