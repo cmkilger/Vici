@@ -10,9 +10,8 @@
 
 
 @interface ViciGame : NSObject {
+	@private
 	NSManagedObjectContext * context;
 }
-
-- (id) initWithManagedObjectContext:(NSManagedObjectContext *)moc;
 
 @end
