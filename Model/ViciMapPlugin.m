@@ -11,4 +11,9 @@
 
 @implementation ViciMapPlugin
 
+- (void) configureMapWithManagedObjectContext:(NSManagedObjectContext *)context {
+	NSLog(@"ViciMapPlugin is an abstract class.  Implementation of configureMapWithManagedObjectContext: should be done in the subclass.");
+	return;
+}
+
 @end

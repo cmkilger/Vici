@@ -15,6 +15,7 @@
 #import "Trigger.h"
 #import "Action.h"
 #import "Condition.h"
+#import "ActionParameter.h"
 
 #import "Battle.h"
 #import "Round.h"

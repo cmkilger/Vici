@@ -12,6 +12,7 @@
 @implementation ViciGamePlugin
 
 - (void) configureGameWithManagedObjectContext:(NSManagedObjectContext *)context {
+	NSLog(@"ViciGamePlugin is an abstract class.  Implementation of configureGameWithManagedObjectContext: should be done in the subclass.");
 	return;
 }
 

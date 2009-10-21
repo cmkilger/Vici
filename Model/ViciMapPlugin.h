@@ -13,4 +13,6 @@
 
 }
 
+- (void) configureMapWithManagedObjectContext:(NSManagedObjectContext *)context;
+
 @end

@@ -123,7 +123,7 @@ static ViciGameFactory *sharedFactory = nil;
 			} else if ([class isKindOfClass:[ViciPlayerPlugin class]]) {
 				[players addObject:plugin];
 			} else {
-				//the plugin is neither a game plugin nor a map plugin.  skip it.
+				//the plugin is neither a game plugin, player plugin nor a map plugin.  skip it.
 				[plugin unload];
 			}
 		}

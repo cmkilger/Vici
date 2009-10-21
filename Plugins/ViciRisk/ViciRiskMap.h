@@ -1,15 +1,15 @@
 //
-//  ViciRiskGame.h
+//  ViciRiskMap.h
 //  Vici
 //
-//  Created by Dave DeLong on 10/19/09.
-//  Copyright 2009 Home. All rights reserved.
+//  Created by Cory Kilger on 10/20/09.
+//  Copyright 2009 Cory Kilger. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
 #import "ViciCore.h"
 
-@interface ViciRiskGame : ViciGamePlugin {
+@interface ViciRiskMap : ViciMapPlugin {
 	NSMutableDictionary * countriesCache;
 	NSMutableDictionary * cardsCache;
 	NSMutableDictionary * continentsCache;

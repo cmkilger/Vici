@@ -1,62 +1,15 @@
 //
-//  ViciRiskGame.m
+//  ViciRiskMap.m
 //  Vici
 //
-//  Created by Dave DeLong on 10/19/09.
-//  Copyright 2009 Home. All rights reserved.
+//  Created by Cory Kilger on 10/20/09.
+//  Copyright 2009 Cory Kilger. All rights reserved.
 //
 
-#import "ViciRiskGame.h"
+#import "ViciRiskMap.h"
 
-NSString * alaska = @"Alaska";
-NSString * alberta = @"Alberta";
-NSString * centralAmerica = @"Central America";
-NSString * easternUnitedStates = @"Eastern United States";
-NSString * greenland = @"Greenland";
-NSString * northwestTerritory = @"Northwest Territory";
-NSString * westernUnitedStates = @"Western United States";
-NSString * ontario = @"Ontario";
-NSString * quebec = @"Quebec";
 
-NSString * argentina = @"Argentina";
-NSString * brazil = @"Brazil";
-NSString * peru = @"Peru";
-NSString * venezuela = @"Venezuela";
-
-NSString * britishIsles = @"British Isles";
-NSString * iceland = @"Iceland";
-NSString * northernEurope = @"Northern Europe";
-NSString * scandinavia = @"Scandinavia";
-NSString * ukraine = @"Ukraine";
-NSString * westernEurope = @"Western Europe";
-NSString * southernEurope = @"Southern Europe";
-
-NSString * congo = @"Congo";
-NSString * eastAfrica = @"East Africa";
-NSString * egypt = @"Egypt";
-NSString * madagascar = @"Madagascar";
-NSString * northAfrica = @"North Africa";
-NSString * southAfrica = @"South Africa";
-
-NSString * afghanistan = @"Afghanistan";
-NSString * china = @"China";
-NSString * india = @"India";
-NSString * irkutsk = @"Irkutsk";
-NSString * japan = @"Japan";
-NSString * kamchatka = @"Kamchatka";
-NSString * middleEast = @"Middle East";
-NSString * mongolia = @"Mongolia";
-NSString * siam = @"Siam";
-NSString * siberia = @"Siberia";
-NSString * ural = @"Ural";
-NSString * yakutsk = @"Yakutsk";
-
-NSString * easternAustralia = @"Eastern Australia";
-NSString * indonesia = @"Indonesia";
-NSString * newGuinea = @"New Guinea";
-NSString * westernAustralia = @"Western Australia";
-
-@implementation ViciRiskGame
+@implementation ViciRiskMap
 
 - (id) init {
 	if (self = [super init]) {
@@ -67,7 +20,56 @@ NSString * westernAustralia = @"Western Australia";
 	return self;
 }
 
-- (void) configureGameWithManagedObjectContext:(NSManagedObjectContext *)context {
+- (void) configureMapWithManagedObjectContext:(NSManagedObjectContext *)context {
+	
+	NSString * alaska = @"Alaska";
+	NSString * alberta = @"Alberta";
+	NSString * centralAmerica = @"Central America";
+	NSString * easternUnitedStates = @"Eastern United States";
+	NSString * greenland = @"Greenland";
+	NSString * northwestTerritory = @"Northwest Territory";
+	NSString * westernUnitedStates = @"Western United States";
+	NSString * ontario = @"Ontario";
+	NSString * quebec = @"Quebec";
+	
+	NSString * argentina = @"Argentina";
+	NSString * brazil = @"Brazil";
+	NSString * peru = @"Peru";
+	NSString * venezuela = @"Venezuela";
+	
+	NSString * britishIsles = @"British Isles";
+	NSString * iceland = @"Iceland";
+	NSString * northernEurope = @"Northern Europe";
+	NSString * scandinavia = @"Scandinavia";
+	NSString * ukraine = @"Ukraine";
+	NSString * westernEurope = @"Western Europe";
+	NSString * southernEurope = @"Southern Europe";
+	
+	NSString * congo = @"Congo";
+	NSString * eastAfrica = @"East Africa";
+	NSString * egypt = @"Egypt";
+	NSString * madagascar = @"Madagascar";
+	NSString * northAfrica = @"North Africa";
+	NSString * southAfrica = @"South Africa";
+	
+	NSString * afghanistan = @"Afghanistan";
+	NSString * china = @"China";
+	NSString * india = @"India";
+	NSString * irkutsk = @"Irkutsk";
+	NSString * japan = @"Japan";
+	NSString * kamchatka = @"Kamchatka";
+	NSString * middleEast = @"Middle East";
+	NSString * mongolia = @"Mongolia";
+	NSString * siam = @"Siam";
+	NSString * siberia = @"Siberia";
+	NSString * ural = @"Ural";
+	NSString * yakutsk = @"Yakutsk";
+	
+	NSString * easternAustralia = @"Eastern Australia";
+	NSString * indonesia = @"Indonesia";
+	NSString * newGuinea = @"New Guinea";
+	NSString * westernAustralia = @"Western Australia";
+	
 	Planet * earth = [[Planet alloc] initWithManagedObjectContext:context];
 	[earth setName:@"Earth"];
 	
