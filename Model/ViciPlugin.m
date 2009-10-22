@@ -23,8 +23,8 @@ NSString * kViciPluginDisplayName		= @"kViciPluginDisplayName";
 	return nil;
 }
 
-- (void) configureWithManagedObjectContext:(NSManagedObjectContext *)context {
-	NSLog(@"ViciPlugin is an abstract class.  Implementation of -configureWithManagedObjectContext: should be done in the subclass.");
+- (void) configureWithGame:(Game *)game {
+	NSLog(@"ViciPlugin is an abstract class.  Implementation of -configureWithGame: should be done in the subclass.");
 	return;
 }
 

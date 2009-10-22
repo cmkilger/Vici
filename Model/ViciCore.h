@@ -17,12 +17,7 @@ extern NSString * kViciPluginID;
 extern NSString * kViciPluginDisplayName;
 
 #import "ViciPlugin.h"
-#import "ViciGame.h"
-
-#import "Trigger.h"
-#import "Action.h"
-#import "Condition.h"
-#import "ActionParameter.h"
+#import "Game.h"
 
 #import "Battle.h"
 #import "Round.h"

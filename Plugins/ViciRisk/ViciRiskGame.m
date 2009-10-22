@@ -29,7 +29,7 @@
 	return self;
 }
 
-- (void) configureWithManagedObjectContext:(NSManagedObjectContext *)context {
+- (void) configureWithGame:(Game *)game {
 	
 }
 

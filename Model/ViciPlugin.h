@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class Game;
 
 @interface ViciPlugin : NSObject {
 
@@ -15,6 +16,6 @@
 
 + (NSDictionary *) pluginDescription;
 
-- (void) configureWithManagedObjectContext:(NSManagedObjectContext *)context;
+- (void) configureWithGame:(Game *)game;
 
 @end

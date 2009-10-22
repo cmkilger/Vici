@@ -39,7 +39,8 @@
 	[super dealloc];
 }
 
-- (void) configureWithManagedObjectContext:(NSManagedObjectContext *)context {
+- (void) configureWithGame:(Game *)game {
+	NSManagedObjectContext * context = [game managedObjectContext];
 	
 	NSString * alaska = @"Alaska";
 	NSString * alberta = @"Alberta";
@@ -91,12 +92,15 @@
 	
 	Planet * earth = [[Planet alloc] initWithManagedObjectContext:context];
 	[earth setName:@"Earth"];
+	[game addPlanetsObject:earth];
 	
 	NSArray * continents = [NSArray arrayWithObjects:@"North America", @"South America", @"Europe", @"Africa", @"Asia", @"Australia", nil];
 	for (NSString * continentName in continents) {
 		Continent * continent = [[Continent alloc] initWithManagedObjectContext:context];
 		[continent setName:continentName];
 		[continent setPlanet:earth];
+		[game addContinentsObject:continent];
+		
 		[continentsCache setObject:continent forKey:continentName];
 		[continent release];
 	}
@@ -118,11 +122,14 @@
 			Country * c = [[Country alloc] initWithManagedObjectContext:context];
 			[c setName:countryName];
 			[c setContinent:thisContinent];
+			[game addCountriesObject:c];
+			
 			[countriesCache setObject:c forKey:countryName];
 			
 			//create the card for the country
 			Card * countryCard = [[Card alloc] initWithManagedObjectContext:context];
 			[c setCard:countryCard];
+			[game addCardsObject:countryCard];
 			
 			//memory management
 			[c release];
@@ -195,6 +202,7 @@
 		}
 	}
 	
+	[earth release];
 	/*
 	 we cannot save the managedObjectContext, because country objects require at least one army.
 	 however, that's ok, because we assume that after this is called, the game is going to give the players a chance to place their armies
