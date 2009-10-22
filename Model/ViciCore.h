@@ -7,16 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-
-extern NSString * kViciPluginType;
-extern NSString * kViciPluginTypeMap;
-extern NSString * kViciPluginTypeGame;
-extern NSString * kViciPluginTypePlayer;
-
-extern NSString * kViciPluginID;
-extern NSString * kViciPluginDisplayName;
+#import "ViciConstants.h"
 
 #import "ViciPlugin.h"
+#import "ViciGamePlugin.h"
 #import "Game.h"
 
 #import "Battle.h"

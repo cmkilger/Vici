@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import "ViciCore.h"
 
-@interface ViciRiskGame : ViciPlugin {
+@interface ViciRiskGame : ViciPlugin <ViciGamePlugin> {
 	
 }
 

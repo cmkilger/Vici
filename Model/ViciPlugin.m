@@ -8,14 +8,6 @@
 
 #import "ViciPlugin.h"
 
-NSString * kViciPluginType				= @"kViciPluginType";
-NSString * kViciPluginTypeMap			= @"kViciPluginTypeMap";
-NSString * kViciPluginTypeGame			= @"kViciPluginTypeGame";
-NSString * kViciPluginTypePlayer		= @"kViciPluginTypePlayer";
-
-NSString * kViciPluginID				= @"kViciPluginID";
-NSString * kViciPluginDisplayName		= @"kViciPluginDisplayName";
-
 @implementation ViciPlugin
 
 + (NSDictionary *) pluginDescription {
