@@ -15,3 +15,8 @@ NSString * kViciPluginTypePlayer		= @"kViciPluginTypePlayer";
 
 NSString * kViciPluginID				= @"kViciPluginID";
 NSString * kViciPluginDisplayName		= @"kViciPluginDisplayName";
+
+NSString * kViciCardTypeInfantry		= @"kViciCardTypeInfantry";
+NSString * kViciCardTypeCavalry			= @"kViciCardTypeCavalry";
+NSString * kViciCardTypeArtillery		= @"kViciCardTypeArtillery";
+NSString * kViciCardTypeWild			= @"kViciCardTypeWild";

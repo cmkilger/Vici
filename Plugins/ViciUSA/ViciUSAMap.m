@@ -155,6 +155,9 @@
 	
 	NSArray * allCountries = [neighbors allKeys];
 	
+	NSString * cardTypes[3] = { kViciCardTypeInfantry, kViciCardTypeCavalry, kViciCardTypeArtillery };
+	NSUInteger cardType = 0;
+	
 	for (NSString * countryName in allCountries) {
 		//create the country
 		Country * c = [[Country alloc] initWithManagedObjectContext:context];
@@ -165,13 +168,26 @@
 		
 		//create the card for the country
 		Card * countryCard = [[Card alloc] initWithManagedObjectContext:context];
+		[countryCard setType:cardTypes[cardType]];
 		[c setCard:countryCard];
 		[game addCardsObject:countryCard];
 		
 		//memory management
 		[c release];
 		[countryCard release];
+		cardType++;
+		cardType %= 3;
 	}
+	
+	Card * wild1 = [[Card alloc] initWithManagedObjectContext:context];
+	[wild1 setType:kViciCardTypeWild];
+	[game addCardsObject:wild1];
+	[wild1 release];
+	
+	Card * wild2 = [[Card alloc] initWithManagedObjectContext:context];
+	[wild2 setType:kViciCardTypeWild];
+	[game addCardsObject:wild2];
+	[wild2 release];
 	
 	for (NSString * origin in allCountries) {
 		Country * originCountry = [countriesCache objectForKey:origin];

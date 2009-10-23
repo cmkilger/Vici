@@ -15,3 +15,8 @@ extern NSString * kViciPluginTypePlayer;
 
 extern NSString * kViciPluginID;
 extern NSString * kViciPluginDisplayName;
+
+extern NSString * kViciCardTypeInfantry;
+extern NSString * kViciCardTypeCavalry;
+extern NSString * kViciCardTypeArtillery;
+extern NSString * kViciCardTypeWild;

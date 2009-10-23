@@ -14,7 +14,7 @@
 {
 }
 
-@property (nonatomic, retain) NSNumber * type;
+@property (nonatomic, retain) NSString * type;
 @property (nonatomic, retain) NSManagedObject * country;
 @property (nonatomic, retain) Player * player;
 
