@@ -114,9 +114,6 @@
 	
 	NSArray * allCountries = [NSArray arrayWithObjects:northAmerica, southAmerica, europe, africa, asia, australia, nil];
 	
-	NSString * cardTypes[3] = { kViciCardTypeInfantry, kViciCardTypeCavalry, kViciCardTypeArtillery };
-	NSUInteger cardType = 0;
-	
 	for (NSUInteger i = 0; i < [allCountries count]; ++i) {
 		NSArray * continent = [allCountries objectAtIndex:i];
 		Continent * thisContinent = [continentsCache objectForKey:[continents objectAtIndex:i]];
@@ -128,30 +125,9 @@
 			[game addCountriesObject:c];
 			
 			[countriesCache setObject:c forKey:countryName];
-			
-			//create the card for the country
-			Card * countryCard = [[Card alloc] initWithManagedObjectContext:context];
-			[countryCard setType:cardTypes[cardType]];
-			[c setCard:countryCard];
-			[game addCardsObject:countryCard];
-			
-			//memory management
 			[c release];
-			[countryCard release];
-			cardType++;
-			cardType %= 3;
 		}
 	}
-	
-	Card * wild1 = [[Card alloc] initWithManagedObjectContext:context];
-	[wild1 setType:kViciCardTypeWild];
-	[game addCardsObject:wild1];
-	[wild1 release];
-	
-	Card * wild2 = [[Card alloc] initWithManagedObjectContext:context];
-	[wild2 setType:kViciCardTypeWild];
-	[game addCardsObject:wild2];
-	[wild2 release];
 	
 	NSDictionary * neighbors = [NSDictionary dictionaryWithObjectsAndKeys:
 								//north america

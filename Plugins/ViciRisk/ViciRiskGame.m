@@ -30,7 +30,35 @@
 }
 
 - (void) configureWithGame:(Game *)game {
+	NSManagedObjectContext * context = [game context];
 	
+	NSString * cardTypes[3] = { kViciCardTypeInfantry, kViciCardTypeCavalry, kViciCardTypeArtillery };
+	NSUInteger cardType = 0;
+	
+	NSSet * countries = [game countries];
+	for (Country * country in countries) {
+		
+		//create the card for the country
+		Card * card = [[Card alloc] initWithManagedObjectContext:context];
+		[card setType:cardTypes[cardType]];
+		[country setCard:card];
+		[game addCardsObject:card];
+		
+		//memory management
+		[card release];
+		cardType++;
+		cardType %= 3;
+	}
+	
+	Card * wild1 = [[Card alloc] initWithManagedObjectContext:context];
+	[wild1 setType:kViciCardTypeWild];
+	[game addCardsObject:wild1];
+	[wild1 release];
+	
+	Card * wild2 = [[Card alloc] initWithManagedObjectContext:context];
+	[wild2 setType:kViciCardTypeWild];
+	[game addCardsObject:wild2];
+	[wild2 release];
 }
 
 - (void) gameWillBegin:(Game *)game {

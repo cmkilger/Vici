@@ -84,7 +84,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9A958870108FCA130075941D /* ViciWarcraftMap */;
+			remoteGlobalIDString = 9A958870108FCA130075941D;
 			remoteInfo = ViciWarcraftMap;
 		};
 		55136795108F702F0093B04C /* PBXContainerItemProxy */ = {
