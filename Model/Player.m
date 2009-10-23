@@ -11,6 +11,7 @@
 
 @implementation Player 
 
+@dynamic order;
 @dynamic countries;
 @dynamic armies;
 @dynamic cards;

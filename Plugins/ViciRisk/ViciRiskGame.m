@@ -33,4 +33,23 @@
 	
 }
 
+- (void) gameWillBegin:(Game *)game {
+	NSManagedObjectContext * context = [game managedObjectContext];
+	
+	NSUInteger numberOfPlayers = [[[game players] count] unsignedIntegerValue];
+	//2 players => 40 armies, 3 => 35, 4 => 30, 5 => 25, etc
+	NSUInteger numberOfArmiesPerPlayer = 40 - ((numberOfPlayers-2)*5);
+	
+	//create the to-be-placed armies for each player
+	for (Player * player in [game players]) {
+		for (NSUInteger i = 0; i < numberOfArmiesPerPlayer; ++i) {
+			Army * newArmy = [[Army alloc] initWithManagedObjectContext:context];
+			//if an army's country is nil, it means it hasn't been placed yet
+			[newArmy setCountry:nil];
+			[player addArmiesObject:newArmy];
+			[newArmy release];
+		}
+	}
+}
+
 @end

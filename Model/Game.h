@@ -21,8 +21,11 @@
 	Player * currentPlayer;
 	Round * currentRound;
 	Battle * currentBattle;
+	
+	NSArray * orderedPlayers;
 }
 
+@property (nonatomic, retain) NSNumber* numberOfTurnedInSets;
 @property (nonatomic, retain) NSSet* planets;
 @property (nonatomic, retain) NSSet* rounds;
 @property (nonatomic, retain) NSSet* continents;
@@ -30,9 +33,10 @@
 @property (nonatomic, retain) NSSet* cards;
 @property (nonatomic, retain) NSSet* players;
 
-@property (nonatomic, assign) Player * currentPlayer;
-@property (nonatomic, assign) Round * currentRound;
-@property (nonatomic, assign) Battle * currentBattle;
+@property (nonatomic, readonly) Player * currentPlayer;
+@property (nonatomic, readonly) Round * currentRound;
+@property (nonatomic, readonly) Battle * currentBattle;
+@property (nonatomic, readonly) NSArray * orderedPlayers;
 
 @end
 
@@ -42,11 +46,6 @@
 - (void)removePlanetsObject:(Planet *)value;
 - (void)addPlanets:(NSSet *)value;
 - (void)removePlanets:(NSSet *)value;
-
-- (void)addRoundsObject:(Round *)value;
-- (void)removeRoundsObject:(Round *)value;
-- (void)addRounds:(NSSet *)value;
-- (void)removeRounds:(NSSet *)value;
 
 - (void)addContinentsObject:(Continent *)value;
 - (void)removeContinentsObject:(Continent *)value;
@@ -62,6 +61,11 @@
 - (void)removeCardsObject:(Card *)value;
 - (void)addCards:(NSSet *)value;
 - (void)removeCards:(NSSet *)value;
+
+- (void)addRoundsObject:(Round *)value;
+- (void)removeRoundsObject:(Round *)value;
+- (void)addRounds:(NSSet *)value;
+- (void)removeRounds:(NSSet *)value;
 
 - (void)addPlayersObject:(Player *)value;
 - (void)removePlayersObject:(Player *)value;

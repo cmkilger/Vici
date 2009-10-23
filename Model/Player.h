@@ -13,6 +13,7 @@
 {
 }
 
+@property (nonatomic, retain) NSNumber* order;
 @property (nonatomic, retain) NSSet* countries;
 @property (nonatomic, retain) NSSet* armies;
 @property (nonatomic, retain) NSSet* cards;

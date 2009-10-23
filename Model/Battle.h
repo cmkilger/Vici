@@ -13,6 +13,7 @@
 {
 }
 
+@property (nonatomic, retain) NSNumber* order;
 @property (nonatomic, retain) NSManagedObject * round;
 @property (nonatomic, retain) NSManagedObject * defendingCountry;
 @property (nonatomic, retain) NSManagedObject * attackingCountry;

@@ -17,4 +17,9 @@
 @dynamic country;
 @dynamic player;
 
+- (id) initWithManagedObjectContext:(NSManagedObjectContext *)context {
+	NSEntityDescription * planet = [NSEntityDescription entityForName:@"Army" inManagedObjectContext:context];
+	return [self initWithEntity:planet insertIntoManagedObjectContext:context];
+}
+
 @end

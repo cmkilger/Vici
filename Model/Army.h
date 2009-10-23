@@ -19,6 +19,8 @@
 @property (nonatomic, retain) Country * country;
 @property (nonatomic, retain) Player * player;
 
+- (id) initWithManagedObjectContext:(NSManagedObjectContext *)context;
+
 @end
 
 

@@ -13,6 +13,7 @@
 
 @implementation Round 
 
+@dynamic order;
 @dynamic player;
 @dynamic battles;
 

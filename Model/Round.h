@@ -15,6 +15,7 @@
 {
 }
 
+@property (nonatomic, retain) NSNumber* order;
 @property (nonatomic, retain) Player * player;
 @property (nonatomic, retain) NSSet* battles;
 

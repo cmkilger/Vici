@@ -11,6 +11,7 @@
 
 @implementation Battle 
 
+@dynamic order;
 @dynamic round;
 @dynamic defendingCountry;
 @dynamic attackingCountry;
