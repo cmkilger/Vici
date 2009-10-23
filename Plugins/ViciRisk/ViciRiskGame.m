@@ -30,7 +30,7 @@
 }
 
 - (void) configureWithGame:(Game *)game {
-	NSManagedObjectContext * context = [game context];
+	NSManagedObjectContext * context = [game managedObjectContext];
 	
 	NSString * cardTypes[3] = { kViciCardTypeInfantry, kViciCardTypeCavalry, kViciCardTypeArtillery };
 	NSUInteger cardType = 0;
@@ -64,7 +64,7 @@
 - (void) gameWillBegin:(Game *)game {
 	NSManagedObjectContext * context = [game managedObjectContext];
 	
-	NSUInteger numberOfPlayers = [[[game players] count] unsignedIntegerValue];
+	NSUInteger numberOfPlayers = [[game players] count];
 	//2 players => 40 armies, 3 => 35, 4 => 30, 5 => 25, etc
 	NSUInteger numberOfArmiesPerPlayer = 40 - ((numberOfPlayers-2)*5);
 	

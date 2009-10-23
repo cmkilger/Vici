@@ -34,6 +34,7 @@
 		5513676F108F5DEF0093B04C /* ViciPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 5513676D108F5DEF0093B04C /* ViciPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55136770108F5DEF0093B04C /* ViciPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513676E108F5DEF0093B04C /* ViciPlugin.m */; };
 		55136868108F8E950093B04C /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 551629F2107FED8900C446B1 /* Game.m */; };
+		5517D33610921EFF00A5CAE2 /* Game_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 5517D33510921EFF00A5CAE2 /* Game_Private.h */; };
 		553E38161083BA850071E012 /* ViciGameFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 553E38151083BA850071E012 /* ViciGameFactory.m */; };
 		5589A800108578230042A130 /* Battle.h in Headers */ = {isa = PBXBuildFile; fileRef = 5589A7AB108564B80042A130 /* Battle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5589A801108578230042A130 /* Battle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5589A7AC108564B80042A130 /* Battle.m */; };
@@ -206,6 +207,7 @@
 		5513676E108F5DEF0093B04C /* ViciPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViciPlugin.m; sourceTree = "<group>"; };
 		551629F1107FED8900C446B1 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		551629F2107FED8900C446B1 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		5517D33510921EFF00A5CAE2 /* Game_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game_Private.h; sourceTree = "<group>"; };
 		553D5F44108CC9AD00CB88D5 /* ViciRiskGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViciRiskGame.h; sourceTree = "<group>"; };
 		553D5F45108CC9AD00CB88D5 /* ViciRiskGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViciRiskGame.m; sourceTree = "<group>"; };
 		553E38141083BA850071E012 /* ViciGameFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViciGameFactory.h; sourceTree = "<group>"; };
@@ -448,6 +450,7 @@
 		5589A85010858F7A0042A130 /* Game Objects */ = {
 			isa = PBXGroup;
 			children = (
+				5517D33510921EFF00A5CAE2 /* Game_Private.h */,
 				551629F1107FED8900C446B1 /* Game.h */,
 				551629F2107FED8900C446B1 /* Game.m */,
 				5589A7AB108564B80042A130 /* Battle.h */,
@@ -539,6 +542,7 @@
 				5513676F108F5DEF0093B04C /* ViciPlugin.h in Headers */,
 				551083861090F08700E803C0 /* ViciGamePlugin.h in Headers */,
 				551083891090F09800E803C0 /* ViciConstants.h in Headers */,
+				5517D33610921EFF00A5CAE2 /* Game_Private.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
