@@ -34,7 +34,10 @@
 		5513676F108F5DEF0093B04C /* ViciPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 5513676D108F5DEF0093B04C /* ViciPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55136770108F5DEF0093B04C /* ViciPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513676E108F5DEF0093B04C /* ViciPlugin.m */; };
 		55136868108F8E950093B04C /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 551629F2107FED8900C446B1 /* Game.m */; };
-		5517D33610921EFF00A5CAE2 /* Game_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 5517D33510921EFF00A5CAE2 /* Game_Private.h */; };
+		5517D33610921EFF00A5CAE2 /* Game_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 5517D33510921EFF00A5CAE2 /* Game_Private.h */; settings = {ATTRIBUTES = (); }; };
+		5517D35E1092421C00A5CAE2 /* Setting.h in Headers */ = {isa = PBXBuildFile; fileRef = 5517D35C1092421C00A5CAE2 /* Setting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5517D35F1092421C00A5CAE2 /* Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = 5517D35D1092421C00A5CAE2 /* Setting.m */; };
+		5517D3961093753F00A5CAE2 /* ViciCore.pch in Headers */ = {isa = PBXBuildFile; fileRef = 5517D3951093753F00A5CAE2 /* ViciCore.pch */; };
 		553E38161083BA850071E012 /* ViciGameFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 553E38151083BA850071E012 /* ViciGameFactory.m */; };
 		5589A800108578230042A130 /* Battle.h in Headers */ = {isa = PBXBuildFile; fileRef = 5589A7AB108564B80042A130 /* Battle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5589A801108578230042A130 /* Battle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5589A7AC108564B80042A130 /* Battle.m */; };
@@ -208,6 +211,9 @@
 		551629F1107FED8900C446B1 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		551629F2107FED8900C446B1 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 		5517D33510921EFF00A5CAE2 /* Game_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game_Private.h; sourceTree = "<group>"; };
+		5517D35C1092421C00A5CAE2 /* Setting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Setting.h; sourceTree = "<group>"; };
+		5517D35D1092421C00A5CAE2 /* Setting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Setting.m; sourceTree = "<group>"; };
+		5517D3951093753F00A5CAE2 /* ViciCore.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViciCore.pch; sourceTree = "<group>"; };
 		553D5F44108CC9AD00CB88D5 /* ViciRiskGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViciRiskGame.h; sourceTree = "<group>"; };
 		553D5F45108CC9AD00CB88D5 /* ViciRiskGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViciRiskGame.m; sourceTree = "<group>"; };
 		553E38141083BA850071E012 /* ViciGameFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViciGameFactory.h; sourceTree = "<group>"; };
@@ -419,6 +425,7 @@
 		5589A7F1108577F50042A130 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				5517D3951093753F00A5CAE2 /* ViciCore.pch */,
 				5589A84C10858F340042A130 /* ViciCore.h */,
 				551083871090F09800E803C0 /* ViciConstants.h */,
 				551083881090F09800E803C0 /* ViciConstants.m */,
@@ -453,6 +460,8 @@
 				5517D33510921EFF00A5CAE2 /* Game_Private.h */,
 				551629F1107FED8900C446B1 /* Game.h */,
 				551629F2107FED8900C446B1 /* Game.m */,
+				5517D35C1092421C00A5CAE2 /* Setting.h */,
+				5517D35D1092421C00A5CAE2 /* Setting.m */,
 				5589A7AB108564B80042A130 /* Battle.h */,
 				5589A7AC108564B80042A130 /* Battle.m */,
 				5589A7B1108564B80042A130 /* Round.h */,
@@ -543,6 +552,8 @@
 				551083861090F08700E803C0 /* ViciGamePlugin.h in Headers */,
 				551083891090F09800E803C0 /* ViciConstants.h in Headers */,
 				5517D33610921EFF00A5CAE2 /* Game_Private.h in Headers */,
+				5517D35E1092421C00A5CAE2 /* Setting.h in Headers */,
+				5517D3961093753F00A5CAE2 /* ViciCore.pch in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -761,6 +772,7 @@
 				55136770108F5DEF0093B04C /* ViciPlugin.m in Sources */,
 				55136868108F8E950093B04C /* Game.m in Sources */,
 				5510838A1090F09800E803C0 /* ViciConstants.m in Sources */,
+				5517D35F1092421C00A5CAE2 /* Setting.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1056,7 +1068,7 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Foundation.framework/Headers/Foundation.h";
+				GCC_PREFIX_HEADER = Model/ViciCore.pch;
 				INFOPLIST_FILE = "ViciCore-Info.plist";
 				INSTALL_PATH = "@loader_path/../Frameworks";
 				OTHER_LDFLAGS = (
@@ -1082,7 +1094,7 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Foundation.framework/Headers/Foundation.h";
+				GCC_PREFIX_HEADER = Model/ViciCore.pch;
 				INFOPLIST_FILE = "ViciCore-Info.plist";
 				INSTALL_PATH = "@loader_path/../Frameworks";
 				OTHER_LDFLAGS = (

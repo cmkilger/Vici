@@ -13,6 +13,5 @@
 @property (nonatomic, assign) Player * currentPlayer;
 @property (nonatomic, assign) Round * currentRound;
 @property (nonatomic, assign) Battle * currentBattle;
-@property (nonatomic, assign) NSArray * orderedPlayers;
 
 @end

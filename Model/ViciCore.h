@@ -12,6 +12,7 @@
 #import "ViciPlugin.h"
 #import "ViciGamePlugin.h"
 #import "Game.h"
+#import "Setting.h"
 
 #import "Battle.h"
 #import "Round.h"
@@ -23,5 +24,3 @@
 
 #import "Player.h"
 #import "Army.h"
-
-#import "NSArray+ViciAdditions.h"
