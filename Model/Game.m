@@ -27,6 +27,7 @@
 @dynamic countries;
 @dynamic cards;
 @dynamic players;
+@dynamic settings;
 
 - (id) initWithManagedObjectContext:(NSManagedObjectContext *)moc {
 	NSEntityDescription * entity = [NSEntityDescription entityForName:@"Game" inManagedObjectContext:moc];
@@ -52,6 +53,24 @@
 		orderedPlayers = [[[self managedObjectContext] executeFetchRequest:playerRequest error:nil] retain];
 		[playerRequest release];
 	}
+}
+
+- (NSData *) settingDataForKey:(NSString *)key {
+	NSSet * matchingSettings = [[self settings] filteredSetUsingPredicate:[NSPredicate predicateWithFormat:@"key = %@", key]];
+	if ([matchingSettings count] < 1) { return nil; }
+	Setting * setting = [matchingSettings anyObject];
+	return [setting dataValue];
+}
+
+- (void) setSettingData:(NSData *)data forKey:(NSString *)key {
+	NSSet * matchingSettings = [[self settings] filteredSetUsingPredicate:[NSPredicate predicateWithFormat:@"key = %@", key]];
+	Setting * setting = [matchingSettings anyObject];
+	if (setting == nil) {
+		setting = [[[Setting alloc] initWithManagedObjectContext:[self managedObjectContext]] autorelease];
+		[setting setKey:key];
+		[self addSettingsObject:setting];
+	}
+	[setting setDataValue:data];
 }
 
 @end

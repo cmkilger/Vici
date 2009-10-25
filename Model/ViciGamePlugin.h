@@ -13,7 +13,7 @@
 @class Round;
 @class Player;
 
-@protocol ViciGamePlugin
+@protocol ViciGamePlugin <ViciPlugin>
 
 //all the following methods are optional
 @optional
@@ -45,5 +45,8 @@
 
 //called whenever a player has been defeated
 - (void) player:(Player *)aPlayer wasDefeatedInGame:(Game *)game;
+
+//called whenever a player wants to save the game
+- (void) gameWillSave:(Game *)game;
 
 @end

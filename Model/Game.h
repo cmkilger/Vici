@@ -32,11 +32,15 @@
 @property (nonatomic, retain) NSSet* countries;
 @property (nonatomic, retain) NSSet* cards;
 @property (nonatomic, retain) NSSet* players;
+@property (nonatomic, retain) NSSet* settings;
 
 @property (nonatomic, readonly) Player * currentPlayer;
 @property (nonatomic, readonly) Round * currentRound;
 @property (nonatomic, readonly) Battle * currentBattle;
 @property (nonatomic, readonly) NSArray * orderedPlayers;
+
+- (NSData *) settingDataForKey:(NSString *)key;
+- (void) setSettingData:(NSData *)data forKey:(NSString *)key;
 
 @end
 
@@ -71,6 +75,11 @@
 - (void)removePlayersObject:(Player *)value;
 - (void)addPlayers:(NSSet *)value;
 - (void)removePlayers:(NSSet *)value;
+
+- (void)addSettingsObject:(Setting *)value;
+- (void)removeSettingsObject:(Setting *)value;
+- (void)addSettings:(NSSet *)value;
+- (void)removeSettings:(NSSet *)value;
 
 @end
 

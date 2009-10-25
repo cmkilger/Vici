@@ -6,13 +6,9 @@
 //  Copyright 2009 Home. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
-
 @class Game;
 
-@interface ViciPlugin : NSObject {
-
-}
+@protocol ViciPlugin
 
 + (NSDictionary *) pluginDescription;
 

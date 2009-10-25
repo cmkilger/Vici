@@ -6,11 +6,11 @@
 //  Copyright 2009 Home. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 #import "ViciCore.h"
 
-@interface ViciRiskGame : ViciPlugin <ViciGamePlugin> {
-	
+@interface ViciRiskGame : NSObject <ViciGamePlugin> {
+	NSUInteger numberOfTurnedInSets;
 }
 
 @end

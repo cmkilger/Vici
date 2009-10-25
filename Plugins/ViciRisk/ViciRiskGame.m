@@ -8,6 +8,8 @@
 
 #import "ViciRiskGame.h"
 
+NSString * numberOfSetsTurnedInKey = @"numberOfSetsTurnedInKey";
+
 @implementation ViciRiskGame
 
 + (NSDictionary *) pluginDescription {
@@ -22,16 +24,12 @@
 			nil];
 }
 
-- (id) init {
-	if (self = [super init]) {
-		
-	}
-	return self;
-}
-
 - (void) configureWithGame:(Game *)game {
 	NSManagedObjectContext * context = [game managedObjectContext];
 	
+	numberOfTurnedInSets = 0;
+	
+#pragma mark Create the cards for each country
 	NSString * cardTypes[3] = { kViciCardTypeInfantry, kViciCardTypeCavalry, kViciCardTypeArtillery };
 	NSUInteger cardType = 0;
 	
@@ -78,6 +76,13 @@
 			[newArmy release];
 		}
 	}
+}
+
+
+//called whenever a player wants to save the game
+- (void) gameWillSave:(Game *)game {
+	NSData * setsTurnedIn = [NSKeyedArchiver archivedDataWithRootObject:[NSNumber numberWithUnsignedInteger:numberOfTurnedInSets]];
+	[game setSettingData:setsTurnedIn forKey:numberOfSetsTurnedInKey];
 }
 
 @end
