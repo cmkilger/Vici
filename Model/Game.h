@@ -15,6 +15,7 @@
 @class Player;
 @class Round;
 @class Battle;
+@class Setting;
 
 @interface Game :  NSManagedObject  
 {

@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import "ViciCore.h"
 
-@interface ViciWarcraftMap : ViciPlugin {
+@interface ViciWarcraftMap : NSObject <ViciPlugin> {
 
 }
 
