@@ -15,6 +15,7 @@
 #import "Planet.h"
 #import "Player.h"
 #import "Round.h"
+#import "Setting.h"
 
 @implementation Game 
 

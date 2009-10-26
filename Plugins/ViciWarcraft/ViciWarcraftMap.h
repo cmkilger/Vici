@@ -10,7 +10,8 @@
 #import "ViciCore.h"
 
 @interface ViciWarcraftMap : NSObject <ViciPlugin> {
-
+	NSMutableDictionary * countriesCache;
+	NSMutableDictionary * continentsCache;
 }
 
 @end
