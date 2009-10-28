@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import "ViciCore.h"
 
-@interface ViciWarcraftMap : NSObject <ViciPlugin> {
+@interface ViciWarcraftMap : NSObject <ViciMapPlugin> {
 	NSMutableDictionary * countriesCache;
 	NSMutableDictionary * continentsCache;
 }

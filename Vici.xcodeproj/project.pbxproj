@@ -38,6 +38,7 @@
 		5517D35F1092421C00A5CAE2 /* Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = 5517D35D1092421C00A5CAE2 /* Setting.m */; };
 		5517D3961093753F00A5CAE2 /* ViciCore.pch in Headers */ = {isa = PBXBuildFile; fileRef = 5517D3951093753F00A5CAE2 /* ViciCore.pch */; };
 		553E38161083BA850071E012 /* ViciGameFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 553E38151083BA850071E012 /* ViciGameFactory.m */; };
+		557829F61097F9F40054D585 /* ViciMapPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 557829F51097F9F40054D585 /* ViciMapPlugin.h */; };
 		5589A800108578230042A130 /* Battle.h in Headers */ = {isa = PBXBuildFile; fileRef = 5589A7AB108564B80042A130 /* Battle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5589A801108578230042A130 /* Battle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5589A7AC108564B80042A130 /* Battle.m */; };
 		5589A804108578230042A130 /* Player.h in Headers */ = {isa = PBXBuildFile; fileRef = 5589A7AF108564B80042A130 /* Player.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -216,6 +217,7 @@
 		553D5F45108CC9AD00CB88D5 /* ViciRiskGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViciRiskGame.m; sourceTree = "<group>"; };
 		553E38141083BA850071E012 /* ViciGameFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViciGameFactory.h; sourceTree = "<group>"; };
 		553E38151083BA850071E012 /* ViciGameFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViciGameFactory.m; sourceTree = "<group>"; };
+		557829F51097F9F40054D585 /* ViciMapPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViciMapPlugin.h; sourceTree = "<group>"; };
 		5589A7AB108564B80042A130 /* Battle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Battle.h; sourceTree = "<group>"; };
 		5589A7AC108564B80042A130 /* Battle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Battle.m; sourceTree = "<group>"; };
 		5589A7AF108564B80042A130 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
@@ -484,6 +486,7 @@
 			children = (
 				5513676D108F5DEF0093B04C /* ViciPlugin.h */,
 				551083851090F08700E803C0 /* ViciGamePlugin.h */,
+				557829F51097F9F40054D585 /* ViciMapPlugin.h */,
 			);
 			name = "Plugin Templates";
 			sourceTree = "<group>";
@@ -551,6 +554,7 @@
 				5517D33610921EFF00A5CAE2 /* Game_Private.h in Headers */,
 				5517D35E1092421C00A5CAE2 /* Setting.h in Headers */,
 				5517D3961093753F00A5CAE2 /* ViciCore.pch in Headers */,
+				557829F61097F9F40054D585 /* ViciMapPlugin.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
