@@ -8,15 +8,21 @@
 
 #import <CoreData/CoreData.h>
 
+@protocol ViciPlayerPlugin;
 
 @interface Player :  NSManagedObject  
 {
+	id<ViciPlayerPlugin> plugin;
 }
 
+@property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSNumber* order;
+@property (nonatomic, retain) NSData * color;
 @property (nonatomic, retain) NSSet* countries;
 @property (nonatomic, retain) NSSet* armies;
 @property (nonatomic, retain) NSSet* cards;
+
+- (id) initWithManagedObjectContext:(NSManagedObjectContext *)context;
 
 @end
 

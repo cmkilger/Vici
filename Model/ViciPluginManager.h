@@ -8,13 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ViciGameFactory : NSObject {
+@interface ViciPluginManager : NSObject {
 	NSMutableArray * gameTypes;
 	NSMutableArray * maps;
 	NSMutableArray * players;
 }
 
-+ (ViciGameFactory *) sharedFactory;
++ (ViciPluginManager *) sharedManager;
 
 /**
  return an array of NSDictionaries.  Each NSDictionary should have at least three keys:

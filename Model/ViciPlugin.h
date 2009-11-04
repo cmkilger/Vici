@@ -8,7 +8,7 @@
 
 @class Game;
 
-@protocol ViciPlugin
+@protocol ViciPlugin <NSObject>
 
 + (NSDictionary *) pluginDescription;
 

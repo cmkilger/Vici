@@ -9,12 +9,12 @@
 // The pattern for creating this singleton came from Peter Hosey's blog.
 // http://boredzo.org/blog/archives/2009-06-17/doing-it-wrong
 
-#import "ViciGameFactory.h"
+#import "ViciPluginManager.h"
 #import "ViciCore.h"
 
-static ViciGameFactory *sharedFactory = nil;
+static ViciPluginManager *sharedManager = nil;
 
-@interface ViciGameFactory ()
+@interface ViciPluginManager ()
 
 - (void) clearPlugins;
 - (void) findPlugins;
@@ -22,35 +22,26 @@ static ViciGameFactory *sharedFactory = nil;
 
 @end
 
-@interface Game (ViciGameFactoryPrivateMethods)
-
-//we don't want to expose this method to anyone other than the factory
-- (id) initWithManagedObjectContext:(NSManagedObjectContext *)moc;
-
-@end
-
-
-
-@implementation ViciGameFactory
+@implementation ViciPluginManager
 
 + (void) initialize {
 	//+initialize can get called multiple times, but we only want to create a single instance of ViciGameFactory
-    if (!sharedFactory && self == [ViciGameFactory class]) {
+    if (!sharedManager && self == [ViciPluginManager class]) {
 		//init will assign sharedInstance for us.
-		[[ViciGameFactory alloc] init];
+		[[ViciPluginManager alloc] init];
     }
 }
 
-+ (id) sharedFactory {
++ (id) sharedManager {
     //Already set by +initialize.
-    return sharedFactory;
+    return sharedManager;
 }
 
 + (id) allocWithZone:(NSZone *)zone {
     //Usually already set by +initialize.
-    if (sharedFactory) {
+    if (sharedManager) {
         //The caller expects to receive a new object, so implicitly retain it to balance out the caller's eventual release message.
-        return [sharedFactory retain];
+        return [sharedManager retain];
     } else {
         //When not already set, +initialize is our caller—it's creating the shared instance. Let this go through.
         return [super allocWithZone:zone];
@@ -60,7 +51,7 @@ static ViciGameFactory *sharedFactory = nil;
 - (id) init {
     //If sharedInstance is nil, +initialize is our caller, so initialize the instance.
     //Conversely, if it is not nil, release this instance (if it isn't the shared instance) and return the shared instance.
-    if (!sharedFactory) {
+    if (!sharedManager) {
         if ((self = [super init])) {
             //Initialize the instance here.
 			
@@ -73,10 +64,10 @@ static ViciGameFactory *sharedFactory = nil;
 		
         //Assign sharedInstance here so that we don't end up with multiple instances if a caller calls +alloc/-init without going through +sharedInstance.
         //This isn't foolproof, however (especially if you involve threads). The only correct way to get an instance of a singleton is through the +sharedInstance method.
-        sharedFactory = self;
-    } else if (self != sharedFactory) {
+        sharedManager = self;
+    } else if (self != sharedManager) {
         [self release];
-        self = sharedFactory;
+        self = sharedManager;
     }
 	
     return self;

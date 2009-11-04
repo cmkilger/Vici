@@ -26,7 +26,6 @@
 	NSArray * orderedPlayers;
 }
 
-@property (nonatomic, retain) NSNumber* numberOfTurnedInSets;
 @property (nonatomic, retain) NSSet* planets;
 @property (nonatomic, retain) NSSet* rounds;
 @property (nonatomic, retain) NSSet* continents;

@@ -7,6 +7,16 @@
 //
 
 #import "ViciDocument.h"
+#import "ViciCore.h"
+
+@interface Game (ViciDocumentGamePrivateMethods)
+
+//we don't want to expose this method to anyone other than the factory
+- (id) initWithManagedObjectContext:(NSManagedObjectContext *)moc;
+
+@end
+
+
 
 @implementation ViciDocument
 

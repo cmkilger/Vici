@@ -18,6 +18,9 @@
 //all the following methods are optional
 @optional
 
+//default is YES
+- (BOOL) canFortifyInGame:(Game *)game;
+
 //initial game
 - (void) gameWillBegin:(Game *)game;
 //called repeated as players choose/are assigned countries

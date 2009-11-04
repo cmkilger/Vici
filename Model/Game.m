@@ -21,7 +21,6 @@
 
 @synthesize currentPlayer, currentRound, currentBattle, orderedPlayers;
 
-@dynamic numberOfTurnedInSets;
 @dynamic planets;
 @dynamic rounds;
 @dynamic continents;
@@ -34,7 +33,6 @@
 	NSEntityDescription * entity = [NSEntityDescription entityForName:@"Game" inManagedObjectContext:moc];
 	if (self = [super initWithEntity:entity insertIntoManagedObjectContext:moc]) {
 		[self setCurrentPlayer:nil];
-		[self setNumberOfTurnedInSets:[NSNumber numberWithUnsignedInteger:0]];
 		[self setCurrentRound:nil];
 		[self setCurrentBattle:nil];
 		

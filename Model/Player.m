@@ -11,9 +11,16 @@
 
 @implementation Player 
 
+@dynamic name;
 @dynamic order;
+@dynamic color;
 @dynamic countries;
 @dynamic armies;
 @dynamic cards;
+
+- (id) initWithManagedObjectContext:(NSManagedObjectContext *)context {
+	NSEntityDescription * player = [NSEntityDescription entityForName:@"Player" inManagedObjectContext:context];
+	return [self initWithEntity:player insertIntoManagedObjectContext:context];
+}
 
 @end
