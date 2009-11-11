@@ -19,6 +19,8 @@
 @property (nonatomic, retain) Player * player;
 @property (nonatomic, retain) NSSet* battles;
 
+- (id) initWithManagedObjectContext:(NSManagedObjectContext *)context;
+
 @end
 
 

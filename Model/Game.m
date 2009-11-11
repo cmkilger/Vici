@@ -72,4 +72,22 @@
 	[setting setDataValue:data];
 }
 
+- (Player *) advanceToNextPlayer {
+	NSUInteger indexOfNextPlayer = 0;
+	if ([self currentPlayer] != nil) {
+		indexOfNextPlayer = [orderedPlayers indexOfObject:[self currentPlayer]] + 1;
+		indexOfNextPlayer %= [orderedPlayers count];
+	}
+	[self setCurrentPlayer:[orderedPlayers objectAtIndex:indexOfNextPlayer]];
+	return [self currentPlayer];
+}
+
+- (Round *) advanceToNextRound {
+	Round * nextRound = [[Round alloc] initWithManagedObjectContext:[self managedObjectContext]];
+	[nextRound setOrder:[NSNumber numberWithUnsignedInteger:[[self currentRound] order] + 1]];
+	[nextRound setPlayer:[self advanceToNextPlayer]];
+	[self setCurrentRound:nextRound];
+	return [nextRound autorelease];
+}
+
 @end

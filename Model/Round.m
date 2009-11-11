@@ -17,4 +17,9 @@
 @dynamic player;
 @dynamic battles;
 
+- (id) initWithManagedObjectContext:(NSManagedObjectContext *)context {
+	NSEntityDescription * planet = [NSEntityDescription entityForName:@"Round" inManagedObjectContext:context];
+	return [self initWithEntity:planet insertIntoManagedObjectContext:context];
+}
+
 @end

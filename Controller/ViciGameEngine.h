@@ -27,6 +27,8 @@ typedef NSUInteger ViciGameState;
 
 - (BOOL) addPlayer:(id<ViciPlayerPlugin>)aPlayer name:(NSString *)name color:(ViciColor *)color;
 
+- (void) beginGame;
+
 - (void) didSelectCountry:(Country *)country;
 - (void) didSelectCard:(Card *)card;
 

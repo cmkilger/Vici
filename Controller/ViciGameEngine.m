@@ -8,8 +8,12 @@
 
 #import "ViciGameEngine.h"
 
+#define PLUGIN_INVOKE(o,s) (([o respondsToSelector:@selector(s)]) ? [o s game] : 0)
+#define PLUGIN_INVOKE2(o,s,p) (([o respondsToSelector:@selector(s)]) ? [o performSelector:@selector(s) withObject:(p) withObject:game] : 0)
+
 enum {
 	ViciGameStateStart = 0,
+	ViciGameStateSetup,
 	
 	ViciGameStateRoundBegin,
 	ViciGameStatePlaceArmies,
@@ -25,6 +29,13 @@ enum {
 	
 	ViciGameStateGameOver
 };
+
+@interface ViciGameEngine ()
+
+- (void) beginNewRound;
+
+@end
+
 
 @implementation ViciGameEngine
 
@@ -65,6 +76,22 @@ enum {
 	return NO;
 }
 
+- (void) beginGame {
+	if (state == ViciGameStateStart) {
+		state = ViciGameStateSetup;
+		PLUGIN_INVOKE(gamePlugin, gameWillBegin:);
+		[self beginNewRound];
+	}
+}
+
+- (void) beginNewRound {
+	if (state == ViciGameStateSetup || state == ViciGameStateRoundEnd) {
+		state = ViciGameStateRoundBegin;
+		Round * nextRound = [game advanceToNextRound];
+		PLUGIN_INVOKE2(gamePlugin, round:willBeginInGame:, nextRound);
+	}
+}
+
 - (void) didSelectCountry:(Country *)country {
 	//TODO: what happens when a country is selected?
 	/*
@@ -75,9 +102,9 @@ enum {
 
 - (BOOL) canFortify {
 	BOOL canFortify = YES;
-	if ([gamePlugin respondsToSelector:@selector(canFortify)]) {
-		canFortify = [gamePlugin canFortifyInGame:game];
-	}
+	
+	canFortify = PLUGIN_INVOKE(gamePlugin, canFortifyInGame:);
+	
 	return (state == ViciGameStateSelectAttacker || state == ViciGameStateSelectDefender) && canFortify;
 }
 

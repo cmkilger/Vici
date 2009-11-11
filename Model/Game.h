@@ -42,6 +42,9 @@
 - (NSData *) settingDataForKey:(NSString *)key;
 - (void) setSettingData:(NSData *)data forKey:(NSString *)key;
 
+- (Player *) advanceToNextPlayer;
+- (Round *) advanceToNextRound;
+
 @end
 
 
