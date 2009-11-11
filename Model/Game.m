@@ -84,7 +84,7 @@
 
 - (Round *) advanceToNextRound {
 	Round * nextRound = [[Round alloc] initWithManagedObjectContext:[self managedObjectContext]];
-	[nextRound setOrder:[NSNumber numberWithUnsignedInteger:[[self currentRound] order] + 1]];
+	[nextRound setOrder:[NSNumber numberWithUnsignedInteger:[[[self currentRound] order] unsignedIntegerValue] + 1]];
 	[nextRound setPlayer:[self advanceToNextPlayer]];
 	[self setCurrentRound:nextRound];
 	return [nextRound autorelease];
