@@ -40,7 +40,6 @@
 		5517D3961093753F00A5CAE2 /* ViciCore.pch in Headers */ = {isa = PBXBuildFile; fileRef = 5517D3951093753F00A5CAE2 /* ViciCore.pch */; };
 		55433CAF109FBBDD0023DBB3 /* ViciBYUMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 55433C90109FBB8F0023DBB3 /* ViciBYUMap.m */; };
 		55433CB7109FBC100023DBB3 /* ViciCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5589A7F9108578130042A130 /* ViciCore.framework */; };
-		55433CB9109FBC1B0023DBB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55433CB8109FBC1B0023DBB3 /* Foundation.framework */; };
 		557829F61097F9F40054D585 /* ViciMapPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 557829F51097F9F40054D585 /* ViciMapPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5589A800108578230042A130 /* Battle.h in Headers */ = {isa = PBXBuildFile; fileRef = 5589A7AB108564B80042A130 /* Battle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5589A801108578230042A130 /* Battle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5589A7AC108564B80042A130 /* Battle.m */; };
@@ -247,7 +246,6 @@
 		55433C8F109FBB8F0023DBB3 /* ViciBYUMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViciBYUMap.h; sourceTree = "<group>"; };
 		55433C90109FBB8F0023DBB3 /* ViciBYUMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViciBYUMap.m; sourceTree = "<group>"; };
 		55433C97109FBBA20023DBB3 /* ViciBYUMap.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViciBYUMap.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		55433CB8109FBC1B0023DBB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		557829F51097F9F40054D585 /* ViciMapPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViciMapPlugin.h; sourceTree = "<group>"; };
 		5589A7AB108564B80042A130 /* Battle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Battle.h; sourceTree = "<group>"; };
 		5589A7AC108564B80042A130 /* Battle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Battle.m; sourceTree = "<group>"; };
@@ -303,7 +301,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				55433CB7109FBC100023DBB3 /* ViciCore.framework in Frameworks */,
-				55433CB9109FBC1B0023DBB3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,7 +401,6 @@
 				2A37F4B8FDCFA73011CA2CEA /* Resources */,
 				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
 				19C28FB0FE9D524F11CA2CBB /* Products */,
-				55433CB8109FBC1B0023DBB3 /* Foundation.framework */,
 			);
 			name = Vici;
 			sourceTree = "<group>";

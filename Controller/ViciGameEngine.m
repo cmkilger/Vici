@@ -15,14 +15,11 @@ enum {
 	ViciGameStateStart = 0,			//!< The game engine is still being initialized (players being added)
 	ViciGameStateSetup,				//!< Control has been given to the engine, initial armies are given out and other custom rules
 	
-	ViciGameStateRoundBegin,		//!< Begin a player's turn
-	ViciGameStatePlaceArmies,		//!< The player has armies to place
-	ViciGameStateTurnInSets,		//!< The phase at the beginning of a turn where a user can/must turn in cards
+	ViciGameStateRoundBegin,		//!< Begin a player's turn, calculate armies for the player, etc.
+	ViciGameStatePlaceArmies,		//!< The player has armies to place at the beginning of the turn, can turn in cards if desired
 	
-	ViciGameStateSelectAttacker,	//!< During the attacking phase when the engine is waiting for the user to select an attacking country
-	ViciGameStateSelectDefender,	//!< During the attacking phase when the engine is waiting for the user to select a defending country
-	ViciGameStateAttack,			//!< ???: What exactly is this?
-	ViciGameStateMoveArmies,		//!< Any time when a user has armies to place
+	ViciGameStateAttack,			//!< The phase where the user is attacking other players
+	ViciGameStateMoveArmies,		//!< When a player has armies to place after winning a battle
 	
 	ViciGameStateFortify,			//!< The phase at the end of a turn where a user can fortify armies
 	ViciGameStateRoundEnd,			//!< After a user ends his/her turn, before the next user begins
@@ -93,11 +90,30 @@ enum {
 }
 
 - (void) didSelectCountry:(Country *)country {
-	//TODO: what happens when a country is selected?
 	/*
 	 different things can happen based on what the current state of the game is.
 	 for example, if not all of the countries belong to a player, then this will assign the country to the current player
 	 */
+		
+	switch (state) {
+		case ViciGameStatePlaceArmies: {
+			// TODO: Place an army if capable, end round if in country choosing phase
+			break;
+		}
+		case ViciGameStateAttack: {
+			// TODO: Select country if it is owned by the current player, otherwise attack from selected country if capable
+			break;
+		}
+		case ViciGameStateMoveArmies: {
+			// TODO: Place armies in country if able to move them from the selected country
+			break;
+		}
+		case ViciGameStateFortify: {
+			// TODO: Place armies in country if able to fortify them from the selected country
+			break;
+		}
+	}
+	
 }
 
 - (BOOL) canFortify {
@@ -105,11 +121,11 @@ enum {
 	
 	canFortify = PLUGIN_INVOKE(gamePlugin, canFortifyInGame:);
 	
-	return (state == ViciGameStateSelectAttacker || state == ViciGameStateSelectDefender) && canFortify;
+	return ViciGameStateAttack && canFortify;
 }
 
 - (void) willBeginFortifications {
-	if (state == ViciGameStateSelectAttacker || state == ViciGameStateSelectDefender) {
+	if (state == ViciGameStateAttack) {
 		state = ViciGameStateFortify;
 	}
 }

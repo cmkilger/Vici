@@ -13,6 +13,7 @@
 #import "ViciGamePlugin.h"
 #import "ViciMapPlugin.h"
 #import "ViciPlayerPlugin.h"
+#import "ViciPluginDelegate.h"
 
 #import "Game.h"
 #import "Setting.h"

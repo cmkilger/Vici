@@ -13,14 +13,15 @@
 typedef NSUInteger ViciGameState;
 
 @interface ViciGameEngine : NSObject {
-	ViciGameState state;
-	NSManagedObjectContext * context;
-	Game * game;
-	id<ViciGameEngineDelegate> delegate;
+	ViciGameState state;					//!< The current state (phase) of the game
+	NSManagedObjectContext * context;		//!< The game's managed object context
+	Game * game;							//!< The Game object stored using Core Data
+	id<ViciGameEngineDelegate> delegate;	//!< The game engine's delegate
+	Country * selectedCountry;				//!< Can be the attacking country, or source of a fortification, etc.
 	
-	id<ViciMapPlugin> mapPlugin;
-	id<ViciGamePlugin> gamePlugin;
-	NSMutableArray * players;
+	id<ViciMapPlugin> mapPlugin;			//!< The map plugin
+	id<ViciGamePlugin> gamePlugin;			//!< The game plugin
+	NSMutableArray * players;				//!< Ordered array of the players
 }
 
 - (id) initWithManagedObjectContext:(NSManagedObjectContext *)aContext mapPlugin:(id<ViciMapPlugin>)aMap gamePlugin:(id<ViciGamePlugin>)aGame;
