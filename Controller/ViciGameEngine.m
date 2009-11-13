@@ -12,22 +12,22 @@
 #define PLUGIN_INVOKE2(o,s,p) (([o respondsToSelector:@selector(s)]) ? [o performSelector:@selector(s) withObject:(p) withObject:game] : 0)
 
 enum {
-	ViciGameStateStart = 0,
-	ViciGameStateSetup,
+	ViciGameStateStart = 0,			//!< The game engine is still being initialized (players being added)
+	ViciGameStateSetup,				//!< Control has been given to the engine, initial armies are given out and other custom rules
 	
-	ViciGameStateRoundBegin,
-	ViciGameStatePlaceArmies,
-	ViciGameStateTurnInSets,
+	ViciGameStateRoundBegin,		//!< Begin a player's turn
+	ViciGameStatePlaceArmies,		//!< The player has armies to place
+	ViciGameStateTurnInSets,		//!< The phase at the beginning of a turn where a user can/must turn in cards
 	
-	ViciGameStateSelectAttacker,
-	ViciGameStateSelectDefender,
-	ViciGameStateAttack,
-	ViciGameStateMoveArmies,
+	ViciGameStateSelectAttacker,	//!< During the attacking phase when the engine is waiting for the user to select an attacking country
+	ViciGameStateSelectDefender,	//!< During the attacking phase when the engine is waiting for the user to select a defending country
+	ViciGameStateAttack,			//!< ???: What exactly is this?
+	ViciGameStateMoveArmies,		//!< Any time when a user has armies to place
 	
-	ViciGameStateFortify,
-	ViciGameStateRoundEnd,
+	ViciGameStateFortify,			//!< The phase at the end of a turn where a user can fortify armies
+	ViciGameStateRoundEnd,			//!< After a user ends his/her turn, before the next user begins
 	
-	ViciGameStateGameOver
+	ViciGameStateGameOver			//!< After a game has been determined to be over
 };
 
 @interface ViciGameEngine ()
