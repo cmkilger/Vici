@@ -22,4 +22,8 @@
 	return [self initWithEntity:planet insertIntoManagedObjectContext:context];
 }
 
+- (Battle *) lastBattle {
+	return [[self.battles sortedArrayUsingDescriptor:[NSSortDescriptor sortDescriptorWithKey:@"order" ascending:YES]] lastObject];
+}
+
 @end

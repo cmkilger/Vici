@@ -23,4 +23,8 @@
 	return [self initWithEntity:player insertIntoManagedObjectContext:context];
 }
 
+- (NSSet*) unplacedArmies {
+	return [[self armies] filteredSetUsingPredicate:[NSPredicate predicateWithFormat:@"country = nil"]];
+}
+
 @end

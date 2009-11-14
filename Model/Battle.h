@@ -19,6 +19,8 @@
 @property (nonatomic, retain) NSManagedObject * attackingCountry;
 @property (nonatomic, retain) NSManagedObject * defender;
 
+- (id) initWithManagedObjectContext:(NSManagedObjectContext *)context;
+
 @end
 
 

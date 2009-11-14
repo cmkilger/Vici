@@ -232,21 +232,21 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9A08104C10AE62F400FC0C72 /* ViciCoreiPhone */;
+			remoteGlobalIDString = 9A08104C10AE62F400FC0C72;
 			remoteInfo = ViciCoreiPhone;
 		};
 		9A08122A10AE761D00FC0C72 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9A080D7810AE5D0C00FC0C72 /* ViciiPhone */;
+			remoteGlobalIDString = 9A080D7810AE5D0C00FC0C72;
 			remoteInfo = ViciiPhone;
 		};
 		9A08122C10AE761D00FC0C72 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9A08104C10AE62F400FC0C72 /* ViciCoreiPhone */;
+			remoteGlobalIDString = 9A08104C10AE62F400FC0C72;
 			remoteInfo = ViciCoreiPhone;
 		};
 		9A9587B6108F81490075941D /* PBXContainerItemProxy */ = {
@@ -520,12 +520,11 @@
 		2A37F4ABFDCFA73011CA2CEA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				2A37F4AEFDCFA73011CA2CEA /* ViciDocument.h */,
-				2A37F4ACFDCFA73011CA2CEA /* ViciDocument.m */,
 				55D75A9D10A122B500C1438A /* ViciGameEngine.h */,
 				55D75A9E10A122B500C1438A /* ViciGameEngine.m */,
 				55D75ACB10A1248500C1438A /* ViciGameEngineDelegate.h */,
 				9A08116910AE6CDA00FC0C72 /* iPhone */,
+				9AC1260A10AE7A5F00A7130D /* Mac */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -718,6 +717,15 @@
 				9A958872108FCA130075941D /* ViciWarcraftMap-Info.plist */,
 			);
 			path = ViciWarcraft;
+			sourceTree = "<group>";
+		};
+		9AC1260A10AE7A5F00A7130D /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4AEFDCFA73011CA2CEA /* ViciDocument.h */,
+				2A37F4ACFDCFA73011CA2CEA /* ViciDocument.m */,
+			);
+			name = Mac;
 			sourceTree = "<group>";
 		};
 		9AF05D9E108ED7C50003548B /* Plugins */ = {

@@ -20,6 +20,7 @@
 @property (nonatomic, retain) NSSet* battles;
 
 - (id) initWithManagedObjectContext:(NSManagedObjectContext *)context;
+- (Battle *) lastBattle;
 
 @end
 

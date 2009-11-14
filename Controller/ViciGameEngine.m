@@ -98,15 +98,60 @@ enum {
 		
 	switch (state) {
 		case ViciGameStatePlaceArmies: {
-			// TODO: Place an army if capable, end round if in country choosing phase
+			// If the player has no armies to place and the selected country is an attackable country, move to the next phase and recall this method, otherwise attempt to place the army
+			if ([[[game currentPlayer] unplacedArmies] count] == 0 && [gamePlugin player:[game currentPlayer] canAttackCountry:country]) {
+				state = ViciGameStateAttack;
+				[self didSelectCountry:country];
+			}
+			
+			// Attempt to place an army in the country.  If succesful, check if we're still in the country choosing phase, and if so end the round.
+			else {
+				if ([gamePlugin placeArmyInCountry:country inGame:game]) {
+					selectedCountry = country;
+					if ([[[game countries] filteredSetUsingPredicate:[NSPredicate predicateWithFormat:@"player = nil"]] count] > 0) {
+						state == ViciGameStateRoundEnd;
+						[self beginNewRound];
+					}
+				}
+			}
+			
 			break;
 		}
 		case ViciGameStateAttack: {
-			// TODO: Select country if it is owned by the current player, otherwise attack from selected country if capable
+			// Select country if it is owned by the current player
+			if ([country player] == [game currentPlayer])
+				selectedCountry = country;
+			
+			// Attack the country if able to
+			else if ([gamePlugin player:[game currentPlayer] canAttackCountry:country]) {
+				Battle * battle = [[Battle alloc] initWithManagedObjectContext:context];
+				[battle setRound:[game currentRound]];
+				[battle setOrder:[[[game currentRound] battles] valueForKeyPath:@"@count"]];
+				[battle setAttackingCountry:selectedCountry];
+				[battle setDefendingCountry:country];
+				[battle setDefender:[country player]];
+				[gamePlugin executeBattle:battle inGame:game];
+				
+				// if the attacked country is now owned by the current player he obviously conquered it
+				if ([country player] == [game currentPlayer]) {
+					selectedCountry = country;
+					// TODO: check for end of game
+				}
+				
+				// If there are now armies to be placed we move to the moving phase
+				if ([[[game currentPlayer] unplacedArmies] count] > 0)
+					state = ViciGameStateMoveArmies;
+			}
+
 			break;
 		}
 		case ViciGameStateMoveArmies: {
-			// TODO: Place armies in country if able to move them from the selected country
+			// We are only in this phase after a country is conquered, so the only possible countries are from the previous battle
+			Battle * battle = [[game currentRound] lastBattle];
+			if (country == [battle attackingCountry] || country == [battle defendingCountry])
+				[gamePlugin placeArmyInCountry:country inGame:game];
+			if ([[[game currentPlayer] unplacedArmies] count] == 0)
+				state = ViciGameStateAttack;
 			break;
 		}
 		case ViciGameStateFortify: {

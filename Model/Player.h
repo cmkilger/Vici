@@ -23,6 +23,7 @@
 @property (nonatomic, retain) NSSet* cards;
 
 - (id) initWithManagedObjectContext:(NSManagedObjectContext *)context;
+- (NSSet*) unplacedArmies;
 
 @end
 

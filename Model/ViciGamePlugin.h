@@ -15,6 +15,15 @@
 
 @protocol ViciGamePlugin <ViciPlugin>
 
+//called when a player is about to place an army in a country
+- (BOOL) placeArmyInCountry:(Country *)aCountry inGame:(Game *)game;
+//called to know if the player is able to attack the given country
+- (BOOL) player:(Player *)aPlayer canAttackCountry:(Country *)aCountry;
+
+//called when a player is attacking another country
+- (void) executeBattle:(Battle *)aBattle inGame:(Game *)game;
+
+
 //all the following methods are optional
 @optional
 
@@ -30,18 +39,6 @@
 - (void) round:(Round *)aRound willBeginInGame:(Game *)game;
 //called when a player turns in a set of cards
 - (void) cards:(NSSet *)cards wereTurnedInInGame:(Game *)game;
-
-//called when a player is about to place an army in a country
-- (void) army:(Army *)anArmy willBePlacedInCountry:(Country *)aCountry inGame:(Game *)game;
-//called when a player has just placed an army in a country
-- (void) army:(Army *)anArmy wasPlacedInCountry:(Country *)aCountry inGame:(Game *)game;
-
-//called when a player is about to attack another country
-- (void) battle:(Battle *)aBattle willBeginInGame:(Game *)game;
-//called after a player has attacked another country
-- (void) battle:(Battle *)aBattle didEndInGame:(Game *)game;
-//called when a player conquers a country
-- (void) country:(Country *)aCountry wasConqueredInGame:(Game *)game;
 
 //called as a round is ending
 - (void) round:(Round *)aRound didEndInGame:(Game *)game;

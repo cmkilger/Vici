@@ -17,4 +17,9 @@
 @dynamic attackingCountry;
 @dynamic defender;
 
+- (id) initWithManagedObjectContext:(NSManagedObjectContext *)context {
+	NSEntityDescription * planet = [NSEntityDescription entityForName:@"Battle" inManagedObjectContext:context];
+	return [self initWithEntity:planet insertIntoManagedObjectContext:context];
+}
+
 @end
