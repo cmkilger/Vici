@@ -23,7 +23,7 @@
 }
 
 - (Battle *) lastBattle {
-	return [[self.battles sortedArrayUsingDescriptor:[NSSortDescriptor sortDescriptorWithKey:@"order" ascending:YES]] lastObject];
+	return [[[self.battles allObjects] sortedArrayUsingDescriptors:[NSArray arrayWithObject:[[NSSortDescriptor alloc] initWithKey:@"order" ascending:YES]]] lastObject];
 }
 
 @end
