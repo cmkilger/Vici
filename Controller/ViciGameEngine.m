@@ -7,6 +7,7 @@
 //
 
 #import "ViciGameEngine.h"
+//#import "ViciPlayerPlugin.h"
 
 #define PLUGIN_INVOKE(o,s) (([o respondsToSelector:@selector(s)]) ? [o s game] : 0)
 #define PLUGIN_INVOKE2(o,s,p) (([o respondsToSelector:@selector(s)]) ? [o performSelector:@selector(s) withObject:(p) withObject:game] : 0)

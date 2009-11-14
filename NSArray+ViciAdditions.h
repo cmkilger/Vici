@@ -6,7 +6,7 @@
 //  Copyright 2009 Cory Kilger. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
 
 @interface NSArray (ViciAdditions)

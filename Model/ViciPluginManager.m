@@ -92,15 +92,13 @@ static ViciPluginManager *sharedManager = nil;
 - (void) findPlugins {
 	[self clearPlugins];
 	
-	NSURL * internalPluginsDirectory = [[NSBundle mainBundle] builtInPlugInsURL];
+	NSString * internalPluginsDirectory = [[NSBundle mainBundle] builtInPlugInsPath];
 	NSError * error = nil;
-	NSArray * internalPlugins = [[NSFileManager defaultManager] contentsOfDirectoryAtURL:internalPluginsDirectory
-															  includingPropertiesForKeys:nil 
-																				 options:NSDirectoryEnumerationSkipsSubdirectoryDescendants 
-																				   error:&error];
+	NSArray * internalPlugins = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:internalPluginsDirectory error:&error];
+	
 	if (error != nil) { /* something bad happened */ }
-	for (NSURL * foundPlugin in internalPlugins) {
-		NSBundle * plugin = [NSBundle bundleWithURL:foundPlugin];
+	for (NSString * foundPlugin in internalPlugins) {
+		NSBundle * plugin = [NSBundle bundleWithPath:foundPlugin];
 		if (plugin != nil) {
 			//this url points to a valid plugin
 			[plugin load];

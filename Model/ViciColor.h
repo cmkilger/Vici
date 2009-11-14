@@ -6,7 +6,11 @@
 //  Copyright 2009 Home. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
+
+#if TARGET_OS_IPHONE
+#import <CoreGraphics/CoreGraphics.h>
+#endif
 
 
 @interface ViciColor : NSObject <NSCoding> {

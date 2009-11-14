@@ -20,7 +20,7 @@
 @implementation NSSet (ViciAdditions)
 
 - (NSArray *) sortedArrayUsingDescriptor:(NSSortDescriptor *)sortDescriptor {
-	return [self sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+	return [[self allObjects] sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
 }
 
 @end

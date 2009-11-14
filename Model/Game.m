@@ -7,7 +7,7 @@
 //
 
 #import "Game.h"
-#import "Game_Private.h"
+#import "Game+Private.h"
 
 #import "Card.h"
 #import "Continent.h"
@@ -48,7 +48,7 @@
 		[orderedPlayers release];
 		NSFetchRequest * playerRequest = [[NSFetchRequest alloc] init];
 		[playerRequest setEntity:[NSEntityDescription entityForName:@"Player" inManagedObjectContext:[self managedObjectContext]]];
-		[playerRequest setSortDescriptors:[NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"order" ascending:YES]]];
+		[playerRequest setSortDescriptors:[NSArray arrayWithObject:[[[NSSortDescriptor alloc] initWithKey:@"order" ascending:YES] autorelease]]];
 		orderedPlayers = [[[self managedObjectContext] executeFetchRequest:playerRequest error:nil] retain];
 		[playerRequest release];
 	}

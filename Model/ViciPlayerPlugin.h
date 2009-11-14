@@ -6,7 +6,7 @@
 //  Copyright 2009 Home. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
 
 @protocol ViciPlayerPlugin <ViciPlugin>
