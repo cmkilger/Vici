@@ -18,7 +18,7 @@
 //called when a player is about to place an army in a country
 - (BOOL) placeArmyInCountry:(Country *)aCountry inGame:(Game *)game;
 //called to know if the player is able to attack the given country
-- (BOOL) player:(Player *)aPlayer canAttackCountry:(Country *)aCountry;
+- (BOOL) player:(Player *)aPlayer canAttackCountry:(Country *)toCountry fromCountry:(Country *)fromCountry inGame:(Game *)game;
 
 //called when a player is attacking another country
 - (void) executeBattle:(Battle *)aBattle inGame:(Game *)game;

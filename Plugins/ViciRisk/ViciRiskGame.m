@@ -95,14 +95,21 @@ NSString * numberOfSetsTurnedInKey = @"numberOfSetsTurnedInKey";
 }
 
 //called to know if the player is able to attack the given country
-- (BOOL) player:(Player *)aPlayer canAttackCountry:(Country *)aCountry {
-	// TODO: implement
-	return NO;
+- (BOOL) player:(Player *)aPlayer canAttackCountry:(Country *)toCountry fromCountry:(Country *)fromCountry inGame:(Game *)game {	
+	if (!toCountry || !fromCountry)
+		return NO;
+	if ([toCountry player] == aPlayer)
+		return NO;
+	if ([fromCountry player] != aPlayer)
+		return NO;
+	if ([[fromCountry armies] count] < 2)
+		return NO;
+	return [[fromCountry neighbors] containsObject:toCountry];
 }
 
 //called when a player is attacking another country
 - (void) executeBattle:(Battle *)aBattle inGame:(Game *)game {
-	// TODO: implement
+	// TODO: Implement executeBattle:inGame:
 }
 
 @end

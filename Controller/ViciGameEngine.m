@@ -102,7 +102,7 @@ enum {
 	switch (state) {
 		case ViciGameStatePlaceArmies: {
 			// If the player has no armies to place and the selected country is an attackable country, move to the next phase and recall this method, otherwise attempt to place the army
-			if ([[[game currentPlayer] unplacedArmies] count] == 0 && [gamePlugin player:[game currentPlayer] canAttackCountry:country]) {
+			if ([[[game currentPlayer] unplacedArmies] count] == 0 && [gamePlugin player:[game currentPlayer] canAttackCountry:country fromCountry:selectedCountry inGame:game]) {
 				state = ViciGameStateAttack;
 				[self didSelectCountry:country];
 			}
@@ -126,7 +126,7 @@ enum {
 				selectedCountry = country;
 			
 			// Attack the country if able to
-			else if ([gamePlugin player:[game currentPlayer] canAttackCountry:country]) {
+			else if ([gamePlugin player:[game currentPlayer] canAttackCountry:country fromCountry:selectedCountry inGame:game]) {
 				Battle * battle = [[Battle alloc] initWithManagedObjectContext:context];
 				[battle setRound:[game currentRound]];
 				[battle setOrder:[[[game currentRound] battles] valueForKeyPath:@"@count"]];
@@ -158,7 +158,13 @@ enum {
 			break;
 		}
 		case ViciGameStateFortify: {
+			if (!selectedCountry && [country player] == [game currentPlayer]) {
+				selectedCountry = country;
+				// TODO: Pickup all armies from selected country but one
+			}
+			
 			// TODO: Place armies in country if able to fortify them from the selected country
+			
 			break;
 		}
 	}
@@ -176,6 +182,7 @@ enum {
 - (void) willBeginFortifications {
 	if (state == ViciGameStateAttack) {
 		state = ViciGameStateFortify;
+		selectedCountry = nil;
 	}
 }
 
