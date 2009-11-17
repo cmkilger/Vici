@@ -65,7 +65,7 @@ enum {
 		
 		//use a keypath instead of -count, because we need the answer as an NSNumber, not an NSUInteger
 		[newPlayer setOrder:[players valueForKeyPath:@"@count"]];
-		[players addObject:newPlayer];
+		[players addObject:aPlayer];
 		[game addPlayersObject:newPlayer];
 		
 		[newPlayer release];
@@ -87,6 +87,9 @@ enum {
 		state = ViciGameStateRoundBegin;
 		Round * nextRound = [game advanceToNextRound];
 		PLUGIN_INVOKE2(gamePlugin, round:willBeginInGame:, nextRound);
+		
+		// Tells the player plugin for the current player to play the round
+		[[players objectAtIndex:[[[game currentPlayer] order] intValue]] playRound:nextRound inGame:game];
 	}
 }
 

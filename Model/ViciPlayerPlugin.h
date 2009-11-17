@@ -6,10 +6,11 @@
 //  Copyright 2009 Home. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
+@class Round;
+@class Game;
 
 @protocol ViciPlayerPlugin <ViciPlugin>
 
+- (void) playRound:(Round *)aRound inGame:(Game *)game;
 
 @end

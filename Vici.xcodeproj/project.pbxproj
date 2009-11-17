@@ -20,6 +20,7 @@
 				55136840108F8AF70093B04C /* PBXTargetDependency */,
 				551083641090340800E803C0 /* PBXTargetDependency */,
 				55433CC9109FBC4C0023DBB3 /* PBXTargetDependency */,
+				9AB9F58810BB04970083281B /* PBXTargetDependency */,
 			);
 			name = "All Mac";
 			productName = All;
@@ -149,6 +150,9 @@
 		9A95888D108FCE400075941D /* ViciWarcraftMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95888C108FCE400075941D /* ViciWarcraftMap.m */; };
 		9A9BA2A8108EAEC10095DFF2 /* NSArray+ViciAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A9BA2A6108EAEC10095DFF2 /* NSArray+ViciAdditions.h */; };
 		9A9BA2A9108EAEC10095DFF2 /* NSArray+ViciAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9BA2A7108EAEC10095DFF2 /* NSArray+ViciAdditions.m */; };
+		9AB9F4DA10BB04970083281B /* ViciHumanPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AB9F4D810BB04970083281B /* ViciHumanPlayer.h */; };
+		9AB9F52A10BB04970083281B /* ViciHumanPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9F4D910BB04970083281B /* ViciHumanPlayer.m */; };
+		9AB9F54310BB04970083281B /* ViciCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5589A7F9108578130042A130 /* ViciCore.framework */; };
 		9AF05D2D108ED4DA0003548B /* ViciRiskGame.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5589A7EB108573CB0042A130 /* ViciRiskGame.bundle */; };
 		9AF05D58108ED6E20003548B /* ViciRiskMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF05D21108ED48D0003548B /* ViciRiskMap.m */; };
 		9AF05D5A108ED6E20003548B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */; };
@@ -270,6 +274,20 @@
 			remoteGlobalIDString = 5589A7F8108578130042A130;
 			remoteInfo = ViciCore;
 		};
+		9AB9F54110BB04970083281B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5589A7F8108578130042A130;
+			remoteInfo = ViciCore;
+		};
+		9AB9F58710BB04970083281B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AB9F4EE10BB04970083281B /* ViciHumanPlayer */;
+			remoteInfo = ViciHumanPlayer;
+		};
 		9AF05D33108ED4F00003548B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
@@ -378,6 +396,10 @@
 		9A95888C108FCE400075941D /* ViciWarcraftMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViciWarcraftMap.m; sourceTree = "<group>"; };
 		9A9BA2A6108EAEC10095DFF2 /* NSArray+ViciAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+ViciAdditions.h"; path = "../NSArray+ViciAdditions.h"; sourceTree = "<group>"; };
 		9A9BA2A7108EAEC10095DFF2 /* NSArray+ViciAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+ViciAdditions.m"; path = "../NSArray+ViciAdditions.m"; sourceTree = "<group>"; };
+		9AB9F4D810BB04970083281B /* ViciHumanPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViciHumanPlayer.h; sourceTree = "<group>"; };
+		9AB9F4D910BB04970083281B /* ViciHumanPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViciHumanPlayer.m; sourceTree = "<group>"; };
+		9AB9F4EF10BB04970083281B /* ViciHumanPlayer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViciHumanPlayer.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AB9F4F010BB04970083281B /* ViciHumanPlayer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ViciHumanPlayer-Info.plist"; sourceTree = "<group>"; };
 		9AF05D20108ED48D0003548B /* ViciRiskMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViciRiskMap.h; sourceTree = "<group>"; };
 		9AF05D21108ED48D0003548B /* ViciRiskMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViciRiskMap.m; sourceTree = "<group>"; };
 		9AF05D5F108ED6E20003548B /* ViciRiskMap.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViciRiskMap.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -457,6 +479,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9AB9F4ED10BB04970083281B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AB9F54310BB04970083281B /* ViciCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9AF05D59108ED6E20003548B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -499,6 +529,7 @@
 				9A9587A1108F809A0075941D /* ViciUSAMap.bundle */,
 				9A958871108FCA130075941D /* ViciWarcraftMap.bundle */,
 				55433C97109FBBA20023DBB3 /* ViciBYUMap.bundle */,
+				9AB9F4EF10BB04970083281B /* ViciHumanPlayer.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -719,6 +750,16 @@
 			path = ViciWarcraft;
 			sourceTree = "<group>";
 		};
+		9AB9F4D710BB04970083281B /* ViciHuman */ = {
+			isa = PBXGroup;
+			children = (
+				9AB9F4D810BB04970083281B /* ViciHumanPlayer.h */,
+				9AB9F4D910BB04970083281B /* ViciHumanPlayer.m */,
+				9AB9F4F010BB04970083281B /* ViciHumanPlayer-Info.plist */,
+			);
+			path = ViciHuman;
+			sourceTree = "<group>";
+		};
 		9AC1260A10AE7A5F00A7130D /* Mac */ = {
 			isa = PBXGroup;
 			children = (
@@ -731,6 +772,7 @@
 		9AF05D9E108ED7C50003548B /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				9AB9F4D710BB04970083281B /* ViciHuman */,
 				553D5F49108CC9B100CB88D5 /* ViciRisk */,
 				9A958793108F80690075941D /* ViciUSA */,
 				9A95887E108FCC0E0075941D /* ViciWarcraft */,
@@ -781,6 +823,7 @@
 				55D75B2110A1DDE500C1438A /* ViciCore_Internal.h in Headers */,
 				9A08118010AE6E6A00FC0C72 /* ViciAppDelegate.h in Headers */,
 				9A08120F10AE74E300FC0C72 /* Vici_iPhone_Prefix.pch in Headers */,
+				9AB9F4DA10BB04970083281B /* ViciHumanPlayer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -962,6 +1005,24 @@
 			productReference = 9A958871108FCA130075941D /* ViciWarcraftMap.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
+		9AB9F4EE10BB04970083281B /* ViciHumanPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AB9F4F410BB04970083281B /* Build configuration list for PBXNativeTarget "ViciHumanPlayer" */;
+			buildPhases = (
+				9AB9F4EB10BB04970083281B /* Resources */,
+				9AB9F4EC10BB04970083281B /* Sources */,
+				9AB9F4ED10BB04970083281B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AB9F54210BB04970083281B /* PBXTargetDependency */,
+			);
+			name = ViciHumanPlayer;
+			productName = ViciHumanPlayer;
+			productReference = 9AB9F4EF10BB04970083281B /* ViciHumanPlayer.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		9AF05D55108ED6E20003548B /* ViciRiskMap */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9AF05D5C108ED6E20003548B /* Build configuration list for PBXNativeTarget "ViciRiskMap" */;
@@ -1003,6 +1064,7 @@
 				9A9587A0108F809A0075941D /* ViciUSAMap */,
 				9A958870108FCA130075941D /* ViciWarcraftMap */,
 				55433C96109FBBA20023DBB3 /* ViciBYUMap */,
+				9AB9F4EE10BB04970083281B /* ViciHumanPlayer */,
 			);
 		};
 /* End PBXProject section */
@@ -1052,6 +1114,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9A95886D108FCA130075941D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AB9F4EB10BB04970083281B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1164,6 +1233,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9AB9F4EC10BB04970083281B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AB9F52A10BB04970083281B /* ViciHumanPlayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9AF05D57108ED6E20003548B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1254,6 +1331,16 @@
 			isa = PBXTargetDependency;
 			target = 5589A7F8108578130042A130 /* ViciCore */;
 			targetProxy = 9A9587BA108F81550075941D /* PBXContainerItemProxy */;
+		};
+		9AB9F54210BB04970083281B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5589A7F8108578130042A130 /* ViciCore */;
+			targetProxy = 9AB9F54110BB04970083281B /* PBXContainerItemProxy */;
+		};
+		9AB9F58810BB04970083281B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AB9F4EE10BB04970083281B /* ViciHumanPlayer */;
+			targetProxy = 9AB9F58710BB04970083281B /* PBXContainerItemProxy */;
 		};
 		9AF05D34108ED4F00003548B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1758,6 +1845,58 @@
 			};
 			name = Release;
 		};
+		9AB9F4F210BB04970083281B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Plugins/ViciHuman/ViciHumanPlayer-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ViciHumanPlayer;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		9AB9F4F310BB04970083281B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Plugins/ViciHuman/ViciHumanPlayer-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ViciHumanPlayer;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		9AF05D5D108ED6E20003548B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1908,6 +2047,15 @@
 			buildConfigurations = (
 				9A958873108FCA130075941D /* Debug */,
 				9A958874108FCA130075941D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AB9F4F410BB04970083281B /* Build configuration list for PBXNativeTarget "ViciHumanPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AB9F4F210BB04970083281B /* Debug */,
+				9AB9F4F310BB04970083281B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
