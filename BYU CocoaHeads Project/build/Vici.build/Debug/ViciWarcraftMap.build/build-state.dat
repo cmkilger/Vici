@@ -1,42 +1,0 @@
-TViciWarcraftMap
-v7
-r0
-t280277398.089474
-cCheck dependencies
-cProcessInfoPlistFile "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciWarcraftMap.bundle/Contents/Info.plist" Plugins/ViciWarcraft/ViciWarcraftMap-Info.plist
-cTouch "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciWarcraftMap.bundle"
-
-N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciWarcraftMap.bundle
-t1258584499
-s102
-
-N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciWarcraftMap.bundle/Contents/Info.plist
-t1258584499
-s679
-
-NPlugins/ViciWarcraft/ViciWarcraftMap-Info.plist
-c000000004B00B74900000000000002AA
-t1258338121
-s682
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies280277398#280277398#0(0"0(0#1#0"4300885448#0"0#
-
-CProcessInfoPlistFile "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciWarcraftMap.bundle/Contents/Info.plist" Plugins/ViciWarcraft/ViciWarcraftMap-Info.plist
-s280277299.948491
-e280277299.950765
-r1
-xProcessInfoPlistFile
-x/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciWarcraftMap.bundle/Contents/Info.plist
-xPlugins/ViciWarcraft/ViciWarcraftMap-Info.plist
-lSLF07#2@55"Process Plugins/ViciWarcraft/ViciWarcraftMap-Info.plist280277299#280277299#0(0"0(0#0#93"/Users/ammoknight/Code/BYU CocoaHeads Project/Plugins/ViciWarcraft/ViciWarcraftMap-Info.plist4300885448#276"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    builtin-infoPlistUtility Plugins/ViciWarcraft/ViciWarcraftMap-Info.plist -expandbuildsettings -platform macosx -o "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciWarcraftMap.bundle/Contents/Info.plist"0#
-
-CTouch "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciWarcraftMap.bundle"
-s280277299.950823
-e280277299.954083
-r1
-xTouch
-x/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciWarcraftMap.bundle
-lSLF07#2@86"Touch /Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciWarcraftMap.bundle280277299#280277299#0(0"0(0#0#0"4300885448#160"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    /usr/bin/touch -c "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciWarcraftMap.bundle"0#
-
