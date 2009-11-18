@@ -1,0 +1,904 @@
+TViciCore
+v7
+r0
+t280277397.892574
+cCheck dependencies
+cSymLink "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/Current" A
+cSymLink "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Resources" Versions/Current/Resources
+cSymLink "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Headers" Versions/Current/Headers
+cSymLink "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/ViciCore" Versions/Current/ViciCore
+cProcessInfoPlistFile "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/Resources/Info.plist" ViciCore-Info.plist
+cCpHeader build/Debug/ViciCore.framework/Versions/A/Headers/Battle.h Model/Battle.h
+cCpHeader build/Debug/ViciCore.framework/Versions/A/Headers/Player.h Model/Player.h
+cCpHeader build/Debug/ViciCore.framework/Versions/A/Headers/Round.h Model/Round.h
+cCpHeader build/Debug/ViciCore.framework/Versions/A/Headers/Planet.h Model/Planet.h
+cCpHeader build/Debug/ViciCore.framework/Versions/A/Headers/Card.h Model/Card.h
+cCpHeader build/Debug/ViciCore.framework/Versions/A/Headers/Country.h Model/Country.h
+cCpHeader build/Debug/ViciCore.framework/Versions/A/Headers/Continent.h Model/Continent.h
+cCpHeader build/Debug/ViciCore.framework/Versions/A/Headers/Army.h Model/Army.h
+cCpHeader build/Debug/ViciCore.framework/Versions/A/Headers/ViciCore.h Model/ViciCore.h
+cCpHeader build/Debug/ViciCore.framework/Versions/A/Headers/ViciPlugin.h Model/ViciPlugin.h
+cCpHeader build/Debug/ViciCore.framework/Versions/A/Headers/ViciGamePlugin.h Model/ViciGamePlugin.h
+cCpHeader build/Debug/ViciCore.framework/Versions/A/Headers/ViciConstants.h Model/ViciConstants.h
+cCpHeader build/Debug/ViciCore.framework/Versions/A/Headers/Setting.h Model/Setting.h
+cCpHeader build/Debug/ViciCore.framework/Versions/A/Headers/ViciMapPlugin.h Model/ViciMapPlugin.h
+cProcessPCH /var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ViciCore-ahamjaphmfcmkjdundcazqxyluki/ViciCore.pch.gch Model/ViciCore.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Battle.o "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Battle.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Player.o "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Player.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Round.o "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Round.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Planet.o "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Planet.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Card.o "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Card.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Country.o "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Country.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Continent.o "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Continent.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Army.o "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Army.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/NSArray+ViciAdditions.o "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/../NSArray+ViciAdditions.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Game.o "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Game.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/ViciConstants.o "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciConstants.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Setting.o "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Setting.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/ViciGameEngine.o "/Users/ammoknight/Code/BYU CocoaHeads Project/Controller/ViciGameEngine.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/ViciPluginManager.o "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciPluginManager.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/ViciColor.o "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciColor.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cLd "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/ViciCore" normal x86_64
+cTouch "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework"
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004AFB025C00000000000000EE
+t1257964124
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.h
+c000000004AB9AB42000000000000043A
+t1253681986
+s1082
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004AB9AA2700000000000013E6
+t1253681703
+s5094
+
+N/System/Library/Frameworks/CoreData.framework/CoreData
+c000000004AD843D5000000000052D690
+t1255687125
+s5428880
+
+N/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004AD8432D0000000000B37440
+t1255686957
+s11760704
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Controller/ViciGameEngine.h
+c000000004B047A1100000000000004FA
+t1258584593
+s1274
+i<Foundation/Foundation.h>
+i"ViciGameEngineDelegate.h"
+i"ViciCore.h"
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Controller/ViciGameEngine.m
+c000000004B0383FE0000000000001A56
+t1258521598
+s6742
+i"ViciGameEngine.h"
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Controller/ViciGameEngineDelegate.h
+c000000004B00B74A00000000000000D1
+t1258338122
+s209
+i<Foundation/Foundation.h>
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/../NSArray+ViciAdditions.h
+c000000004B00B74A000000000000019D
+t1258338122
+s413
+i<Foundation/Foundation.h>
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/../NSArray+ViciAdditions.m
+c000000004B00B74A0000000000000264
+t1258338122
+s612
+i"NSArray+ViciAdditions.h"
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Army.h
+c000000004B00B74900000000000001C3
+t1258338121
+s451
+i<CoreData/CoreData.h>
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Army.m
+c000000004B00B7490000000000000208
+t1258338121
+s520
+i"Army.h"
+i"Country.h"
+i"Player.h"
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Battle.h
+c000000004B00B7490000000000000237
+t1258338121
+s567
+i<CoreData/CoreData.h>
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Battle.m
+c000000004B00B749000000000000021A
+t1258338121
+s538
+i"Battle.h"
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Card.h
+c000000004B00B74900000000000001B5
+t1258338121
+s437
+i<CoreData/CoreData.h>
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Card.m
+c000000004B00B74900000000000001EA
+t1258338121
+s490
+i"Card.h"
+i"Player.h"
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Continent.h
+c000000004B00B74900000000000002A8
+t1258338121
+s680
+i<CoreData/CoreData.h>
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Continent.m
+c000000004B00B749000000000000021E
+t1258338121
+s542
+i"Continent.h"
+i"Country.h"
+i"Planet.h"
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Country.h
+c000000004B00B74900000000000003F1
+t1258338121
+s1009
+i<CoreData/CoreData.h>
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Country.m
+c000000004B00B7490000000000000243
+t1258338121
+s579
+i"Country.h"
+i"Card.h"
+i"Player.h"
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Game+Private.h
+c000000004B00B7490000000000000167
+t1258338121
+s359
+i<Foundation/Foundation.h>
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Game.h
+c000000004B00B7490000000000000929
+t1258338121
+s2345
+i<CoreData/CoreData.h>
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Game.m
+c000000004B00B7490000000000000C4D
+t1258338121
+s3149
+i"Game.h"
+i"Game+Private.h"
+i"Card.h"
+i"Continent.h"
+i"Country.h"
+i"Planet.h"
+i"Player.h"
+i"Round.h"
+i"Setting.h"
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Planet.h
+c000000004B00B7490000000000000266
+t1258338121
+s614
+i<CoreData/CoreData.h>
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Planet.m
+c000000004B00B74900000000000001D5
+t1258338121
+s469
+i"Planet.h"
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Player.h
+c000000004B00B74900000000000004C6
+t1258338121
+s1222
+i<CoreData/CoreData.h>
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Player.m
+c000000004B00B749000000000000029A
+t1258338121
+s666
+i"Player.h"
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Round.h
+c000000004B00B74900000000000002A8
+t1258338121
+s680
+i<CoreData/CoreData.h>
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Round.m
+c000000004B00B74900000000000002C9
+t1258338121
+s713
+i"Round.h"
+i"Battle.h"
+i"Player.h"
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Setting.h
+c000000004B00B7490000000000000165
+t1258338121
+s357
+i<CoreData/CoreData.h>
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Setting.m
+c000000004B00B74900000000000000F0
+t1258338121
+s240
+i"Setting.h"
+i"Game.h"
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciColor.h
+c000000004B00B7490000000000000257
+t1258338121
+s599
+i<Foundation/Foundation.h>
+i<CoreGraphics/CoreGraphics.h>
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciColor.m
+c000000004B00B7490000000000000438
+t1258338121
+s1080
+i"ViciColor.h"
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciConstants.h
+c000000004B00B7490000000000000225
+t1258338121
+s549
+i<Foundation/Foundation.h>
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciConstants.m
+c000000004B00B74900000000000002E1
+t1258338121
+s737
+i"ViciConstants.h"
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciCore.h
+c000000004B00B74900000000000001F5
+t1258338121
+s501
+i<Foundation/Foundation.h>
+i"ViciConstants.h"
+i"ViciPlugin.h"
+i"ViciGamePlugin.h"
+i"ViciMapPlugin.h"
+i"ViciPlayerPlugin.h"
+i"ViciColor.h"
+i"Game.h"
+i"Setting.h"
+i"Battle.h"
+i"Round.h"
+i"Country.h"
+i"Continent.h"
+i"Planet.h"
+i"Card.h"
+i"Player.h"
+i"Army.h"
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciCore.pch
+c000000004B00B74900000000000000CE
+t1258338121
+s206
+i<Foundation/Foundation.h>
+i"ViciCore.h"
+i"ViciCore_Internal.h"
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciCore_Internal.h
+c000000004B00B74900000000000000B7
+t1258338121
+s183
+i"NSArray+ViciAdditions.h"
+i"ViciColor.h"
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciGamePlugin.h
+c000000004B0383FE0000000000000639
+t1258521598
+s1593
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciMapPlugin.h
+c000000004B00B7490000000000000136
+t1258338121
+s310
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciPlayerPlugin.h
+c000000004B0383FE0000000000000102
+t1258521598
+s258
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciPlugin.h
+c000000004B00B74900000000000000FE
+t1258338121
+s254
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciPluginManager.h
+c000000004B00B74900000000000005BD
+t1258338121
+s1469
+i<Foundation/Foundation.h>
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciPluginManager.m
+c000000004B00B74900000000000010F5
+t1258338121
+s4341
+i"ViciPluginManager.h"
+i"ViciCore.h"
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/NSArray+ViciAdditions.h
+c000000004B00B74A000000000000019D
+t1258338122
+s413
+i<Foundation/Foundation.h>
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework
+t1258584597
+s204
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Headers
+t3
+s24
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Resources
+t3
+s26
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/Headers/Army.h
+t1258584486
+s451
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/Headers/Battle.h
+t1258584486
+s567
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/Headers/Card.h
+t1258584486
+s437
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/Headers/Continent.h
+t1258584486
+s680
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/Headers/Country.h
+t1258584486
+s1009
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/Headers/Planet.h
+t1258584486
+s614
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/Headers/Player.h
+t1258584486
+s1222
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/Headers/Round.h
+t1258584486
+s680
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/Headers/Setting.h
+t1258584486
+s357
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/Headers/ViciConstants.h
+t1258584486
+s549
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/Headers/ViciCore.h
+t1258584486
+s501
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/Headers/ViciGamePlugin.h
+t1258584486
+s1593
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/Headers/ViciMapPlugin.h
+t1258584486
+s310
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/Headers/ViciPlugin.h
+t1258584486
+s254
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/Resources/Info.plist
+t1258584486
+s668
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/ViciCore
+t1258584597
+s56600
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/Current
+t3
+s1
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/ViciCore
+t3
+s25
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Army.o
+t1258584489
+s13452
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Battle.o
+t1258584489
+s13616
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Card.o
+t1258584489
+s13444
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Continent.o
+t1258584489
+s13520
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Country.o
+t1258584489
+s13856
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Game.o
+t1258584489
+s28600
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/NSArray+ViciAdditions.o
+t1258584489
+s8500
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Planet.o
+t1258584489
+s13336
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Player.o
+t1258584489
+s15280
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Round.o
+t1258584489
+s15424
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Setting.o
+t1258584489
+s5972
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/ViciColor.o
+t1258584490
+s17460
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/ViciConstants.o
+t1258584489
+s7072
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/ViciCore.LinkFileList
+c000000004B0479A600000000000006E7
+t1258584486
+s1767
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/ViciGameEngine.o
+t1258584597
+s31256
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/ViciPluginManager.o
+t1258584490
+s22344
+
+N/var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ViciCore-ahamjaphmfcmkjdundcazqxyluki/ViciCore.pch.gch
+t1258584489
+s42459248
+
+NViciCore-Info.plist
+c000000004B00B74A00000000000002A6
+t1258338122
+s678
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies280277397#280277397#0(0"0(0#1#0"4300885448#0"0#
+
+CCompileC build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Army.o "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Army.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s280277289.552133
+e280277289.700890
+r1
+xCompileC
+xbuild/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Army.o
+x/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Army.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@66"Compile /Users/ammoknight/Code/BYU CocoaHeads Project/Model/Army.m280277289#280277289#0(0"0(0#0#58"/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Army.m4300885448#1533"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-generated-files.hmap" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-own-target-headers.hmap" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-all-target-headers.hmap" -iquote "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-project-headers.hmap" "-F/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/include" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/DerivedSources/x86_64" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/DerivedSources" -include /var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ViciCore-ahamjaphmfcmkjdundcazqxyluki/ViciCore.pch -c "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Army.m" -o "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Army.o"0#
+
+CCompileC build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Battle.o "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Battle.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s280277289.079340
+e280277289.251101
+r1
+xCompileC
+xbuild/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Battle.o
+x/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Battle.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/ammoknight/Code/BYU CocoaHeads Project/Model/Battle.m280277289#280277289#0(0"0(0#0#60"/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Battle.m4300885448#1537"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-generated-files.hmap" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-own-target-headers.hmap" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-all-target-headers.hmap" -iquote "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-project-headers.hmap" "-F/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/include" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/DerivedSources/x86_64" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/DerivedSources" -include /var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ViciCore-ahamjaphmfcmkjdundcazqxyluki/ViciCore.pch -c "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Battle.m" -o "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Battle.o"0#
+
+CCompileC build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Card.o "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Card.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s280277289.440421
+e280277289.542986
+r1
+xCompileC
+xbuild/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Card.o
+x/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Card.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@66"Compile /Users/ammoknight/Code/BYU CocoaHeads Project/Model/Card.m280277289#280277289#0(0"0(0#0#58"/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Card.m4300885448#1533"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-generated-files.hmap" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-own-target-headers.hmap" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-all-target-headers.hmap" -iquote "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-project-headers.hmap" "-F/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/include" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/DerivedSources/x86_64" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/DerivedSources" -include /var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ViciCore-ahamjaphmfcmkjdundcazqxyluki/ViciCore.pch -c "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Card.m" -o "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Card.o"0#
+
+CCompileC build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Continent.o "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Continent.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s280277289.543074
+e280277289.738620
+r1
+xCompileC
+xbuild/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Continent.o
+x/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Continent.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@71"Compile /Users/ammoknight/Code/BYU CocoaHeads Project/Model/Continent.m280277289#280277289#0(0"0(0#0#63"/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Continent.m4300885448#1543"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-generated-files.hmap" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-own-target-headers.hmap" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-all-target-headers.hmap" -iquote "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-project-headers.hmap" "-F/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/include" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/DerivedSources/x86_64" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/DerivedSources" -include /var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ViciCore-ahamjaphmfcmkjdundcazqxyluki/ViciCore.pch -c "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Continent.m" -o "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Continent.o"0#
+
+CCompileC build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Country.o "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Country.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s280277289.451050
+e280277289.552040
+r1
+xCompileC
+xbuild/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Country.o
+x/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Country.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@69"Compile /Users/ammoknight/Code/BYU CocoaHeads Project/Model/Country.m280277289#280277289#0(0"0(0#0#61"/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Country.m4300885448#1539"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-generated-files.hmap" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-own-target-headers.hmap" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-all-target-headers.hmap" -iquote "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-project-headers.hmap" "-F/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/include" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/DerivedSources/x86_64" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/DerivedSources" -include /var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ViciCore-ahamjaphmfcmkjdundcazqxyluki/ViciCore.pch -c "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Country.m" -o "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Country.o"0#
+
+CCompileC build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Game.o "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Game.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s280277289.738721
+e280277289.875333
+r1
+xCompileC
+xbuild/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Game.o
+x/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Game.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@66"Compile /Users/ammoknight/Code/BYU CocoaHeads Project/Model/Game.m280277289#280277289#0(0"0(0#0#58"/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Game.m4300885448#1533"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-generated-files.hmap" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-own-target-headers.hmap" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-all-target-headers.hmap" -iquote "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-project-headers.hmap" "-F/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/include" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/DerivedSources/x86_64" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/DerivedSources" -include /var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ViciCore-ahamjaphmfcmkjdundcazqxyluki/ViciCore.pch -c "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Game.m" -o "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Game.o"0#
+
+CCompileC build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/NSArray+ViciAdditions.o "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/../NSArray+ViciAdditions.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s280277289.700975
+e280277289.803462
+r1
+xCompileC
+xbuild/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/NSArray+ViciAdditions.o
+x/Users/ammoknight/Code/BYU CocoaHeads Project/Model/../NSArray+ViciAdditions.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@86"Compile /Users/ammoknight/Code/BYU CocoaHeads Project/Model/../NSArray+ViciAdditions.m280277289#280277289#0(0"0(0#0#78"/Users/ammoknight/Code/BYU CocoaHeads Project/Model/../NSArray+ViciAdditions.m4300885448#1570"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-generated-files.hmap" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-own-target-headers.hmap" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-all-target-headers.hmap" -iquote "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-project-headers.hmap" "-F/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/include" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/DerivedSources/x86_64" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/DerivedSources" -include /var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ViciCore-ahamjaphmfcmkjdundcazqxyluki/ViciCore.pch -c "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/../NSArray+ViciAdditions.m" -o "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/NSArray+ViciAdditions.o"0#
+
+CCompileC build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Planet.o "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Planet.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s280277289.320694
+e280277289.450961
+r1
+xCompileC
+xbuild/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Planet.o
+x/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Planet.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/ammoknight/Code/BYU CocoaHeads Project/Model/Planet.m280277289#280277289#0(0"0(0#0#60"/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Planet.m4300885448#1537"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-generated-files.hmap" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-own-target-headers.hmap" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-all-target-headers.hmap" -iquote "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-project-headers.hmap" "-F/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/include" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/DerivedSources/x86_64" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/DerivedSources" -include /var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ViciCore-ahamjaphmfcmkjdundcazqxyluki/ViciCore.pch -c "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Planet.m" -o "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Planet.o"0#
+
+CCompileC build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Player.o "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Player.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s280277289.080109
+e280277289.320585
+r1
+xCompileC
+xbuild/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Player.o
+x/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Player.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/ammoknight/Code/BYU CocoaHeads Project/Model/Player.m280277289#280277289#0(0"0(0#0#60"/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Player.m4300885448#1537"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-generated-files.hmap" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-own-target-headers.hmap" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-all-target-headers.hmap" -iquote "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-project-headers.hmap" "-F/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/include" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/DerivedSources/x86_64" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/DerivedSources" -include /var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ViciCore-ahamjaphmfcmkjdundcazqxyluki/ViciCore.pch -c "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Player.m" -o "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Player.o"0#
+
+CCompileC build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Round.o "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Round.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s280277289.251186
+e280277289.440339
+r1
+xCompileC
+xbuild/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Round.o
+x/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Round.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@67"Compile /Users/ammoknight/Code/BYU CocoaHeads Project/Model/Round.m280277289#280277289#0(0"0(0#0#59"/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Round.m4300885448#1535"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-generated-files.hmap" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-own-target-headers.hmap" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-all-target-headers.hmap" -iquote "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-project-headers.hmap" "-F/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/include" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/DerivedSources/x86_64" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/DerivedSources" -include /var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ViciCore-ahamjaphmfcmkjdundcazqxyluki/ViciCore.pch -c "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Round.m" -o "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Round.o"0#
+
+CCompileC build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Setting.o "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Setting.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s280277289.875435
+e280277289.988894
+r1
+xCompileC
+xbuild/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Setting.o
+x/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Setting.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@69"Compile /Users/ammoknight/Code/BYU CocoaHeads Project/Model/Setting.m280277289#280277289#0(0"0(0#0#61"/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Setting.m4300885448#1539"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-generated-files.hmap" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-own-target-headers.hmap" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-all-target-headers.hmap" -iquote "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-project-headers.hmap" "-F/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/include" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/DerivedSources/x86_64" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/DerivedSources" -include /var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ViciCore-ahamjaphmfcmkjdundcazqxyluki/ViciCore.pch -c "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Setting.m" -o "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/Setting.o"0#
+
+CCompileC build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/ViciColor.o "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciColor.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s280277290.045930
+e280277290.148550
+r1
+xCompileC
+xbuild/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/ViciColor.o
+x/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciColor.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@71"Compile /Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciColor.m280277290#280277290#0(0"0(0#0#63"/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciColor.m4300885448#1543"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-generated-files.hmap" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-own-target-headers.hmap" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-all-target-headers.hmap" -iquote "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-project-headers.hmap" "-F/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/include" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/DerivedSources/x86_64" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/DerivedSources" -include /var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ViciCore-ahamjaphmfcmkjdundcazqxyluki/ViciCore.pch -c "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciColor.m" -o "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/ViciColor.o"0#
+
+CCompileC build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/ViciConstants.o "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciConstants.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s280277289.803559
+e280277289.901449
+r1
+xCompileC
+xbuild/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/ViciConstants.o
+x/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciConstants.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@75"Compile /Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciConstants.m280277289#280277289#0(0"0(0#0#67"/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciConstants.m4300885448#1551"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-generated-files.hmap" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-own-target-headers.hmap" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-all-target-headers.hmap" -iquote "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-project-headers.hmap" "-F/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/include" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/DerivedSources/x86_64" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/DerivedSources" -include /var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ViciCore-ahamjaphmfcmkjdundcazqxyluki/ViciCore.pch -c "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciConstants.m" -o "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/ViciConstants.o"0#
+
+CCompileC build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/ViciGameEngine.o "/Users/ammoknight/Code/BYU CocoaHeads Project/Controller/ViciGameEngine.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s280277397.726133
+e280277397.851709
+r1
+xCompileC
+xbuild/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/ViciGameEngine.o
+x/Users/ammoknight/Code/BYU CocoaHeads Project/Controller/ViciGameEngine.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@81"Compile /Users/ammoknight/Code/BYU CocoaHeads Project/Controller/ViciGameEngine.m280277397#280277397#0(0"0(0#0#73"/Users/ammoknight/Code/BYU CocoaHeads Project/Controller/ViciGameEngine.m4300885448#1558"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-generated-files.hmap" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-own-target-headers.hmap" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-all-target-headers.hmap" -iquote "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-project-headers.hmap" "-F/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/include" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/DerivedSources/x86_64" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/DerivedSources" -include /var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ViciCore-ahamjaphmfcmkjdundcazqxyluki/ViciCore.pch -c "/Users/ammoknight/Code/BYU CocoaHeads Project/Controller/ViciGameEngine.m" -o "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/ViciGameEngine.o"0#
+
+CCompileC build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/ViciPluginManager.o "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciPluginManager.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s280277289.988987
+e280277290.128361
+r1
+xCompileC
+xbuild/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/ViciPluginManager.o
+x/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciPluginManager.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@79"Compile /Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciPluginManager.m280277289#280277290#0(0"0(0#0#71"/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciPluginManager.m4300885448#1559"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-generated-files.hmap" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-own-target-headers.hmap" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-all-target-headers.hmap" -iquote "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-project-headers.hmap" "-F/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/include" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/DerivedSources/x86_64" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/DerivedSources" -include /var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ViciCore-ahamjaphmfcmkjdundcazqxyluki/ViciCore.pch -c "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciPluginManager.m" -o "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/ViciPluginManager.o"0#
+
+CCpHeader build/Debug/ViciCore.framework/Versions/A/Headers/Army.h Model/Army.h
+s280277286.295587
+e280277286.347006
+r1
+xCpHeader
+xbuild/Debug/ViciCore.framework/Versions/A/Headers/Army.h
+xModel/Army.h
+lSLF07#2@17"Copy Model/Army.h280277286#280277286#0(0"0(0#0#58"/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Army.h4300885448#362"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Army.h" "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/Headers"0#
+
+CCpHeader build/Debug/ViciCore.framework/Versions/A/Headers/Battle.h Model/Battle.h
+s280277286.289555
+e280277286.338711
+r1
+xCpHeader
+xbuild/Debug/ViciCore.framework/Versions/A/Headers/Battle.h
+xModel/Battle.h
+lSLF07#2@19"Copy Model/Battle.h280277286#280277286#0(0"0(0#0#60"/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Battle.h4300885448#364"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Battle.h" "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/Headers"0#
+
+CCpHeader build/Debug/ViciCore.framework/Versions/A/Headers/Card.h Model/Card.h
+s280277286.291299
+e280277286.338977
+r1
+xCpHeader
+xbuild/Debug/ViciCore.framework/Versions/A/Headers/Card.h
+xModel/Card.h
+lSLF07#2@17"Copy Model/Card.h280277286#280277286#0(0"0(0#0#58"/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Card.h4300885448#362"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Card.h" "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/Headers"0#
+
+CCpHeader build/Debug/ViciCore.framework/Versions/A/Headers/Continent.h Model/Continent.h
+s280277286.294308
+e280277286.337099
+r1
+xCpHeader
+xbuild/Debug/ViciCore.framework/Versions/A/Headers/Continent.h
+xModel/Continent.h
+lSLF07#2@22"Copy Model/Continent.h280277286#280277286#0(0"0(0#0#63"/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Continent.h4300885448#367"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Continent.h" "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/Headers"0#
+
+CCpHeader build/Debug/ViciCore.framework/Versions/A/Headers/Country.h Model/Country.h
+s280277286.292776
+e280277286.349710
+r1
+xCpHeader
+xbuild/Debug/ViciCore.framework/Versions/A/Headers/Country.h
+xModel/Country.h
+lSLF07#2@20"Copy Model/Country.h280277286#280277286#0(0"0(0#0#61"/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Country.h4300885448#365"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Country.h" "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/Headers"0#
+
+CCpHeader build/Debug/ViciCore.framework/Versions/A/Headers/Planet.h Model/Planet.h
+s280277286.290853
+e280277286.338891
+r1
+xCpHeader
+xbuild/Debug/ViciCore.framework/Versions/A/Headers/Planet.h
+xModel/Planet.h
+lSLF07#2@19"Copy Model/Planet.h280277286#280277286#0(0"0(0#0#60"/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Planet.h4300885448#364"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Planet.h" "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/Headers"0#
+
+CCpHeader build/Debug/ViciCore.framework/Versions/A/Headers/Player.h Model/Player.h
+s280277286.290057
+e280277286.345090
+r1
+xCpHeader
+xbuild/Debug/ViciCore.framework/Versions/A/Headers/Player.h
+xModel/Player.h
+lSLF07#2@19"Copy Model/Player.h280277286#280277286#0(0"0(0#0#60"/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Player.h4300885448#364"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Player.h" "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/Headers"0#
+
+CCpHeader build/Debug/ViciCore.framework/Versions/A/Headers/Round.h Model/Round.h
+s280277286.290457
+e280277286.338804
+r1
+xCpHeader
+xbuild/Debug/ViciCore.framework/Versions/A/Headers/Round.h
+xModel/Round.h
+lSLF07#2@18"Copy Model/Round.h280277286#280277286#0(0"0(0#0#59"/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Round.h4300885448#363"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Round.h" "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/Headers"0#
+
+CCpHeader build/Debug/ViciCore.framework/Versions/A/Headers/Setting.h Model/Setting.h
+s280277286.339114
+e280277286.358535
+r1
+xCpHeader
+xbuild/Debug/ViciCore.framework/Versions/A/Headers/Setting.h
+xModel/Setting.h
+lSLF07#2@20"Copy Model/Setting.h280277286#280277286#0(0"0(0#0#61"/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Setting.h4300885448#365"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Setting.h" "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/Headers"0#
+
+CCpHeader build/Debug/ViciCore.framework/Versions/A/Headers/ViciConstants.h Model/ViciConstants.h
+s280277286.338164
+e280277286.351867
+r1
+xCpHeader
+xbuild/Debug/ViciCore.framework/Versions/A/Headers/ViciConstants.h
+xModel/ViciConstants.h
+lSLF07#2@26"Copy Model/ViciConstants.h280277286#280277286#0(0"0(0#0#67"/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciConstants.h4300885448#371"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciConstants.h" "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/Headers"0#
+
+CCpHeader build/Debug/ViciCore.framework/Versions/A/Headers/ViciCore.h Model/ViciCore.h
+s280277286.296820
+e280277286.339063
+r1
+xCpHeader
+xbuild/Debug/ViciCore.framework/Versions/A/Headers/ViciCore.h
+xModel/ViciCore.h
+lSLF07#2@21"Copy Model/ViciCore.h280277286#280277286#0(0"0(0#0#62"/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciCore.h4300885448#366"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciCore.h" "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/Headers"0#
+
+CCpHeader build/Debug/ViciCore.framework/Versions/A/Headers/ViciGamePlugin.h Model/ViciGamePlugin.h
+s280277286.337288
+e280277286.356695
+r1
+xCpHeader
+xbuild/Debug/ViciCore.framework/Versions/A/Headers/ViciGamePlugin.h
+xModel/ViciGamePlugin.h
+lSLF07#2@27"Copy Model/ViciGamePlugin.h280277286#280277286#0(0"0(0#0#68"/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciGamePlugin.h4300885448#372"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciGamePlugin.h" "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/Headers"0#
+
+CCpHeader build/Debug/ViciCore.framework/Versions/A/Headers/ViciMapPlugin.h Model/ViciMapPlugin.h
+s280277286.339541
+e280277286.349369
+r1
+xCpHeader
+xbuild/Debug/ViciCore.framework/Versions/A/Headers/ViciMapPlugin.h
+xModel/ViciMapPlugin.h
+lSLF07#2@26"Copy Model/ViciMapPlugin.h280277286#280277286#0(0"0(0#0#67"/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciMapPlugin.h4300885448#371"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciMapPlugin.h" "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/Headers"0#
+
+CCpHeader build/Debug/ViciCore.framework/Versions/A/Headers/ViciPlugin.h Model/ViciPlugin.h
+s280277286.298080
+e280277286.337227
+r1
+xCpHeader
+xbuild/Debug/ViciCore.framework/Versions/A/Headers/ViciPlugin.h
+xModel/ViciPlugin.h
+lSLF07#2@23"Copy Model/ViciPlugin.h280277286#280277286#0(0"0(0#0#64"/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciPlugin.h4300885448#368"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciPlugin.h" "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/Headers"0#
+
+CLd "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/ViciCore" normal x86_64
+s280277397.851786
+e280277397.889649
+r1
+xLd
+x/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/ViciCore
+xnormal
+xx86_64
+lSLF07#2@101"Link /Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/ViciCore280277397#280277397#0(0"0(0#0#0"4300885448#806"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -dynamiclib -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug" "-F/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug" -filelist "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/Objects-normal/x86_64/ViciCore.LinkFileList" -install_name @loader_path/../Frameworks/ViciCore.framework/Versions/A/ViciCore -mmacosx-version-min=10.6 -framework Foundation -framework AppKit -framework CoreData -framework Foundation -single_module -compatibility_version 1 -current_version 1 -o "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/ViciCore"0#
+
+CProcessInfoPlistFile "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/Resources/Info.plist" ViciCore-Info.plist
+s280277286.286851
+e280277286.289492
+r1
+xProcessInfoPlistFile
+x/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/Resources/Info.plist
+xViciCore-Info.plist
+lSLF07#2@27"Process ViciCore-Info.plist280277286#280277286#0(0"0(0#0#65"/Users/ammoknight/Code/BYU CocoaHeads Project/ViciCore-Info.plist4300885448#256"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    builtin-infoPlistUtility ViciCore-Info.plist -expandbuildsettings -platform macosx -o "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/A/Resources/Info.plist"0#
+
+CProcessPCH /var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ViciCore-ahamjaphmfcmkjdundcazqxyluki/ViciCore.pch.gch Model/ViciCore.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s280277286.358707
+e280277289.079162
+r1
+xProcessPCH
+x/var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ViciCore-ahamjaphmfcmkjdundcazqxyluki/ViciCore.pch.gch
+xModel/ViciCore.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@29"Precompile Model/ViciCore.pch280277286#280277289#0(0"0(0#0#64"/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciCore.pch4300885448#1426"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-generated-files.hmap" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-own-target-headers.hmap" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-all-target-headers.hmap" -iquote "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/ViciCore-project-headers.hmap" "-F/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/include" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/DerivedSources/x86_64" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciCore.build/DerivedSources" -c "/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciCore.pch" -o /var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ViciCore-ahamjaphmfcmkjdundcazqxyluki/ViciCore.pch.gch0#
+
+CSymLink "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Headers" Versions/Current/Headers
+s280277286.284432
+e280277286.286574
+r1
+xSymLink
+x/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Headers
+xVersions/Current/Headers
+lSLF07#2@92"Process /Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Headers280277286#280277286#0(0"0(0#0#0"4300885448#183"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    /bin/ln -sf Versions/Current/Headers "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Headers"0#
+
+CSymLink "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Resources" Versions/Current/Resources
+s280277286.282519
+e280277286.284938
+r1
+xSymLink
+x/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Resources
+xVersions/Current/Resources
+lSLF07#2@94"Process /Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Resources280277286#280277286#0(0"0(0#0#0"4300885448#187"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    /bin/ln -sf Versions/Current/Resources "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Resources"0#
+
+CSymLink "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/Current" A
+s280277286.272800
+e280277286.284352
+r1
+xSymLink
+x/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/Current
+xA
+lSLF07#2@101"Process /Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/Current280277286#280277286#0(0"0(0#0#0"7297009404609131520#169"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    /bin/ln -sf A "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/Versions/Current"0#
+
+CSymLink "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/ViciCore" Versions/Current/ViciCore
+s280277286.284993
+e280277286.286798
+r1
+xSymLink
+x/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/ViciCore
+xVersions/Current/ViciCore
+lSLF07#2@93"Process /Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/ViciCore280277286#280277286#0(0"0(0#0#0"4300885448#185"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    /bin/ln -sf Versions/Current/ViciCore "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/ViciCore"0#
+
+CTouch "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework"
+s280277397.889782
+e280277397.892535
+r1
+xTouch
+x/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework
+lSLF07#2@82"Touch /Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework280277397#280277397#0(0"0(0#0#0"4300885448#156"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    /usr/bin/touch -c "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework"0#
+

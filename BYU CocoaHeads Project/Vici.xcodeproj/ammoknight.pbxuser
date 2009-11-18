@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 5B26CA4E10B0EF0000031A20 /* Vici */;
+		activeTarget = 55136837108F8AF10093B04C /* All Mac */;
+		codeSenseManager = 5B26CA7510B0EF1F00031A20 /* Code sense */;
+		executables = (
+			5B26CA4E10B0EF0000031A20 /* Vici */,
+			5B26CA4F10B0EF0000031A20 /* ViciiPhone */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					485,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					1473,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFindDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFindDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					200,
+					611,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFindDataSource_MessageID,
+					PBXFindDataSource_LocationID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					557,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 280276453;
+			PBXWorkspaceStateSaveDate = 280276453;
+		};
+		perUserProjectItems = {
+			5BA7DC3C10B3BED2006BDC84 = 5BA7DC3C10B3BED2006BDC84 /* PBXTextBookmark */;
+			5BA7DC4B10B3C140006BDC84 = 5BA7DC4B10B3C140006BDC84 /* PBXTextBookmark */;
+			5BA7DC4C10B3C140006BDC84 = 5BA7DC4C10B3C140006BDC84 /* PBXTextBookmark */;
+			5BCB859E10B4B1A1002E66D7 /* XCBuildMessageTextBookmark */ = 5BCB859E10B4B1A1002E66D7 /* XCBuildMessageTextBookmark */;
+			5BCB859F10B4B1A1002E66D7 /* PBXTextBookmark */ = 5BCB859F10B4B1A1002E66D7 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 5B26CA7410B0EF1F00031A20 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	55136837108F8AF10093B04C /* All Mac */ = {
+		activeExec = 0;
+	};
+	551629F2107FED8900C446B1 /* Game.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1027, 1222}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 2215}";
+		};
+	};
+	553D5F44108CC9AD00CB88D5 /* ViciRiskGame.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {691, 848}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 276}";
+			sepNavWindowFrame = "{{15, 82}, {750, 976}}";
+		};
+	};
+	553D5F45108CC9AD00CB88D5 /* ViciRiskGame.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1651, 1664}}";
+			sepNavSelRange = "{3603, 0}";
+			sepNavVisRange = "{0, 1308}";
+		};
+	};
+	55433C96109FBBA20023DBB3 /* ViciBYUMap */ = {
+		activeExec = 0;
+	};
+	5589A7B0108564B80042A130 /* Player.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {796, 848}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 666}";
+		};
+	};
+	5589A7BA108564B80042A130 /* Country.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {810, 848}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 579}";
+		};
+	};
+	5589A7EA108573CB0042A130 /* ViciRiskGame */ = {
+		activeExec = 0;
+	};
+	5589A7F8108578130042A130 /* ViciCore */ = {
+		activeExec = 0;
+	};
+	55D75A9D10A122B500C1438A /* ViciGameEngine.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1006, 825}}";
+			sepNavSelRange = "{215, 1}";
+			sepNavVisRange = "{0, 1274}";
+			sepNavWindowFrame = "{{260, 82}, {750, 976}}";
+		};
+	};
+	55D75A9E10A122B500C1438A /* ViciGameEngine.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {985, 2730}}";
+			sepNavSelRange = "{5320, 0}";
+			sepNavVisRange = "{5099, 440}";
+			sepNavWindowFrame = "{{15, 82}, {750, 976}}";
+		};
+	};
+	5B26CA4E10B0EF0000031A20 /* Vici */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Vici;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	5B26CA4F10B0EF0000031A20 /* ViciiPhone */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = ViciiPhone;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	5B26CA7410B0EF1F00031A20 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	5B26CA7510B0EF1F00031A20 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	5BA7DC3C10B3BED2006BDC84 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55D75A9D10A122B500C1438A /* ViciGameEngine.h */;
+		name = "ViciGameEngine.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1254;
+		vrLoc = 0;
+	};
+	5BA7DC4B10B3C140006BDC84 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55D75A9E10A122B500C1438A /* ViciGameEngine.m */;
+		name = "ViciGameEngine.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 988;
+		vrLoc = 5754;
+	};
+	5BA7DC4C10B3C140006BDC84 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55D75A9E10A122B500C1438A /* ViciGameEngine.m */;
+		name = "ViciGameEngine.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 903;
+		vrLoc = 5839;
+	};
+	5BCB859E10B4B1A1002E66D7 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "'ViciGameEngine' may not respond to '-gameOver'";
+		fRef = 55D75A9E10A122B500C1438A /* ViciGameEngine.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 141;
+		rType = 1;
+	};
+	5BCB859F10B4B1A1002E66D7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55D75A9E10A122B500C1438A /* ViciGameEngine.m */;
+		name = "ViciGameEngine.m: 142";
+		rLen = 0;
+		rLoc = 5320;
+		rType = 0;
+		vrLen = 440;
+		vrLoc = 5099;
+	};
+	8D15AC270486D014006FF6A4 /* Vici */ = {
+		activeExec = 0;
+		executables = (
+			5B26CA4E10B0EF0000031A20 /* Vici */,
+		);
+	};
+	9A080D7810AE5D0C00FC0C72 /* ViciiPhone */ = {
+		activeExec = 0;
+		executables = (
+			5B26CA4F10B0EF0000031A20 /* ViciiPhone */,
+		);
+	};
+	9A08104C10AE62F400FC0C72 /* ViciCoreiPhone */ = {
+		activeExec = 0;
+	};
+	9A08120410AE73E100FC0C72 /* All iPhone */ = {
+		activeExec = 0;
+	};
+	9A9587A0108F809A0075941D /* ViciUSAMap */ = {
+		activeExec = 0;
+	};
+	9A958870108FCA130075941D /* ViciWarcraftMap */ = {
+		activeExec = 0;
+	};
+	9AB9F4EE10BB04970083281B /* ViciHumanPlayer */ = {
+		activeExec = 0;
+	};
+	9AF05D55108ED6E20003548B /* ViciRiskMap */ = {
+		activeExec = 0;
+	};
+}

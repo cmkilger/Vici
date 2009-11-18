@@ -1,0 +1,251 @@
+TViciUSAMap
+v7
+r0
+t280277398.088484
+cCheck dependencies
+cProcessInfoPlistFile "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciUSAMap.bundle/Contents/Info.plist" Plugins/ViciUSA/ViciUSAMap-Info.plist
+cProcessPCH /var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-fbpijqluqhdyswcgnbgiheyombbe/AppKit.h.gch /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Vici.build/Debug/ViciUSAMap.build/Objects-normal/x86_64/ViciUSAMap.o "/Users/ammoknight/Code/BYU CocoaHeads Project/Plugins/ViciUSA/ViciUSAMap.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cLd "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciUSAMap.bundle/Contents/MacOS/ViciUSAMap" normal x86_64
+cTouch "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciUSAMap.bundle"
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004AFB025C00000000000000EE
+t1257964124
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h
+c000000004A67D2A800000000000017ED
+t1248318120
+s6125
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.h
+c000000004AB9AB42000000000000043A
+t1253681986
+s1082
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004AB9AA2700000000000013E6
+t1253681703
+s5094
+
+N/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004AD8432D0000000000B37440
+t1255686957
+s11760704
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Army.h
+c000000004B00B74900000000000001C3
+t1258338121
+s451
+i<CoreData/CoreData.h>
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Battle.h
+c000000004B00B7490000000000000237
+t1258338121
+s567
+i<CoreData/CoreData.h>
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Card.h
+c000000004B00B74900000000000001B5
+t1258338121
+s437
+i<CoreData/CoreData.h>
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Continent.h
+c000000004B00B74900000000000002A8
+t1258338121
+s680
+i<CoreData/CoreData.h>
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Country.h
+c000000004B00B74900000000000003F1
+t1258338121
+s1009
+i<CoreData/CoreData.h>
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Game.h
+c000000004B00B7490000000000000929
+t1258338121
+s2345
+i<CoreData/CoreData.h>
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Planet.h
+c000000004B00B7490000000000000266
+t1258338121
+s614
+i<CoreData/CoreData.h>
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Player.h
+c000000004B00B74900000000000004C6
+t1258338121
+s1222
+i<CoreData/CoreData.h>
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Round.h
+c000000004B00B74900000000000002A8
+t1258338121
+s680
+i<CoreData/CoreData.h>
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/Setting.h
+c000000004B00B7490000000000000165
+t1258338121
+s357
+i<CoreData/CoreData.h>
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciColor.h
+c000000004B00B7490000000000000257
+t1258338121
+s599
+i<Foundation/Foundation.h>
+i<CoreGraphics/CoreGraphics.h>
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciConstants.h
+c000000004B00B7490000000000000225
+t1258338121
+s549
+i<Foundation/Foundation.h>
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciCore.h
+c000000004B00B74900000000000001F5
+t1258338121
+s501
+i<Foundation/Foundation.h>
+i"ViciConstants.h"
+i"ViciPlugin.h"
+i"ViciGamePlugin.h"
+i"ViciMapPlugin.h"
+i"ViciPlayerPlugin.h"
+i"ViciColor.h"
+i"Game.h"
+i"Setting.h"
+i"Battle.h"
+i"Round.h"
+i"Country.h"
+i"Continent.h"
+i"Planet.h"
+i"Card.h"
+i"Player.h"
+i"Army.h"
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciGamePlugin.h
+c000000004B0383FE0000000000000639
+t1258521598
+s1593
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciMapPlugin.h
+c000000004B00B7490000000000000136
+t1258338121
+s310
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciPlayerPlugin.h
+c000000004B0383FE0000000000000102
+t1258521598
+s258
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Model/ViciPlugin.h
+c000000004B00B74900000000000000FE
+t1258338121
+s254
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Plugins/ViciUSA/ViciUSAMap.h
+c000000004B00B7490000000000000134
+t1258338121
+s308
+i<Cocoa/Cocoa.h>
+i"ViciCore.h"
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/Plugins/ViciUSA/ViciUSAMap.m
+c000000004B00B7490000000000002452
+t1258338121
+s9298
+i"ViciUSAMap.h"
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciCore.framework/ViciCore
+c000000004B047A15000000000000DD18
+t1258584597
+s56600
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciUSAMap.bundle
+t1258584598
+s102
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciUSAMap.bundle/Contents/Info.plist
+t1258584499
+s669
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciUSAMap.bundle/Contents/MacOS/ViciUSAMap
+t1258584598
+s23512
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciUSAMap.build/Objects-normal/x86_64/ViciUSAMap.LinkFileList
+c000000004B0479B30000000000000079
+t1258584499
+s121
+
+N/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciUSAMap.build/Objects-normal/x86_64/ViciUSAMap.o
+t1258584499
+s39284
+
+N/var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-fbpijqluqhdyswcgnbgiheyombbe/AppKit.h.gch
+t1258584493
+s53515280
+
+NPlugins/ViciUSA/ViciUSAMap-Info.plist
+c000000004B00B74900000000000002A5
+t1258338121
+s677
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies280277398#280277398#0(0"0(0#1#0"4300885448#0"0#
+
+CCompileC build/Vici.build/Debug/ViciUSAMap.build/Objects-normal/x86_64/ViciUSAMap.o "/Users/ammoknight/Code/BYU CocoaHeads Project/Plugins/ViciUSA/ViciUSAMap.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s280277299.643432
+e280277299.899416
+r1
+xCompileC
+xbuild/Vici.build/Debug/ViciUSAMap.build/Objects-normal/x86_64/ViciUSAMap.o
+x/Users/ammoknight/Code/BYU CocoaHeads Project/Plugins/ViciUSA/ViciUSAMap.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@82"Compile /Users/ammoknight/Code/BYU CocoaHeads Project/Plugins/ViciUSA/ViciUSAMap.m280277299#280277299#0(0"0(0#0#74"/Users/ammoknight/Code/BYU CocoaHeads Project/Plugins/ViciUSA/ViciUSAMap.m4300885448#1571"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciUSAMap.build/ViciUSAMap-generated-files.hmap" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciUSAMap.build/ViciUSAMap-own-target-headers.hmap" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciUSAMap.build/ViciUSAMap-all-target-headers.hmap" -iquote "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciUSAMap.build/ViciUSAMap-project-headers.hmap" "-F/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/include" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciUSAMap.build/DerivedSources/x86_64" "-I/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciUSAMap.build/DerivedSources" -include /var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-fbpijqluqhdyswcgnbgiheyombbe/AppKit.h -c "/Users/ammoknight/Code/BYU CocoaHeads Project/Plugins/ViciUSA/ViciUSAMap.m" -o "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciUSAMap.build/Objects-normal/x86_64/ViciUSAMap.o"0#
+
+CLd "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciUSAMap.bundle/Contents/MacOS/ViciUSAMap" normal x86_64
+s280277398.046673
+e280277398.086117
+r1
+xLd
+x/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciUSAMap.bundle/Contents/MacOS/ViciUSAMap
+xnormal
+xx86_64
+lSLF07#2@106"Link /Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciUSAMap.bundle/Contents/MacOS/ViciUSAMap280277398#280277398#0(0"0(0#0#0"4300885448#672"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -bundle -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug" "-F/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug" -filelist "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Vici.build/Debug/ViciUSAMap.build/Objects-normal/x86_64/ViciUSAMap.LinkFileList" -mmacosx-version-min=10.6 -framework Foundation -framework AppKit -framework Foundation -framework ViciCore -o "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciUSAMap.bundle/Contents/MacOS/ViciUSAMap"0#
+
+CProcessInfoPlistFile "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciUSAMap.bundle/Contents/Info.plist" Plugins/ViciUSA/ViciUSAMap-Info.plist
+s280277299.639742
+e280277299.643320
+r1
+xProcessInfoPlistFile
+x/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciUSAMap.bundle/Contents/Info.plist
+xPlugins/ViciUSA/ViciUSAMap-Info.plist
+lSLF07#2@45"Process Plugins/ViciUSA/ViciUSAMap-Info.plist280277299#280277299#0(0"0(0#0#83"/Users/ammoknight/Code/BYU CocoaHeads Project/Plugins/ViciUSA/ViciUSAMap-Info.plist4300885448#261"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    builtin-infoPlistUtility Plugins/ViciUSA/ViciUSAMap-Info.plist -expandbuildsettings -platform macosx -o "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciUSAMap.bundle/Contents/Info.plist"0#
+
+CProcessPCH /var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-fbpijqluqhdyswcgnbgiheyombbe/AppKit.h.gch /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h normal x86_64 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CTouch "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciUSAMap.bundle"
+s280277398.086192
+e280277398.088446
+r1
+xTouch
+x/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciUSAMap.bundle
+lSLF07#2@81"Touch /Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciUSAMap.bundle280277398#280277398#0(0"0(0#0#0"4300885448#155"    cd "/Users/ammoknight/Code/BYU CocoaHeads Project"    /usr/bin/touch -c "/Users/ammoknight/Code/BYU CocoaHeads Project/build/Debug/ViciUSAMap.bundle"0#
+
