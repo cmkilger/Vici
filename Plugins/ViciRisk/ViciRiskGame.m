@@ -112,4 +112,9 @@ NSString * numberOfSetsTurnedInKey = @"numberOfSetsTurnedInKey";
 	// TODO: Implement executeBattle:inGame:
 }
 
+- (BOOL) isGameOverInGame:(Game *)game {
+	// TODO: Implement -isGameOverInGame:
+	return NO;
+}
+
 @end

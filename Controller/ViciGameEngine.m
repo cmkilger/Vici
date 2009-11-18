@@ -138,7 +138,8 @@ enum {
 				// if the attacked country is now owned by the current player he obviously conquered it
 				if ([country player] == [game currentPlayer]) {
 					selectedCountry = country;
-					// TODO: check for end of game
+					if ([gamePlugin isGameOverInGame:game])
+						[self gameOver];
 				}
 				
 				// If there are now armies to be placed we move to the moving phase
@@ -188,6 +189,10 @@ enum {
 
 - (void) didSelectCard:(Card *)card {
 	
+}
+
+- (void)gameOver {
+	// TODO: Do whatever it's supposed to do when the game is over
 }
 
 @end

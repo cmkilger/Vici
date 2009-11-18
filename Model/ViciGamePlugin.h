@@ -23,6 +23,9 @@
 //called when a player is attacking another country
 - (void) executeBattle:(Battle *)aBattle inGame:(Game *)game;
 
+//called at the end of every country conquest
+- (BOOL) isGameOverInGame:(Game *)game;
+
 
 //all the following methods are optional
 @optional
