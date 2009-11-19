@@ -36,5 +36,7 @@ typedef NSUInteger ViciGameState;
 - (BOOL) canFortify;
 - (void) willBeginFortifications;
 
+- (void) gameOver;
+
 
 @end
