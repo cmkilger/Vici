@@ -114,12 +114,8 @@ NSString * numberOfSetsTurnedInKey = @"numberOfSetsTurnedInKey";
 
 //Called after every battle to check if the game has been won
 - (BOOL) isGameOverInGame:(Game *)game {
-	
 	//Assumes a simple victory condition: one player controls all the countries. Does not take into account conditions such as alliances.
-	if([[game countries] count] == [[[game currentPlayer] countries] count])
-		return YES;
-	else
-		return NO;
+	return ([[game countries] count] == [[[game currentPlayer] countries] count]);
 }
 
 @end
