@@ -29,3 +29,6 @@
 
 #import "Player.h"
 #import "Army.h"
+
+#import "ViciGameEngineDelegate.h"
+#import "ViciGameEngine.h"

@@ -363,9 +363,9 @@
 		5589A7F9108578130042A130 /* ViciCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViciCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5589A7FA108578130042A130 /* ViciCore-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ViciCore-Info.plist"; sourceTree = "<group>"; };
 		5589A84C10858F340042A130 /* ViciCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViciCore.h; sourceTree = "<group>"; };
-		55D75A9D10A122B500C1438A /* ViciGameEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViciGameEngine.h; sourceTree = "<group>"; };
-		55D75A9E10A122B500C1438A /* ViciGameEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViciGameEngine.m; sourceTree = "<group>"; };
-		55D75ACB10A1248500C1438A /* ViciGameEngineDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViciGameEngineDelegate.h; sourceTree = "<group>"; };
+		55D75A9D10A122B500C1438A /* ViciGameEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViciGameEngine.h; path = ../Controller/ViciGameEngine.h; sourceTree = "<group>"; };
+		55D75A9E10A122B500C1438A /* ViciGameEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViciGameEngine.m; path = ../Controller/ViciGameEngine.m; sourceTree = "<group>"; };
+		55D75ACB10A1248500C1438A /* ViciGameEngineDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViciGameEngineDelegate.h; path = ../Controller/ViciGameEngineDelegate.h; sourceTree = "<group>"; };
 		55D75AD310A1265200C1438A /* ViciPlayerPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViciPlayerPlugin.h; sourceTree = "<group>"; };
 		55D75AF910A12B5200C1438A /* ViciColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViciColor.h; sourceTree = "<group>"; };
 		55D75AFA10A12B5200C1438A /* ViciColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViciColor.m; sourceTree = "<group>"; };
@@ -551,9 +551,6 @@
 		2A37F4ABFDCFA73011CA2CEA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				55D75A9D10A122B500C1438A /* ViciGameEngine.h */,
-				55D75A9E10A122B500C1438A /* ViciGameEngine.m */,
-				55D75ACB10A1248500C1438A /* ViciGameEngineDelegate.h */,
 				9A08116910AE6CDA00FC0C72 /* iPhone */,
 				9AC1260A10AE7A5F00A7130D /* Mac */,
 			);
@@ -638,6 +635,9 @@
 				551083871090F09800E803C0 /* ViciConstants.h */,
 				551083881090F09800E803C0 /* ViciConstants.m */,
 				775BDEF0067A8BF0009058FE /* ViciDocument.xcdatamodel */,
+				55D75A9D10A122B500C1438A /* ViciGameEngine.h */,
+				55D75A9E10A122B500C1438A /* ViciGameEngine.m */,
+				55D75ACB10A1248500C1438A /* ViciGameEngineDelegate.h */,
 				5589A85210858F920042A130 /* Plugin Templates */,
 				5589A84F10858F660042A130 /* Territories */,
 				5589A85010858F7A0042A130 /* Game Objects */,

@@ -26,6 +26,6 @@
 - (void) configureWithGame:(Game *)game {}
 
 //! The human player does nothing in the -playRound method, since all decisions are made in the human's brain and are communicated via the user interface
-- (void) playRound:(Round *)aRound inGame:(Game *)game {}
+- (void) playRound:(Round *)aRound inGameEngine:(ViciGameEngine *)game {}
 
 @end

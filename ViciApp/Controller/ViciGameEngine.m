@@ -43,7 +43,6 @@ enum {
 		context = [aContext retain];
 		mapPlugin = [aMap retain];
 		gamePlugin = [aGame retain];
-		players = [[NSMutableArray alloc] init];
 		game = [[Game alloc] initWithManagedObjectContext:context];
 	}
 	return self;
@@ -53,7 +52,6 @@ enum {
 	[context release], context = nil;
 	[mapPlugin release], mapPlugin = nil;
 	[gamePlugin release], gamePlugin = nil;
-	[players release], players = nil;
 	[super dealloc];
 }
 
@@ -62,10 +60,10 @@ enum {
 		Player * newPlayer = [[Player alloc] initWithManagedObjectContext:context];
 		[newPlayer setName:name];
 		[newPlayer setColor:[NSKeyedArchiver archivedDataWithRootObject:color]];
+		[newPlayer setPlugin:aPlayer];
 		
 		//use a keypath instead of -count, because we need the answer as an NSNumber, not an NSUInteger
-		[newPlayer setOrder:[players valueForKeyPath:@"@count"]];
-		[players addObject:aPlayer];
+		[newPlayer setOrder:[[game players] valueForKeyPath:@"@count"]];
 		[game addPlayersObject:newPlayer];
 		
 		[newPlayer release];
@@ -89,7 +87,7 @@ enum {
 		PLUGIN_INVOKE2(gamePlugin, round:willBeginInGame:, nextRound);
 		
 		// Tells the player plugin for the current player to play the round
-		[[players objectAtIndex:[[[game currentPlayer] order] intValue]] playRound:nextRound inGame:game];
+		[[[game currentPlayer] plugin] playRound:nextRound inGameEngine:self];
 	}
 }
 

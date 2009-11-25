@@ -8,9 +8,10 @@
 
 @class Round;
 @class Game;
+@class ViciGameEngine;
 
 @protocol ViciPlayerPlugin <ViciPlugin>
 
-- (void) playRound:(Round *)aRound inGame:(Game *)game;
+- (void) playRound:(Round *)aRound inGameEngine:(ViciGameEngine *)game;
 
 @end

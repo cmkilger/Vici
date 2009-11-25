@@ -11,6 +11,9 @@
 
 @protocol ViciMapPlugin <ViciPlugin>
 
+- (CGPathRef) pathForCountry:(Country *)aCountry;
+- (NSString *) backgroundImageFilePath;
+
 @optional
 
 - (BOOL) country:(Country *)aCountry connectsToCountry:(Country *)otherCountry inGame:(Game *)game;

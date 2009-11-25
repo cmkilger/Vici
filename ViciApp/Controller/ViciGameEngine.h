@@ -21,7 +21,6 @@ typedef NSUInteger ViciGameState;
 	
 	id<ViciMapPlugin> mapPlugin;			//!< The map plugin
 	id<ViciGamePlugin> gamePlugin;			//!< The game plugin
-	NSMutableArray * players;				//!< Ordered array of the players
 }
 
 - (id) initWithManagedObjectContext:(NSManagedObjectContext *)aContext mapPlugin:(id<ViciMapPlugin>)aMap gamePlugin:(id<ViciGamePlugin>)aGame;

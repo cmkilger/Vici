@@ -22,6 +22,8 @@
 @property (nonatomic, retain) NSSet* armies;
 @property (nonatomic, retain) NSSet* cards;
 
+@property (nonatomic, assign) id<ViciPlayerPlugin> plugin;
+
 - (id) initWithManagedObjectContext:(NSManagedObjectContext *)context;
 - (NSSet*) unplacedArmies;
 

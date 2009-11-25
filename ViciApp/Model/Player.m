@@ -18,6 +18,8 @@
 @dynamic armies;
 @dynamic cards;
 
+@synthesize plugin;
+
 - (id) initWithManagedObjectContext:(NSManagedObjectContext *)context {
 	NSEntityDescription * player = [NSEntityDescription entityForName:@"Player" inManagedObjectContext:context];
 	return [self initWithEntity:player insertIntoManagedObjectContext:context];
