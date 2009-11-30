@@ -109,7 +109,45 @@ NSString * numberOfSetsTurnedInKey = @"numberOfSetsTurnedInKey";
 
 //called when a player is attacking another country
 - (void) executeBattle:(Battle *)aBattle inGame:(Game *)game {
-	// TODO: Implement executeBattle:inGame:
+	// TODO: Fix number of dice to not use magic numbers, possible configurable
+	int numAttackingDice = 3;
+	int numDefendingDice = 2;
+	
+	NSMutableArray * attackingDice = [NSMutableArray arrayWithCapacity:numAttackingDice];
+	NSMutableArray * defendingDice = [NSMutableArray arrayWithCapacity:numDefendingDice];
+	
+	for (int i = 0; i < numAttackingDice; i++)
+		[attackingDice addObject:[NSNumber numberWithInt:rand()%6]];
+	for (int i = 0; i < numDefendingDice; i++)
+		[defendingDice addObject:[NSNumber numberWithInt:rand()%6]];
+	
+	NSSortDescriptor * sort = [[NSSortDescriptor alloc] initWithKey:nil ascending:NO selector:@selector(compare:)];
+	[attackingDice sortUsingDescriptors:[NSArray arrayWithObject:sort]];
+	[defendingDice sortUsingDescriptors:[NSArray arrayWithObject:sort]];
+	[sort release];
+	
+	int attackerLosses = 0;
+	int defenderLosses = 0;
+	
+	for (int i = 0; i < fmin(numAttackingDice, numDefendingDice); i++) {
+		if ([[attackingDice objectAtIndex:i] compare:[defendingDice objectAtIndex:i]] == NSOrderedDescending)
+			defenderLosses++;
+		else
+			attackerLosses++;
+	}
+	
+	for (int i = 0; i < attackerLosses; i++) {
+		Army * army = [aBattle.attackingCountry.armies anyObject];
+		army.country = nil;
+	}
+	
+	for (int i = 0; i < defenderLosses; i++) {
+		Army * army = [aBattle.defendingCountry.armies anyObject];
+		army.country = nil;
+	}
+	
+	if ([aBattle.defendingCountry.armies count] == 0)
+		aBattle.defendingCountry.player = aBattle.attackingCountry.player;
 }
 
 //Called after every battle to check if the game has been won

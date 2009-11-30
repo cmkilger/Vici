@@ -109,7 +109,7 @@ enum {
 			else {
 				if ([gamePlugin placeArmyInCountry:country inGame:game]) {
 					selectedCountry = country;
-					if ([[[game countries] filteredSetUsingPredicate:[NSPredicate predicateWithFormat:@"player = nil"]] count] > 0) {
+					if ([[[game countries] filteredSetUsingPredicate:[NSPredicate predicateWithFormat:@"player == nil"]] count] > 0) {
 						state == ViciGameStateRoundEnd;
 						[self beginNewRound];
 					}
@@ -132,6 +132,7 @@ enum {
 				[battle setDefendingCountry:country];
 				[battle setDefender:[country player]];
 				[gamePlugin executeBattle:battle inGame:game];
+				[battle release];
 				
 				// if the attacked country is now owned by the current player he obviously conquered it
 				if ([country player] == [game currentPlayer]) {

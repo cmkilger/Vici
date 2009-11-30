@@ -144,7 +144,6 @@
 		9A08120F10AE74E300FC0C72 /* Vici_iPhone_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 9A08120E10AE74E300FC0C72 /* Vici_iPhone_Prefix.pch */; };
 		9A08121410AE758600FC0C72 /* mainiPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A08121210AE754800FC0C72 /* mainiPhone.m */; };
 		9A9587A6108F80C10075941D /* ViciUSAMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A958796108F80690075941D /* ViciUSAMap.m */; };
-		9A9587AB108F81040075941D /* ViciUSAMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9A9587A1108F809A0075941D /* ViciUSAMap.bundle */; };
 		9A9587AE108F81200075941D /* ViciCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5589A7F9108578130042A130 /* ViciCore.framework */; };
 		9A9587B4108F813B0075941D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */; };
 		9A95888D108FCE400075941D /* ViciWarcraftMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95888C108FCE400075941D /* ViciWarcraftMap.m */; };
@@ -1097,7 +1096,6 @@
 				2F7446AC0DB6BCF400F9684A /* ViciDocument.xib in Resources */,
 				9AF05D2D108ED4DA0003548B /* ViciRiskGame.bundle in Resources */,
 				9AF05D97108ED7950003548B /* ViciRiskMap.bundle in Resources */,
-				9A9587AB108F81040075941D /* ViciUSAMap.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

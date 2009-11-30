@@ -8,16 +8,19 @@
 
 #import <CoreData/CoreData.h>
 
+@class Round;
+@class Country;
+@class Player;
 
 @interface Battle :  NSManagedObject  
 {
 }
 
 @property (nonatomic, retain) NSNumber* order;
-@property (nonatomic, retain) NSManagedObject * round;
-@property (nonatomic, retain) NSManagedObject * defendingCountry;
-@property (nonatomic, retain) NSManagedObject * attackingCountry;
-@property (nonatomic, retain) NSManagedObject * defender;
+@property (nonatomic, retain) Round * round;
+@property (nonatomic, retain) Country * defendingCountry;
+@property (nonatomic, retain) Country * attackingCountry;
+@property (nonatomic, retain) Player * defender;
 
 - (id) initWithManagedObjectContext:(NSManagedObjectContext *)context;
 
