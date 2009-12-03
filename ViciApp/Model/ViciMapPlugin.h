@@ -8,11 +8,12 @@
 
 @class Game;
 @class Country;
+@class Planet;
 
 @protocol ViciMapPlugin <ViciPlugin>
 
 - (CGPathRef) pathForCountry:(Country *)aCountry;
-- (NSString *) backgroundImageFilePath;
+- (NSString *) backgroundImageFilePathForPlanet:(Planet *)aPlanet;
 
 @optional
 
