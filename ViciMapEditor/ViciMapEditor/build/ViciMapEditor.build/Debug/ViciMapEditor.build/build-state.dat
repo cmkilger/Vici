@@ -1,0 +1,254 @@
+TViciMapEditor
+v7
+r0
+t281927909.529443
+cCheck dependencies
+cProcessInfoPlistFile /Users/ammoknight/Code/ViciMapEditor/build/Debug/ViciMapEditor.app/Contents/Info.plist ViciMapEditor-Info.plist
+cCpResource build/Debug/ViciMapEditor.app/Contents/Resources/English.lproj/Credits.rtf English.lproj/Credits.rtf
+cCopyStringsFile /Users/ammoknight/Code/ViciMapEditor/build/Debug/ViciMapEditor.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+cCompileXIB /Users/ammoknight/Code/ViciMapEditor/English.lproj/ViciMapEditorDocument.xib
+cCompileXIB /Users/ammoknight/Code/ViciMapEditor/English.lproj/MainMenu.xib
+cProcessPCH /var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ViciMapEditor_Prefix-dgnoeavkbffeiceqfdnwvhiqgrkv/ViciMapEditor_Prefix.pch.gch ViciMapEditor_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ViciMapEditor.build/Debug/ViciMapEditor.build/Objects-normal/x86_64/MyDocument.o /Users/ammoknight/Code/ViciMapEditor/MyDocument.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ViciMapEditor.build/Debug/ViciMapEditor.build/Objects-normal/x86_64/main.o /Users/ammoknight/Code/ViciMapEditor/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/ammoknight/Code/ViciMapEditor/build/Debug/ViciMapEditor.app/Contents/MacOS/ViciMapEditor normal x86_64
+cTouch /Users/ammoknight/Code/ViciMapEditor/build/Debug/ViciMapEditor.app
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004AFB025C00000000000000EE
+t1257964124
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004A1F2D63000000000000A5E0
+t1243557219
+s42464
+
+N/Users/ammoknight/Code/ViciMapEditor/English.lproj/Credits.rtf
+c000000004B1DA96500000000000001D0
+t1260235109
+s464
+
+N/Users/ammoknight/Code/ViciMapEditor/English.lproj/InfoPlist.strings
+c000000004B17EB84000000000000002D
+t1259858820
+s45
+
+N/Users/ammoknight/Code/ViciMapEditor/English.lproj/MainMenu.xib
+c000000004B17EB84000000000002ADFA
+t1259858820
+s175610
+
+N/Users/ammoknight/Code/ViciMapEditor/English.lproj/MyDocument.xib
+c000000004B1DA5450000000000016309
+t1260234053
+s90889
+
+N/Users/ammoknight/Code/ViciMapEditor/English.lproj/ViciMapEditorDocument.xib
+c000000004B1DA5450000000000016309
+t1260234053
+s90889
+
+N/Users/ammoknight/Code/ViciMapEditor/MyDocument.h
+c000000004B17EB8400000000000000C8
+t1259858820
+s200
+i<Cocoa/Cocoa.h>
+
+N/Users/ammoknight/Code/ViciMapEditor/MyDocument.m
+c000000004B1DA68600000000000009ED
+t1260234374
+s2541
+i"MyDocument.h"
+
+N/Users/ammoknight/Code/ViciMapEditor/ViciMapEditor_Prefix.pch
+c000000004B17EB84000000000000009D
+t1259858820
+s157
+i<Cocoa/Cocoa.h>
+
+N/Users/ammoknight/Code/ViciMapEditor/build/Debug/ViciMapEditor.app
+t1260235109
+s102
+
+N/Users/ammoknight/Code/ViciMapEditor/build/Debug/ViciMapEditor.app/Contents/Info.plist
+t1260234119
+s1331
+
+N/Users/ammoknight/Code/ViciMapEditor/build/Debug/ViciMapEditor.app/Contents/MacOS/ViciMapEditor
+t1260234375
+s10912
+
+N/Users/ammoknight/Code/ViciMapEditor/build/Debug/ViciMapEditor.app/Contents/PkgInfo
+t1260234119
+s8
+
+N/Users/ammoknight/Code/ViciMapEditor/build/Debug/ViciMapEditor.app/Contents/Resources/English.lproj/Credits.rtf
+t1260235109
+s464
+
+N/Users/ammoknight/Code/ViciMapEditor/build/Debug/ViciMapEditor.app/Contents/Resources/English.lproj/InfoPlist.strings
+t1259859764
+s92
+
+N/Users/ammoknight/Code/ViciMapEditor/build/Debug/ViciMapEditor.app/Contents/Resources/English.lproj/MainMenu.nib
+t1259859764
+s33347
+
+N/Users/ammoknight/Code/ViciMapEditor/build/Debug/ViciMapEditor.app/Contents/Resources/English.lproj/MyDocument.nib
+t1260234119
+s30762
+
+N/Users/ammoknight/Code/ViciMapEditor/build/Debug/ViciMapEditor.app/Contents/Resources/English.lproj/ViciMapEditorDocument.nib
+t1260234374
+s30762
+
+N/Users/ammoknight/Code/ViciMapEditor/build/ViciMapEditor.build/Debug/ViciMapEditor.build/Objects-normal/x86_64/MyDocument.o
+t1260234375
+s19348
+
+N/Users/ammoknight/Code/ViciMapEditor/build/ViciMapEditor.build/Debug/ViciMapEditor.build/Objects-normal/x86_64/ViciMapEditor.LinkFileList
+c000000004B17EF3400000000000000F2
+t1259859764
+s242
+
+N/Users/ammoknight/Code/ViciMapEditor/build/ViciMapEditor.build/Debug/ViciMapEditor.build/Objects-normal/x86_64/main.o
+t1259859767
+s4992
+
+N/Users/ammoknight/Code/ViciMapEditor/main.m
+c000000004B17EB8400000000000000F4
+t1259858820
+s244
+i<Cocoa/Cocoa.h>
+
+N/var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ViciMapEditor_Prefix-dgnoeavkbffeiceqfdnwvhiqgrkv/ViciMapEditor_Prefix.pch.gch
+t1259859767
+s54212368
+
+NViciMapEditor-Info.plist
+c000000004B1BE4ED00000000000005CD
+t1260119277
+s1485
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies281927909#281927909#0(0"0(0#1#0"4300885448#0"0#
+
+CCompileC build/ViciMapEditor.build/Debug/ViciMapEditor.build/Objects-normal/x86_64/MyDocument.o /Users/ammoknight/Code/ViciMapEditor/MyDocument.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s281927174.681718
+e281927175.198510
+r1
+xCompileC
+xbuild/ViciMapEditor.build/Debug/ViciMapEditor.build/Objects-normal/x86_64/MyDocument.o
+x/Users/ammoknight/Code/ViciMapEditor/MyDocument.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@57"Compile /Users/ammoknight/Code/ViciMapEditor/MyDocument.m281927174#281927175#0(0"0(0#0#49"/Users/ammoknight/Code/ViciMapEditor/MyDocument.m4300885448#1560"    cd /Users/ammoknight/Code/ViciMapEditor    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/ammoknight/Code/ViciMapEditor/build/ViciMapEditor.build/Debug/ViciMapEditor.build/ViciMapEditor-generated-files.hmap -I/Users/ammoknight/Code/ViciMapEditor/build/ViciMapEditor.build/Debug/ViciMapEditor.build/ViciMapEditor-own-target-headers.hmap -I/Users/ammoknight/Code/ViciMapEditor/build/ViciMapEditor.build/Debug/ViciMapEditor.build/ViciMapEditor-all-target-headers.hmap -iquote /Users/ammoknight/Code/ViciMapEditor/build/ViciMapEditor.build/Debug/ViciMapEditor.build/ViciMapEditor-project-headers.hmap -F/Users/ammoknight/Code/ViciMapEditor/build/Debug -I/Users/ammoknight/Code/ViciMapEditor/build/Debug/include -I/Users/ammoknight/Code/ViciMapEditor/build/ViciMapEditor.build/Debug/ViciMapEditor.build/DerivedSources/x86_64 -I/Users/ammoknight/Code/ViciMapEditor/build/ViciMapEditor.build/Debug/ViciMapEditor.build/DerivedSources -include /var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ViciMapEditor_Prefix-dgnoeavkbffeiceqfdnwvhiqgrkv/ViciMapEditor_Prefix.pch -c /Users/ammoknight/Code/ViciMapEditor/MyDocument.m -o /Users/ammoknight/Code/ViciMapEditor/build/ViciMapEditor.build/Debug/ViciMapEditor.build/Objects-normal/x86_64/MyDocument.o0#
+
+CCompileC build/ViciMapEditor.build/Debug/ViciMapEditor.build/Objects-normal/x86_64/main.o /Users/ammoknight/Code/ViciMapEditor/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s281552567.286517
+e281552567.473611
+r1
+xCompileC
+xbuild/ViciMapEditor.build/Debug/ViciMapEditor.build/Objects-normal/x86_64/main.o
+x/Users/ammoknight/Code/ViciMapEditor/main.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@51"Compile /Users/ammoknight/Code/ViciMapEditor/main.m281552567#281552567#0(0"0(0#0#43"/Users/ammoknight/Code/ViciMapEditor/main.m4300885448#1548"    cd /Users/ammoknight/Code/ViciMapEditor    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/ammoknight/Code/ViciMapEditor/build/ViciMapEditor.build/Debug/ViciMapEditor.build/ViciMapEditor-generated-files.hmap -I/Users/ammoknight/Code/ViciMapEditor/build/ViciMapEditor.build/Debug/ViciMapEditor.build/ViciMapEditor-own-target-headers.hmap -I/Users/ammoknight/Code/ViciMapEditor/build/ViciMapEditor.build/Debug/ViciMapEditor.build/ViciMapEditor-all-target-headers.hmap -iquote /Users/ammoknight/Code/ViciMapEditor/build/ViciMapEditor.build/Debug/ViciMapEditor.build/ViciMapEditor-project-headers.hmap -F/Users/ammoknight/Code/ViciMapEditor/build/Debug -I/Users/ammoknight/Code/ViciMapEditor/build/Debug/include -I/Users/ammoknight/Code/ViciMapEditor/build/ViciMapEditor.build/Debug/ViciMapEditor.build/DerivedSources/x86_64 -I/Users/ammoknight/Code/ViciMapEditor/build/ViciMapEditor.build/Debug/ViciMapEditor.build/DerivedSources -include /var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ViciMapEditor_Prefix-dgnoeavkbffeiceqfdnwvhiqgrkv/ViciMapEditor_Prefix.pch -c /Users/ammoknight/Code/ViciMapEditor/main.m -o /Users/ammoknight/Code/ViciMapEditor/build/ViciMapEditor.build/Debug/ViciMapEditor.build/Objects-normal/x86_64/main.o0#
+
+CCompileXIB /Users/ammoknight/Code/ViciMapEditor/English.lproj/MainMenu.xib
+s281552564.381754
+e281552564.740918
+r1
+xCompileXIB
+x/Users/ammoknight/Code/ViciMapEditor/English.lproj/MainMenu.xib
+lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib281552564#281552564#0(0"0(0#0#63"/Users/ammoknight/Code/ViciMapEditor/English.lproj/MainMenu.xib4300885448#327"    cd /Users/ammoknight/Code/ViciMapEditor    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ammoknight/Code/ViciMapEditor/build/Debug/ViciMapEditor.app/Contents/Resources/English.lproj/MainMenu.nib /Users/ammoknight/Code/ViciMapEditor/English.lproj/MainMenu.xib0#
+
+CCompileXIB /Users/ammoknight/Code/ViciMapEditor/English.lproj/MyDocument.xib
+s281926919.554191
+e281926920.029163
+r1
+xCompileXIB
+x/Users/ammoknight/Code/ViciMapEditor/English.lproj/MyDocument.xib
+o/* com.apple.ibtool.document.warnings */
+o/Users/ammoknight/Code/ViciMapEditor/English.lproj/MyDocument.xib:5: warning: This window's content rectangle does not lie entirely on the screen with the menu bar and may not be completely visible for all screen resolutions and configurations.
+lSLF07#2@39"CompileXIB English.lproj/MyDocument.xib281926919#281926920#0(286"/* com.apple.ibtool.document.warnings *//Users/ammoknight/Code/ViciMapEditor/English.lproj/MyDocument.xib:5: warning: This window's content rectangle does not lie entirely on the screen with the menu bar and may not be completely visible for all screen resolutions and configurations.1(22@166"This window's content rectangle does not lie entirely on the screen with the menu bar and may not be completely visible for all screen resolutions and configurations.281926920#18446744073709551615#0#0(6@65"/Users/ammoknight/Code/ViciMapEditor/English.lproj/MyDocument.xib281926853#5#0#5#0#0"0(0#0#65"/Users/ammoknight/Code/ViciMapEditor/English.lproj/MyDocument.xib4300885448#331"    cd /Users/ammoknight/Code/ViciMapEditor    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ammoknight/Code/ViciMapEditor/build/Debug/ViciMapEditor.app/Contents/Resources/English.lproj/MyDocument.nib /Users/ammoknight/Code/ViciMapEditor/English.lproj/MyDocument.xib0#
+
+CCompileXIB /Users/ammoknight/Code/ViciMapEditor/English.lproj/ViciMapEditorDocument.xib
+s281927174.135051
+e281927174.681462
+r1
+xCompileXIB
+x/Users/ammoknight/Code/ViciMapEditor/English.lproj/ViciMapEditorDocument.xib
+o/* com.apple.ibtool.document.warnings */
+o/Users/ammoknight/Code/ViciMapEditor/English.lproj/ViciMapEditorDocument.xib:5: warning: This window's content rectangle does not lie entirely on the screen with the menu bar and may not be completely visible for all screen resolutions and configurations.
+lSLF07#2@50"CompileXIB English.lproj/ViciMapEditorDocument.xib281927174#281927174#0(297"/* com.apple.ibtool.document.warnings *//Users/ammoknight/Code/ViciMapEditor/English.lproj/ViciMapEditorDocument.xib:5: warning: This window's content rectangle does not lie entirely on the screen with the menu bar and may not be completely visible for all screen resolutions and configurations.1(22@166"This window's content rectangle does not lie entirely on the screen with the menu bar and may not be completely visible for all screen resolutions and configurations.281927174#18446744073709551615#0#0(6@76"/Users/ammoknight/Code/ViciMapEditor/English.lproj/ViciMapEditorDocument.xib281926853#5#0#5#0#0"0(0#0#76"/Users/ammoknight/Code/ViciMapEditor/English.lproj/ViciMapEditorDocument.xib4300885448#353"    cd /Users/ammoknight/Code/ViciMapEditor    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ammoknight/Code/ViciMapEditor/build/Debug/ViciMapEditor.app/Contents/Resources/English.lproj/ViciMapEditorDocument.nib /Users/ammoknight/Code/ViciMapEditor/English.lproj/ViciMapEditorDocument.xib0#
+
+CCopyStringsFile /Users/ammoknight/Code/ViciMapEditor/build/Debug/ViciMapEditor.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+s281552564.175168
+e281552564.381681
+r1
+xCopyStringsFile
+x/Users/ammoknight/Code/ViciMapEditor/build/Debug/ViciMapEditor.app/Contents/Resources/English.lproj/InfoPlist.strings
+xEnglish.lproj/InfoPlist.strings
+lSLF07#2@36"Copy English.lproj/InfoPlist.strings281552564#281552564#0(0"0(0#0#68"/Users/ammoknight/Code/ViciMapEditor/English.lproj/InfoPlist.strings4300885448#367"    cd /Users/ammoknight/Code/ViciMapEditor    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Users/ammoknight/Code/ViciMapEditor/build/Debug/ViciMapEditor.app/Contents/Resources/English.lproj0#
+
+CCpResource build/Debug/ViciMapEditor.app/Contents/Resources/English.lproj/Credits.rtf English.lproj/Credits.rtf
+s281927909.467896
+e281927909.526322
+r1
+xCpResource
+xbuild/Debug/ViciMapEditor.app/Contents/Resources/English.lproj/Credits.rtf
+xEnglish.lproj/Credits.rtf
+lSLF07#2@30"Copy English.lproj/Credits.rtf281927909#281927909#0(0"0(0#0#62"/Users/ammoknight/Code/ViciMapEditor/English.lproj/Credits.rtf4300885448#355"    cd /Users/ammoknight/Code/ViciMapEditor    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/ammoknight/Code/ViciMapEditor/English.lproj/Credits.rtf /Users/ammoknight/Code/ViciMapEditor/build/Debug/ViciMapEditor.app/Contents/Resources/English.lproj0#
+
+CLd /Users/ammoknight/Code/ViciMapEditor/build/Debug/ViciMapEditor.app/Contents/MacOS/ViciMapEditor normal x86_64
+s281927175.198583
+e281927175.907058
+r1
+xLd
+x/Users/ammoknight/Code/ViciMapEditor/build/Debug/ViciMapEditor.app/Contents/MacOS/ViciMapEditor
+xnormal
+xx86_64
+lSLF07#2@100"Link /Users/ammoknight/Code/ViciMapEditor/build/Debug/ViciMapEditor.app/Contents/MacOS/ViciMapEditor281927175#281927175#0(0"0(0#0#0"4300885448#562"    cd /Users/ammoknight/Code/ViciMapEditor    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/ammoknight/Code/ViciMapEditor/build/Debug -F/Users/ammoknight/Code/ViciMapEditor/build/Debug -filelist /Users/ammoknight/Code/ViciMapEditor/build/ViciMapEditor.build/Debug/ViciMapEditor.build/Objects-normal/x86_64/ViciMapEditor.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -o /Users/ammoknight/Code/ViciMapEditor/build/Debug/ViciMapEditor.app/Contents/MacOS/ViciMapEditor0#
+
+CProcessInfoPlistFile /Users/ammoknight/Code/ViciMapEditor/build/Debug/ViciMapEditor.app/Contents/Info.plist ViciMapEditor-Info.plist
+s281926919.530259
+e281926919.553989
+r1
+xProcessInfoPlistFile
+x/Users/ammoknight/Code/ViciMapEditor/build/Debug/ViciMapEditor.app/Contents/Info.plist
+xViciMapEditor-Info.plist
+lSLF07#2@32"Process ViciMapEditor-Info.plist281926919#281926919#0(0"0(0#0#61"/Users/ammoknight/Code/ViciMapEditor/ViciMapEditor-Info.plist29555241924886632#322"    cd /Users/ammoknight/Code/ViciMapEditor    builtin-infoPlistUtility ViciMapEditor-Info.plist -genpkginfo /Users/ammoknight/Code/ViciMapEditor/build/Debug/ViciMapEditor.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/ammoknight/Code/ViciMapEditor/build/Debug/ViciMapEditor.app/Contents/Info.plist0#
+
+CProcessPCH /var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ViciMapEditor_Prefix-dgnoeavkbffeiceqfdnwvhiqgrkv/ViciMapEditor_Prefix.pch.gch ViciMapEditor_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s281552564.741087
+e281552567.285286
+r1
+xProcessPCH
+x/var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ViciMapEditor_Prefix-dgnoeavkbffeiceqfdnwvhiqgrkv/ViciMapEditor_Prefix.pch.gch
+xViciMapEditor_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@35"Precompile ViciMapEditor_Prefix.pch281552564#281552567#0(0"0(0#0#61"/Users/ammoknight/Code/ViciMapEditor/ViciMapEditor_Prefix.pch7590306394866541568#1450"    cd /Users/ammoknight/Code/ViciMapEditor    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/ammoknight/Code/ViciMapEditor/build/ViciMapEditor.build/Debug/ViciMapEditor.build/ViciMapEditor-generated-files.hmap -I/Users/ammoknight/Code/ViciMapEditor/build/ViciMapEditor.build/Debug/ViciMapEditor.build/ViciMapEditor-own-target-headers.hmap -I/Users/ammoknight/Code/ViciMapEditor/build/ViciMapEditor.build/Debug/ViciMapEditor.build/ViciMapEditor-all-target-headers.hmap -iquote /Users/ammoknight/Code/ViciMapEditor/build/ViciMapEditor.build/Debug/ViciMapEditor.build/ViciMapEditor-project-headers.hmap -F/Users/ammoknight/Code/ViciMapEditor/build/Debug -I/Users/ammoknight/Code/ViciMapEditor/build/Debug/include -I/Users/ammoknight/Code/ViciMapEditor/build/ViciMapEditor.build/Debug/ViciMapEditor.build/DerivedSources/x86_64 -I/Users/ammoknight/Code/ViciMapEditor/build/ViciMapEditor.build/Debug/ViciMapEditor.build/DerivedSources -c /Users/ammoknight/Code/ViciMapEditor/ViciMapEditor_Prefix.pch -o /var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ViciMapEditor_Prefix-dgnoeavkbffeiceqfdnwvhiqgrkv/ViciMapEditor_Prefix.pch.gch0#
+
+CTouch /Users/ammoknight/Code/ViciMapEditor/build/Debug/ViciMapEditor.app
+s281927909.526653
+e281927909.529384
+r1
+xTouch
+x/Users/ammoknight/Code/ViciMapEditor/build/Debug/ViciMapEditor.app
+lSLF07#2@72"Touch /Users/ammoknight/Code/ViciMapEditor/build/Debug/ViciMapEditor.app281927909#281927909#0(0"0(0#0#0"4300885448#133"    cd /Users/ammoknight/Code/ViciMapEditor    /usr/bin/touch -c /Users/ammoknight/Code/ViciMapEditor/build/Debug/ViciMapEditor.app0#
+
