@@ -10,11 +10,12 @@
 
 @implementation MyDocument
 
+@synthesize territoryItem;
+
 - (id)init
 {
     self = [super init];
     if (self) {
-    
         // Add your subclass-specific initialization here.
         // If an error occurs here, send a [self release] message and return nil.
     
@@ -33,6 +34,18 @@
 {
     [super windowControllerDidLoadNib:aController];
     // Add any code here that needs to be executed once the windowController has loaded the document's window.
+	
+	
+	NSMenu * m = [[NSMenu alloc] init];
+	NSMenuItem * addPlanet = [m addItemWithTitle:@"New Planet" action:@selector(addPlanet:) keyEquivalent:@""];
+	[addPlanet setTarget:self];
+	NSMenuItem * addContinent = [m addItemWithTitle:@"New Continent" action:@selector(addContinent:) keyEquivalent:@""];
+	[addContinent setTarget:self];
+	NSMenuItem * addCountry = [m addItemWithTitle:@"New Country" action:@selector(addCountry:) keyEquivalent:@""];
+	[addCountry setTarget:self];
+	
+	[territoryItem setMenu:m];
+	[m release];
 }
 
 - (NSData *)dataOfType:(NSString *)typeName error:(NSError **)outError

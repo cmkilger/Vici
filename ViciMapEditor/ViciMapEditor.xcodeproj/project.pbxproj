@@ -9,12 +9,29 @@
 /* Begin PBXBuildFile section */
 		1DDD582C0DA1D0D100B32029 /* ViciMapEditorDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58280DA1D0D100B32029 /* ViciMapEditorDocument.xib */; };
 		1DDD582D0DA1D0D100B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD582A0DA1D0D100B32029 /* MainMenu.xib */; };
+		557226DA10CF400D0025113C /* BWToolkitFramework.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 557226D910CF400C0025113C /* BWToolkitFramework.framework */; };
+		5572271510CF40330025113C /* BWToolkitFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557226D910CF400C0025113C /* BWToolkitFramework.framework */; };
+		5572272610CF40810025113C /* ImageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5572272510CF40810025113C /* ImageKit.framework */; };
 		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
 		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
 		8D15AC310486D014006FF6A4 /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */; settings = {ATTRIBUTES = (); }; };
 		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		557226DD10CF400D0025113C /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				557226DA10CF400D0025113C /* BWToolkitFramework.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		089C1660FE840EACC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -29,6 +46,8 @@
 		2A37F4BAFDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
 		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		557226D910CF400C0025113C /* BWToolkitFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BWToolkitFramework.framework; path = /Users/dave/Library/Frameworks/BWToolkitFramework.framework; sourceTree = "<absolute>"; };
+		5572272510CF40810025113C /* ImageKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageKit.framework; path = /System/Library/Frameworks/Quartz.framework/Versions/A/Frameworks/ImageKit.framework; sourceTree = "<absolute>"; };
 		8D15AC360486D014006FF6A4 /* ViciMapEditor-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ViciMapEditor-Info.plist"; sourceTree = "<group>"; };
 		8D15AC370486D014006FF6A4 /* ViciMapEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViciMapEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -38,7 +57,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5572271510CF40330025113C /* BWToolkitFramework.framework in Frameworks */,
 				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
+				5572272610CF40810025113C /* ImageKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +77,8 @@
 		1058C7A8FEA54F5311CA2CBB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5572272510CF40810025113C /* ImageKit.framework */,
+				557226D910CF400C0025113C /* BWToolkitFramework.framework */,
 				2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */,
 				13E42FBA07B3F13500E4EEF1 /* CoreData.framework */,
 				2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */,
@@ -132,6 +155,7 @@
 				8D15AC2B0486D014006FF6A4 /* Resources */,
 				8D15AC300486D014006FF6A4 /* Sources */,
 				8D15AC330486D014006FF6A4 /* Frameworks */,
+				557226DD10CF400D0025113C /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -227,6 +251,11 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Library/Frameworks\"",
+					"\"$(SYSTEM_LIBRARY_DIR)/Frameworks/Quartz.framework/Versions/A/Frameworks\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
@@ -244,6 +273,11 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Library/Frameworks\"",
+					"\"$(SYSTEM_LIBRARY_DIR)/Frameworks/Quartz.framework/Versions/A/Frameworks\"",
+				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ViciMapEditor_Prefix.pch;

@@ -11,5 +11,9 @@
 
 @interface MyDocument : NSDocument
 {
+	NSButton * territoryItem;
 }
+
+@property (nonatomic, assign) IBOutlet NSButton * territoryItem;
+
 @end
