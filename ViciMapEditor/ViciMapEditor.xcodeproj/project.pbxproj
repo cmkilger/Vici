@@ -46,7 +46,7 @@
 		2A37F4BAFDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
 		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		557226D910CF400C0025113C /* BWToolkitFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BWToolkitFramework.framework; path = /Users/dave/Library/Frameworks/BWToolkitFramework.framework; sourceTree = "<absolute>"; };
+		557226D910CF400C0025113C /* BWToolkitFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BWToolkitFramework.framework; path = Frameworks/BWToolkitFramework.framework; sourceTree = "<group>"; };
 		5572272510CF40810025113C /* ImageKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageKit.framework; path = /System/Library/Frameworks/Quartz.framework/Versions/A/Frameworks/ImageKit.framework; sourceTree = "<absolute>"; };
 		8D15AC360486D014006FF6A4 /* ViciMapEditor-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ViciMapEditor-Info.plist"; sourceTree = "<group>"; };
 		8D15AC370486D014006FF6A4 /* ViciMapEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViciMapEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -255,6 +255,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../../Library/Frameworks\"",
 					"\"$(SYSTEM_LIBRARY_DIR)/Frameworks/Quartz.framework/Versions/A/Frameworks\"",
+					"\"$(SRCROOT)/Frameworks\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -277,6 +278,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../../Library/Frameworks\"",
 					"\"$(SYSTEM_LIBRARY_DIR)/Frameworks/Quartz.framework/Versions/A/Frameworks\"",
+					"\"$(SRCROOT)/Frameworks\"",
 				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
