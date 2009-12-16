@@ -9,11 +9,17 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface MyDocument : NSDocument
+@class ViciMapView;
+
+@interface ViciMapDocument : NSDocument
 {
 	NSButton * territoryItem;
+	NSScrollView * scrollView;
+	ViciMapView * mapView;
 }
 
 @property (nonatomic, assign) IBOutlet NSButton * territoryItem;
+@property (nonatomic, retain) IBOutlet NSScrollView * scrollView;
+@property (nonatomic, retain) IBOutlet ViciMapView * mapView;
 
 @end

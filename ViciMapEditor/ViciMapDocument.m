@@ -6,11 +6,12 @@
 //  Copyright 2009 BYU. All rights reserved.
 //
 
-#import "MyDocument.h"
+#import "ViciMapDocument.h"
+#import "ViciMapView.h"
 
-@implementation MyDocument
+@implementation ViciMapDocument
 
-@synthesize territoryItem;
+@synthesize territoryItem, scrollView, mapView;
 
 - (id)init
 {
@@ -46,6 +47,16 @@
 	
 	[territoryItem setMenu:m];
 	[m release];
+	
+	[mapView setFrame:[[scrollView contentView] frame]];
+	[mapView setAutoresizingMask:
+	 NSViewMinXMargin |
+	 NSViewWidthSizable |
+	 NSViewMaxXMargin |
+	 NSViewMinYMargin |
+	 NSViewHeightSizable |
+	 NSViewMaxYMargin];
+	[scrollView setDocumentView:mapView];
 }
 
 - (NSData *)dataOfType:(NSString *)typeName error:(NSError **)outError
