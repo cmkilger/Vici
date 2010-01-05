@@ -158,17 +158,52 @@ enum {
 			break;
 		}
 		case ViciGameStateFortify: {
+			//???: Should fortifying be controlled by the plugin since it could change with rule sets?
+			//TODO: Add additional functionality to allow the player to change the fortify from country if the wrong country is selected.
+			
+			//Selects the country to move armies from if it is owned by the player.
 			if (!selectedCountry && [country player] == [game currentPlayer]) {
 				selectedCountry = country;
-				// TODO: Pickup all armies from selected country but one
 			}
-			
-			// TODO: Place armies in country if able to fortify them from the selected country
-			
+			else {
+				//Defaults to YES just in case the map plugin hasn't implemented the country:connectsToCountry:inGame: method.
+				BOOL countriesConnected = YES;
+				
+				if([mapPlugin respondsToSelector:@selector(country:connectsToCountry:inGame:)]) {
+					 countriesConnected = [mapPlugin country:selectedCountry 
+										   connectsToCountry:country 
+													  inGame:game];
+				}
+				
+				//Fortifies all but one army from the first country to the second if they are connected.
+				//!!!: Check this out! This can probably be implemented better and may contain errors.
+				if (countriesConnected) {
+					NSSet * armiesToFortify = [[NSSet alloc] initWithArray:[[selectedCountry armies] allObjects]];
+					NSSet * armyToStay = [[NSSet alloc] initWithArray:[NSArray arrayWithObject:[[selectedCountry armies] anyObject]]];
+					
+					[selectedCountry removeArmies: armiesToFortify];
+					[country addArmies:armiesToFortify];
+					[country removeArmies:armyToStay];
+					[selectedCountry addArmies:armyToStay];
+					
+					[armiesToFortify release];
+					[armyToStay release];
+					
+					//The country moved to is now selected.
+					selectedCountry = country;
+					
+					//Moves to the next state.
+					state = ViciGameStateRoundEnd;
+				}
+				
+				//If the country selected is not connected, but owned by the player, it now becomes the selected country.
+				else if ([country player] == [game currentPlayer]) {
+					selectedCountry = country;
+				}
+			}
 			break;
 		}
 	}
-	
 }
 
 - (BOOL) canFortify {
