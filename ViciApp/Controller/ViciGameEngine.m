@@ -158,48 +158,30 @@ enum {
 			break;
 		}
 		case ViciGameStateFortify: {
-			//???: Should fortifying be controlled by the plugin since it could change with rule sets?
-			//TODO: Add additional functionality to allow the player to change the fortify from country if the wrong country is selected.
-			
+			//???: Should fortifying be controlled by the plugin since it could change with rule sets?			
 			//Selects the country to move armies from if it is owned by the player.
 			if (!selectedCountry && [country player] == [game currentPlayer]) {
 				selectedCountry = country;
+				NSSet * armiesToFortify = [selectedCountry armies];
+				for (Army * army in armiesToFortify)
+					[army setCountry:nil];
+				[[armiesToFortify anyObject] setCountry:country];
 			}
-			else {
-				//Defaults to YES just in case the map plugin hasn't implemented the country:connectsToCountry:inGame: method.
+			
+			// Move one army into the country if it can be fortified to there
+			else if (selectedCountry && [country player] == [game currentPlayer]) {
+				// Defaults to YES just in case the map plugin hasn't implemented the country:connectsToCountry:inGame: method.
+				/*
+				 * TODO: Determining whether or not a armies can be fortified can be more involved than simply checking if they're connected.
+				 *  We should have a plugin method to check if the fortification is valid.
+				 */
 				BOOL countriesConnected = YES;
-				
-				if([mapPlugin respondsToSelector:@selector(country:connectsToCountry:inGame:)]) {
-					 countriesConnected = [mapPlugin country:selectedCountry 
-										   connectsToCountry:country 
-													  inGame:game];
-				}
-				
-				//Fortifies all but one army from the first country to the second if they are connected.
-				//!!!: Check this out! This can probably be implemented better and may contain errors.
-				if (countriesConnected) {
-					NSSet * armiesToFortify = [[NSSet alloc] initWithArray:[[selectedCountry armies] allObjects]];
-					NSSet * armyToStay = [[NSSet alloc] initWithArray:[NSArray arrayWithObject:[[selectedCountry armies] anyObject]]];
-					
-					[selectedCountry removeArmies: armiesToFortify];
-					[country addArmies:armiesToFortify];
-					[country removeArmies:armyToStay];
-					[selectedCountry addArmies:armyToStay];
-					
-					[armiesToFortify release];
-					[armyToStay release];
-					
-					//The country moved to is now selected.
-					selectedCountry = country;
-					
-					//Moves to the next state.
-					state = ViciGameStateRoundEnd;
-				}
-				
-				//If the country selected is not connected, but owned by the player, it now becomes the selected country.
-				else if ([country player] == [game currentPlayer]) {
-					selectedCountry = country;
-				}
+				if([mapPlugin respondsToSelector:@selector(country:connectsToCountry:inGame:)])
+					countriesConnected = [mapPlugin country:selectedCountry connectsToCountry:country inGame:game];				
+				if (countriesConnected)
+					[[[[game currentPlayer] unplacedArmies] anyObject] setCountry:country];
+				if ([[[game currentPlayer] unplacedArmies] count] == 0)
+					selectedCountry = nil;
 			}
 			break;
 		}
