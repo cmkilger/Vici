@@ -21,6 +21,8 @@
 				551083641090340800E803C0 /* PBXTargetDependency */,
 				55433CC9109FBC4C0023DBB3 /* PBXTargetDependency */,
 				9AB9F58810BB04970083281B /* PBXTargetDependency */,
+				8B509E7012E78C2F00F9D524 /* PBXTargetDependency */,
+				8B509E7212E78C2F00F9D524 /* PBXTargetDependency */,
 			);
 			name = "All Mac";
 			productName = All;
@@ -50,7 +52,6 @@
 		5517D33610921EFF00A5CAE2 /* Game+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 5517D33510921EFF00A5CAE2 /* Game+Private.h */; settings = {ATTRIBUTES = (); }; };
 		5517D35E1092421C00A5CAE2 /* Setting.h in Headers */ = {isa = PBXBuildFile; fileRef = 5517D35C1092421C00A5CAE2 /* Setting.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5517D35F1092421C00A5CAE2 /* Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = 5517D35D1092421C00A5CAE2 /* Setting.m */; };
-		5517D3961093753F00A5CAE2 /* ViciCore.pch in Headers */ = {isa = PBXBuildFile; fileRef = 5517D3951093753F00A5CAE2 /* ViciCore.pch */; };
 		55433CAF109FBBDD0023DBB3 /* ViciBYUMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 55433C90109FBB8F0023DBB3 /* ViciBYUMap.m */; };
 		55433CB7109FBC100023DBB3 /* ViciCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5589A7F9108578130042A130 /* ViciCore.framework */; };
 		557829F61097F9F40054D585 /* ViciMapPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 557829F51097F9F40054D585 /* ViciMapPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -88,6 +89,50 @@
 		55D75B2110A1DDE500C1438A /* ViciCore_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 55D75B2010A1DDE500C1438A /* ViciCore_Internal.h */; };
 		775BDEF1067A8BF0009058FE /* ViciDocument.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 775BDEF0067A8BF0009058FE /* ViciDocument.xcdatamodel */; };
 		775DFF38067A968500C5B868 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		8B509E7512E78C5B00F9D524 /* Army.m in Sources */ = {isa = PBXBuildFile; fileRef = 5589A7BE108564B80042A130 /* Army.m */; };
+		8B509E7612E78C5B00F9D524 /* Battle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5589A7AC108564B80042A130 /* Battle.m */; };
+		8B509E7712E78C5B00F9D524 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 5589A7B8108564B80042A130 /* Card.m */; };
+		8B509E7812E78C5B00F9D524 /* Continent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5589A7BC108564B80042A130 /* Continent.m */; };
+		8B509E7912E78C5B00F9D524 /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = 5589A7BA108564B80042A130 /* Country.m */; };
+		8B509E7A12E78C5B00F9D524 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 551629F2107FED8900C446B1 /* Game.m */; };
+		8B509E7B12E78C5B00F9D524 /* NSArray+ViciAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9BA2A7108EAEC10095DFF2 /* NSArray+ViciAdditions.m */; };
+		8B509E7C12E78C5B00F9D524 /* Planet.m in Sources */ = {isa = PBXBuildFile; fileRef = 5589A7B4108564B80042A130 /* Planet.m */; };
+		8B509E7D12E78C5B00F9D524 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 5589A7B0108564B80042A130 /* Player.m */; };
+		8B509E7E12E78C5B00F9D524 /* Round.m in Sources */ = {isa = PBXBuildFile; fileRef = 5589A7B2108564B80042A130 /* Round.m */; };
+		8B509E7F12E78C5B00F9D524 /* Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = 5517D35D1092421C00A5CAE2 /* Setting.m */; };
+		8B509E8012E78C5B00F9D524 /* ViciColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D75AFA10A12B5200C1438A /* ViciColor.m */; };
+		8B509E8112E78C5B00F9D524 /* ViciConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 551083881090F09800E803C0 /* ViciConstants.m */; };
+		8B509E8212E78C5B00F9D524 /* ViciGameEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D75A9E10A122B500C1438A /* ViciGameEngine.m */; };
+		8B509E8312E78C5B00F9D524 /* ViciPluginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 553E38151083BA850071E012 /* ViciPluginManager.m */; };
+		8B509E8D12E78C8A00F9D524 /* Army.h in Headers */ = {isa = PBXBuildFile; fileRef = 5589A7BD108564B80042A130 /* Army.h */; };
+		8B509E8E12E78C8A00F9D524 /* Battle.h in Headers */ = {isa = PBXBuildFile; fileRef = 5589A7AB108564B80042A130 /* Battle.h */; };
+		8B509E8F12E78C8A00F9D524 /* Card.h in Headers */ = {isa = PBXBuildFile; fileRef = 5589A7B7108564B80042A130 /* Card.h */; };
+		8B509E9012E78C8A00F9D524 /* Continent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5589A7BB108564B80042A130 /* Continent.h */; };
+		8B509E9112E78C8A00F9D524 /* Country.h in Headers */ = {isa = PBXBuildFile; fileRef = 5589A7B9108564B80042A130 /* Country.h */; };
+		8B509E9212E78C8A00F9D524 /* Game+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 5517D33510921EFF00A5CAE2 /* Game+Private.h */; };
+		8B509E9312E78C8A00F9D524 /* NSArray+ViciAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A9BA2A6108EAEC10095DFF2 /* NSArray+ViciAdditions.h */; };
+		8B509E9412E78C8A00F9D524 /* Planet.h in Headers */ = {isa = PBXBuildFile; fileRef = 5589A7B3108564B80042A130 /* Planet.h */; };
+		8B509E9512E78C8A00F9D524 /* Player.h in Headers */ = {isa = PBXBuildFile; fileRef = 5589A7AF108564B80042A130 /* Player.h */; };
+		8B509E9612E78C8A00F9D524 /* Round.h in Headers */ = {isa = PBXBuildFile; fileRef = 5589A7B1108564B80042A130 /* Round.h */; };
+		8B509E9712E78C8A00F9D524 /* Setting.h in Headers */ = {isa = PBXBuildFile; fileRef = 5517D35C1092421C00A5CAE2 /* Setting.h */; };
+		8B509E9A12E78C8A00F9D524 /* ViciColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 55D75AF910A12B5200C1438A /* ViciColor.h */; };
+		8B509E9B12E78C8A00F9D524 /* ViciConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 551083871090F09800E803C0 /* ViciConstants.h */; };
+		8B509E9C12E78C8A00F9D524 /* ViciCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 5589A84C10858F340042A130 /* ViciCore.h */; };
+		8B509E9E12E78C8A00F9D524 /* ViciCore_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 55D75B2010A1DDE500C1438A /* ViciCore_Internal.h */; };
+		8B509E9F12E78C8A00F9D524 /* ViciGameEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 55D75A9D10A122B500C1438A /* ViciGameEngine.h */; };
+		8B509EA012E78C8A00F9D524 /* ViciGameEngineDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 55D75ACB10A1248500C1438A /* ViciGameEngineDelegate.h */; };
+		8B509EA112E78C8A00F9D524 /* ViciGamePlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 551083851090F08700E803C0 /* ViciGamePlugin.h */; };
+		8B509EA212E78C8A00F9D524 /* ViciHumanPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AB9F4D810BB04970083281B /* ViciHumanPlayer.h */; };
+		8B509EA312E78C8A00F9D524 /* ViciMapPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 557829F51097F9F40054D585 /* ViciMapPlugin.h */; };
+		8B509EA412E78C8A00F9D524 /* ViciPlayerPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 55D75AD310A1265200C1438A /* ViciPlayerPlugin.h */; };
+		8B509EA512E78C8A00F9D524 /* ViciPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 5513676D108F5DEF0093B04C /* ViciPlugin.h */; };
+		8B509EA612E78C8A00F9D524 /* ViciPluginManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 553E38141083BA850071E012 /* ViciPluginManager.h */; };
+		8B509EA712E78CE300F9D524 /* ViciHumanPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AB9F4D810BB04970083281B /* ViciHumanPlayer.h */; };
+		8B509EE512E7909D00F9D524 /* mainCLI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B509E5312E78A8800F9D524 /* mainCLI.m */; };
+		8B509F1A12E7945300F9D524 /* Game.h in Headers */ = {isa = PBXBuildFile; fileRef = 551629F1107FED8900C446B1 /* Game.h */; };
+		8B509F1B12E7946C00F9D524 /* Game.h in Headers */ = {isa = PBXBuildFile; fileRef = 551629F1107FED8900C446B1 /* Game.h */; };
+		8B509F1C12E7947200F9D524 /* Game.h in Headers */ = {isa = PBXBuildFile; fileRef = 551629F1107FED8900C446B1 /* Game.h */; };
+		8B509F5912E7956100F9D524 /* libVici.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B509E6C12E78BF400F9D524 /* libVici.a */; };
 		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
 		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
 		8D15AC310486D014006FF6A4 /* ViciDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4ACFDCFA73011CA2CEA /* ViciDocument.m */; settings = {ATTRIBUTES = (); }; };
@@ -110,7 +155,6 @@
 		9A08108510AE638400FC0C72 /* ViciConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 551083871090F09800E803C0 /* ViciConstants.h */; };
 		9A08108610AE638400FC0C72 /* Game+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 5517D33510921EFF00A5CAE2 /* Game+Private.h */; };
 		9A08108710AE638400FC0C72 /* Setting.h in Headers */ = {isa = PBXBuildFile; fileRef = 5517D35C1092421C00A5CAE2 /* Setting.h */; };
-		9A08108810AE638400FC0C72 /* ViciCore.pch in Headers */ = {isa = PBXBuildFile; fileRef = 5517D3951093753F00A5CAE2 /* ViciCore.pch */; };
 		9A08108910AE638400FC0C72 /* ViciMapPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 557829F51097F9F40054D585 /* ViciMapPlugin.h */; };
 		9A08108A10AE638400FC0C72 /* ViciGameEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 55D75A9D10A122B500C1438A /* ViciGameEngine.h */; };
 		9A08108B10AE638400FC0C72 /* ViciGameEngineDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 55D75ACB10A1248500C1438A /* ViciGameEngineDelegate.h */; };
@@ -138,10 +182,8 @@
 		9A0810F110AE67D200FC0C72 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0810F010AE67D200FC0C72 /* UIKit.framework */; };
 		9A0810FD10AE685200FC0C72 /* libViciCoreiPhone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A08104D10AE62F400FC0C72 /* libViciCoreiPhone.a */; };
 		9A08116210AE6CCC00FC0C72 /* ViciDocument.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 775BDEF0067A8BF0009058FE /* ViciDocument.xcdatamodel */; };
-		9A08118010AE6E6A00FC0C72 /* ViciAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A08117E10AE6E6A00FC0C72 /* ViciAppDelegate.h */; };
 		9A08118410AE6EBD00FC0C72 /* ViciAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A08117F10AE6E6A00FC0C72 /* ViciAppDelegate.m */; };
 		9A0811BC10AE71CE00FC0C72 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A08118710AE6EF400FC0C72 /* MainWindow.xib */; };
-		9A08120F10AE74E300FC0C72 /* Vici_iPhone_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 9A08120E10AE74E300FC0C72 /* Vici_iPhone_Prefix.pch */; };
 		9A08121410AE758600FC0C72 /* mainiPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A08121210AE754800FC0C72 /* mainiPhone.m */; };
 		9A9587A6108F80C10075941D /* ViciUSAMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A958796108F80690075941D /* ViciUSAMap.m */; };
 		9A9587AE108F81200075941D /* ViciCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5589A7F9108578130042A130 /* ViciCore.framework */; };
@@ -230,6 +272,69 @@
 			proxyType = 1;
 			remoteGlobalIDString = 5589A7F8108578130042A130;
 			remoteInfo = ViciCore;
+		};
+		8B509E6F12E78C2F00F9D524 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B509E5C12E78BB600F9D524;
+			remoteInfo = ViciCLI;
+		};
+		8B509E7112E78C2F00F9D524 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B509E6B12E78BF400F9D524;
+			remoteInfo = ViciStatic;
+		};
+		8B509E8412E78C6100F9D524 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B509E6B12E78BF400F9D524;
+			remoteInfo = ViciCoreStatic;
+		};
+		8B509FA812E797AB00F9D524 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5589A7EA108573CB0042A130 /* ViciRiskGame */;
+			remoteInfo = ViciRiskGame;
+		};
+		8B509FAA12E797AB00F9D524 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AF05D55108ED6E20003548B /* ViciRiskMap */;
+			remoteInfo = ViciRiskMap;
+		};
+		8B509FAC12E797AB00F9D524 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A9587A0108F809A0075941D /* ViciUSAMap */;
+			remoteInfo = ViciUSAMap;
+		};
+		8B509FAE12E797AB00F9D524 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A958870108FCA130075941D /* ViciWarcraftMap */;
+			remoteInfo = ViciWarcraftMap;
+		};
+		8B509FB012E797AB00F9D524 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55433C96109FBBA20023DBB3 /* ViciBYUMap */;
+			remoteInfo = ViciBYUMap;
+		};
+		8B509FB212E797AB00F9D524 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AB9F4EE10BB04970083281B /* ViciHumanPlayer */;
+			remoteInfo = ViciHumanPlayer;
 		};
 		9A0810AC10AE63F100FC0C72 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -371,6 +476,9 @@
 		55D75B2010A1DDE500C1438A /* ViciCore_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViciCore_Internal.h; sourceTree = "<group>"; };
 		775BDEF0067A8BF0009058FE /* ViciDocument.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = ViciDocument.xcdatamodel; sourceTree = "<group>"; };
 		7788DA0506752A1600599AAD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		8B509E5312E78A8800F9D524 /* mainCLI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainCLI.m; sourceTree = "<group>"; };
+		8B509E5D12E78BB600F9D524 /* vici */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = vici; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B509E6C12E78BF400F9D524 /* libVici.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVici.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D15AC360486D014006FF6A4 /* Vici-Info.plist */ = {isa = PBXFileReference; explicitFileType = text.plist.xml; fileEncoding = 4; path = "Vici-Info.plist"; sourceTree = "<group>"; };
 		8D15AC370486D014006FF6A4 /* Vici.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vici.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A080D7910AE5D0C00FC0C72 /* Vici.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vici.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -429,6 +537,21 @@
 			files = (
 				5589A8EE108590860042A130 /* CoreData.framework in Frameworks */,
 				5589A8EB108590830042A130 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B509E5B12E78BB600F9D524 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B509F5912E7956100F9D524 /* libVici.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B509E6A12E78BF400F9D524 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,6 +652,8 @@
 				9A958871108FCA130075941D /* ViciWarcraftMap.bundle */,
 				55433C97109FBBA20023DBB3 /* ViciBYUMap.bundle */,
 				9AB9F4EF10BB04970083281B /* ViciHumanPlayer.bundle */,
+				8B509E5D12E78BB600F9D524 /* vici */,
+				8B509E6C12E78BF400F9D524 /* libVici.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -552,6 +677,7 @@
 			children = (
 				9A08116910AE6CDA00FC0C72 /* iPhone */,
 				9AC1260A10AE7A5F00A7130D /* Mac */,
+				8B509E5012E78A3D00F9D524 /* Mac-CLI */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -637,6 +763,8 @@
 				55D75A9D10A122B500C1438A /* ViciGameEngine.h */,
 				55D75A9E10A122B500C1438A /* ViciGameEngine.m */,
 				55D75ACB10A1248500C1438A /* ViciGameEngineDelegate.h */,
+				553E38141083BA850071E012 /* ViciPluginManager.h */,
+				553E38151083BA850071E012 /* ViciPluginManager.m */,
 				5589A85210858F920042A130 /* Plugin Templates */,
 				5589A84F10858F660042A130 /* Territories */,
 				5589A85010858F7A0042A130 /* Game Objects */,
@@ -697,6 +825,14 @@
 				55D75AD310A1265200C1438A /* ViciPlayerPlugin.h */,
 			);
 			name = "Plugin Templates";
+			sourceTree = "<group>";
+		};
+		8B509E5012E78A3D00F9D524 /* Mac-CLI */ = {
+			isa = PBXGroup;
+			children = (
+				8B509E5312E78A8800F9D524 /* mainCLI.m */,
+			);
+			name = "Mac-CLI";
 			sourceTree = "<group>";
 		};
 		9A080E1F10AE5D6C00FC0C72 /* Mac */ = {
@@ -784,8 +920,6 @@
 			isa = PBXGroup;
 			children = (
 				5589A7F1108577F50042A130 /* Framework */,
-				553E38141083BA850071E012 /* ViciPluginManager.h */,
-				553E38151083BA850071E012 /* ViciPluginManager.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -813,16 +947,45 @@
 				551083891090F09800E803C0 /* ViciConstants.h in Headers */,
 				5517D33610921EFF00A5CAE2 /* Game+Private.h in Headers */,
 				5517D35E1092421C00A5CAE2 /* Setting.h in Headers */,
-				5517D3961093753F00A5CAE2 /* ViciCore.pch in Headers */,
 				557829F61097F9F40054D585 /* ViciMapPlugin.h in Headers */,
 				55D75A9F10A122B500C1438A /* ViciGameEngine.h in Headers */,
 				55D75ACC10A1248500C1438A /* ViciGameEngineDelegate.h in Headers */,
 				55D75AD410A1265200C1438A /* ViciPlayerPlugin.h in Headers */,
 				55D75AFB10A12B5200C1438A /* ViciColor.h in Headers */,
 				55D75B2110A1DDE500C1438A /* ViciCore_Internal.h in Headers */,
-				9A08118010AE6E6A00FC0C72 /* ViciAppDelegate.h in Headers */,
-				9A08120F10AE74E300FC0C72 /* Vici_iPhone_Prefix.pch in Headers */,
 				9AB9F4DA10BB04970083281B /* ViciHumanPlayer.h in Headers */,
+				8B509F1C12E7947200F9D524 /* Game.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B509E6812E78BF400F9D524 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B509E8D12E78C8A00F9D524 /* Army.h in Headers */,
+				8B509E8E12E78C8A00F9D524 /* Battle.h in Headers */,
+				8B509E8F12E78C8A00F9D524 /* Card.h in Headers */,
+				8B509E9012E78C8A00F9D524 /* Continent.h in Headers */,
+				8B509E9112E78C8A00F9D524 /* Country.h in Headers */,
+				8B509E9212E78C8A00F9D524 /* Game+Private.h in Headers */,
+				8B509E9312E78C8A00F9D524 /* NSArray+ViciAdditions.h in Headers */,
+				8B509E9412E78C8A00F9D524 /* Planet.h in Headers */,
+				8B509E9512E78C8A00F9D524 /* Player.h in Headers */,
+				8B509E9612E78C8A00F9D524 /* Round.h in Headers */,
+				8B509E9712E78C8A00F9D524 /* Setting.h in Headers */,
+				8B509E9A12E78C8A00F9D524 /* ViciColor.h in Headers */,
+				8B509E9B12E78C8A00F9D524 /* ViciConstants.h in Headers */,
+				8B509E9C12E78C8A00F9D524 /* ViciCore.h in Headers */,
+				8B509E9E12E78C8A00F9D524 /* ViciCore_Internal.h in Headers */,
+				8B509E9F12E78C8A00F9D524 /* ViciGameEngine.h in Headers */,
+				8B509EA012E78C8A00F9D524 /* ViciGameEngineDelegate.h in Headers */,
+				8B509EA112E78C8A00F9D524 /* ViciGamePlugin.h in Headers */,
+				8B509EA212E78C8A00F9D524 /* ViciHumanPlayer.h in Headers */,
+				8B509EA312E78C8A00F9D524 /* ViciMapPlugin.h in Headers */,
+				8B509EA412E78C8A00F9D524 /* ViciPlayerPlugin.h in Headers */,
+				8B509EA512E78C8A00F9D524 /* ViciPlugin.h in Headers */,
+				8B509EA612E78C8A00F9D524 /* ViciPluginManager.h in Headers */,
+				8B509F1A12E7945300F9D524 /* Game.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -846,13 +1009,14 @@
 				9A08108510AE638400FC0C72 /* ViciConstants.h in Headers */,
 				9A08108610AE638400FC0C72 /* Game+Private.h in Headers */,
 				9A08108710AE638400FC0C72 /* Setting.h in Headers */,
-				9A08108810AE638400FC0C72 /* ViciCore.pch in Headers */,
 				9A08108910AE638400FC0C72 /* ViciMapPlugin.h in Headers */,
 				9A08108A10AE638400FC0C72 /* ViciGameEngine.h in Headers */,
 				9A08108B10AE638400FC0C72 /* ViciGameEngineDelegate.h in Headers */,
 				9A08108C10AE638400FC0C72 /* ViciPlayerPlugin.h in Headers */,
 				9A08108D10AE638400FC0C72 /* ViciColor.h in Headers */,
 				9A08108E10AE638400FC0C72 /* ViciCore_Internal.h in Headers */,
+				8B509EA712E78CE300F9D524 /* ViciHumanPlayer.h in Headers */,
+				8B509F1B12E7946C00F9D524 /* Game.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -911,6 +1075,46 @@
 			productName = ViciCore;
 			productReference = 5589A7F9108578130042A130 /* ViciCore.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		8B509E5C12E78BB600F9D524 /* ViciCLI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B509E6712E78BF200F9D524 /* Build configuration list for PBXNativeTarget "ViciCLI" */;
+			buildPhases = (
+				8B509E5A12E78BB600F9D524 /* Sources */,
+				8B509E5B12E78BB600F9D524 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B509E8512E78C6100F9D524 /* PBXTargetDependency */,
+				8B509FA912E797AB00F9D524 /* PBXTargetDependency */,
+				8B509FAB12E797AB00F9D524 /* PBXTargetDependency */,
+				8B509FAD12E797AB00F9D524 /* PBXTargetDependency */,
+				8B509FAF12E797AB00F9D524 /* PBXTargetDependency */,
+				8B509FB112E797AB00F9D524 /* PBXTargetDependency */,
+				8B509FB312E797AB00F9D524 /* PBXTargetDependency */,
+			);
+			name = ViciCLI;
+			productName = ViciCLI;
+			productReference = 8B509E5D12E78BB600F9D524 /* vici */;
+			productType = "com.apple.product-type.tool";
+		};
+		8B509E6B12E78BF400F9D524 /* ViciCoreStatic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B509E8C12E78C8600F9D524 /* Build configuration list for PBXNativeTarget "ViciCoreStatic" */;
+			buildPhases = (
+				8B509E6812E78BF400F9D524 /* Headers */,
+				8B509E6912E78BF400F9D524 /* Sources */,
+				8B509E6A12E78BF400F9D524 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ViciCoreStatic;
+			productName = ViciStatic;
+			productReference = 8B509E6C12E78BF400F9D524 /* libVici.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 		8D15AC270486D014006FF6A4 /* Vici */ = {
 			isa = PBXNativeTarget;
@@ -1050,7 +1254,14 @@
 			};
 			buildConfigurationList = 26FC0AA90875C8B900E6366F /* Build configuration list for PBXProject "Vici" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* Vici */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1058,8 +1269,10 @@
 				55136837108F8AF10093B04C /* All Mac */,
 				9A08120410AE73E100FC0C72 /* All iPhone */,
 				8D15AC270486D014006FF6A4 /* Vici */,
+				8B509E5C12E78BB600F9D524 /* ViciCLI */,
 				9A080D7810AE5D0C00FC0C72 /* ViciiPhone */,
 				5589A7F8108578130042A130 /* ViciCore */,
+				8B509E6B12E78BF400F9D524 /* ViciCoreStatic */,
 				9A08104C10AE62F400FC0C72 /* ViciCoreiPhone */,
 				5589A7EA108573CB0042A130 /* ViciRiskGame */,
 				9AF05D55108ED6E20003548B /* ViciRiskMap */,
@@ -1173,6 +1386,36 @@
 				55D75AA010A122B500C1438A /* ViciGameEngine.m in Sources */,
 				55D75AA110A122CB00C1438A /* ViciPluginManager.m in Sources */,
 				55D75AFC10A12B5200C1438A /* ViciColor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B509E5A12E78BB600F9D524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B509EE512E7909D00F9D524 /* mainCLI.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B509E6912E78BF400F9D524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B509E7512E78C5B00F9D524 /* Army.m in Sources */,
+				8B509E7612E78C5B00F9D524 /* Battle.m in Sources */,
+				8B509E7712E78C5B00F9D524 /* Card.m in Sources */,
+				8B509E7812E78C5B00F9D524 /* Continent.m in Sources */,
+				8B509E7912E78C5B00F9D524 /* Country.m in Sources */,
+				8B509E7A12E78C5B00F9D524 /* Game.m in Sources */,
+				8B509E7B12E78C5B00F9D524 /* NSArray+ViciAdditions.m in Sources */,
+				8B509E7C12E78C5B00F9D524 /* Planet.m in Sources */,
+				8B509E7D12E78C5B00F9D524 /* Player.m in Sources */,
+				8B509E7E12E78C5B00F9D524 /* Round.m in Sources */,
+				8B509E7F12E78C5B00F9D524 /* Setting.m in Sources */,
+				8B509E8012E78C5B00F9D524 /* ViciColor.m in Sources */,
+				8B509E8112E78C5B00F9D524 /* ViciConstants.m in Sources */,
+				8B509E8212E78C5B00F9D524 /* ViciGameEngine.m in Sources */,
+				8B509E8312E78C5B00F9D524 /* ViciPluginManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1302,6 +1545,51 @@
 			isa = PBXTargetDependency;
 			target = 5589A7F8108578130042A130 /* ViciCore */;
 			targetProxy = 5589A8161085784A0042A130 /* PBXContainerItemProxy */;
+		};
+		8B509E7012E78C2F00F9D524 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B509E5C12E78BB600F9D524 /* ViciCLI */;
+			targetProxy = 8B509E6F12E78C2F00F9D524 /* PBXContainerItemProxy */;
+		};
+		8B509E7212E78C2F00F9D524 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B509E6B12E78BF400F9D524 /* ViciCoreStatic */;
+			targetProxy = 8B509E7112E78C2F00F9D524 /* PBXContainerItemProxy */;
+		};
+		8B509E8512E78C6100F9D524 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B509E6B12E78BF400F9D524 /* ViciCoreStatic */;
+			targetProxy = 8B509E8412E78C6100F9D524 /* PBXContainerItemProxy */;
+		};
+		8B509FA912E797AB00F9D524 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5589A7EA108573CB0042A130 /* ViciRiskGame */;
+			targetProxy = 8B509FA812E797AB00F9D524 /* PBXContainerItemProxy */;
+		};
+		8B509FAB12E797AB00F9D524 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AF05D55108ED6E20003548B /* ViciRiskMap */;
+			targetProxy = 8B509FAA12E797AB00F9D524 /* PBXContainerItemProxy */;
+		};
+		8B509FAD12E797AB00F9D524 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A9587A0108F809A0075941D /* ViciUSAMap */;
+			targetProxy = 8B509FAC12E797AB00F9D524 /* PBXContainerItemProxy */;
+		};
+		8B509FAF12E797AB00F9D524 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A958870108FCA130075941D /* ViciWarcraftMap */;
+			targetProxy = 8B509FAE12E797AB00F9D524 /* PBXContainerItemProxy */;
+		};
+		8B509FB112E797AB00F9D524 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55433C96109FBBA20023DBB3 /* ViciBYUMap */;
+			targetProxy = 8B509FB012E797AB00F9D524 /* PBXContainerItemProxy */;
+		};
+		8B509FB312E797AB00F9D524 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AB9F4EE10BB04970083281B /* ViciHumanPlayer */;
+			targetProxy = 8B509FB212E797AB00F9D524 /* PBXContainerItemProxy */;
 		};
 		9A0810AD10AE63F100FC0C72 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1433,6 +1721,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1446,6 +1735,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
@@ -1633,6 +1923,98 @@
 			};
 			name = Release;
 		};
+		8B509E5F12E78BB700F9D524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = vici;
+			};
+			name = Debug;
+		};
+		8B509E6012E78BB700F9D524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = vici;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		8B509E6D12E78BF400F9D524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Vici;
+			};
+			name = Debug;
+		};
+		8B509E6E12E78BF400F9D524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Vici;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		9A080D7C10AE5D0C00FC0C72 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1696,7 +2078,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				PREBINDING = NO;
 				PRODUCT_NAME = ViciCoreiPhone;
-				SDKROOT = iphoneos3.1.2;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -2003,6 +2385,24 @@
 			buildConfigurations = (
 				5589A7FB108578140042A130 /* Debug */,
 				5589A7FC108578140042A130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B509E6712E78BF200F9D524 /* Build configuration list for PBXNativeTarget "ViciCLI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B509E5F12E78BB700F9D524 /* Debug */,
+				8B509E6012E78BB700F9D524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B509E8C12E78C8600F9D524 /* Build configuration list for PBXNativeTarget "ViciCoreStatic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B509E6D12E78BF400F9D524 /* Debug */,
+				8B509E6E12E78BF400F9D524 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

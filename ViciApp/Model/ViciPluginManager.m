@@ -28,7 +28,7 @@ static ViciPluginManager *sharedManager = nil;
 	//+initialize can get called multiple times, but we only want to create a single instance of ViciGameFactory
     if (!sharedManager && self == [ViciPluginManager class]) {
 		//init will assign sharedInstance for us.
-		[[ViciPluginManager alloc] init];
+		sharedManager = [[ViciPluginManager alloc] init];
     }
 }
 
@@ -54,7 +54,7 @@ static ViciPluginManager *sharedManager = nil;
     if (!sharedManager) {
         if ((self = [super init])) {
             //Initialize the instance here.
-			
+			pluginDirectories = [[NSMutableSet alloc] init];
 			gameTypes = [[NSMutableArray alloc] init];
 			maps = [[NSMutableArray alloc] init];
 			players = [[NSMutableArray alloc] init];
@@ -73,6 +73,10 @@ static ViciPluginManager *sharedManager = nil;
     return self;
 }
 
+- (void) addPluginDirectory:(NSString *)path {
+	[pluginDirectories addObject:[path stringByStandardizingPath]];
+	[self findPlugins];
+}
 
 - (void) clearPlugins {
 	for (NSBundle * plugin in gameTypes) {
@@ -94,10 +98,25 @@ static ViciPluginManager *sharedManager = nil;
 	
 	NSString * internalPluginsDirectory = [[NSBundle mainBundle] builtInPlugInsPath];
 	NSError * error = nil;
-	NSArray * internalPlugins = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:internalPluginsDirectory error:&error];
+	NSArray * allPlugins = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:internalPluginsDirectory error:&error];
+	if (error != nil) { 
+		NSLog(@"%@", error);
+		/* something bad happened */
+	}
 	
-	if (error != nil) { /* something bad happened */ }
-	for (NSString * foundPlugin in internalPlugins) {
+	if (!allPlugins)
+		allPlugins = [NSArray array];
+	
+	for (NSString * path in pluginDirectories) {
+		NSError * error = nil;
+		allPlugins = [allPlugins arrayByAddingObjectsFromArray:[[NSFileManager defaultManager] contentsOfDirectoryAtPath:path error:&error]];
+		if (error != nil) { 
+			NSLog(@"%@", error);
+			/* something bad happened */
+		}
+	}
+	
+	for (NSString * foundPlugin in allPlugins) {
 		NSBundle * plugin = [NSBundle bundleWithPath:foundPlugin];
 		if (plugin != nil) {
 			//this url points to a valid plugin
@@ -108,11 +127,11 @@ static ViciPluginManager *sharedManager = nil;
 			NSDictionary * pluginDescription = [principalClass pluginDescription];
 			NSString * pluginType = [pluginDescription objectForKey:kViciPluginType];
 			
-			if ([pluginType isEqual:kViciPluginTypeGame]) {
+			if ([pluginType isEqualToString:kViciPluginTypeGame]) {
 				[gameTypes addObject:plugin];
-			} else if ([pluginType isEqual:kViciPluginTypeMap]) {
+			} else if ([pluginType isEqualToString:kViciPluginTypeMap]) {
 				[maps addObject:plugin];
-			} else if ([pluginType isEqual:kViciPluginTypePlayer]) {
+			} else if ([pluginType isEqualToString:kViciPluginTypePlayer]) {
 				[players addObject:plugin];
 			} else {
 				//the plugin is neither a game plugin, player plugin nor a map plugin.  skip it.

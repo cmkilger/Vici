@@ -20,5 +20,7 @@
 	<string>1</string>
 	<key>ViciGameRequiresMap</key>
 	<string>edu.byu.cocoaheads.Map.Earth</string>
+	<key>NSPrincipalClass</key>
+	<string>ViciRiskGame</string>
 </dict>
 </plist>

@@ -18,7 +18,7 @@ NSString * numberOfSetsTurnedInKey = @"numberOfSetsTurnedInKey";
 	
 	NSString * localizedName = NSLocalizedStringWithDefaultValue(kViciPluginDisplayName, nil, pluginBundle, @"Classic Risk", nil);
 	
-	return [NSDictionary dictionaryWithObjectsAndKeys:kViciPluginTypeMap, kViciPluginType,
+	return [NSDictionary dictionaryWithObjectsAndKeys:kViciPluginTypeGame, kViciPluginType,
 			[pluginBundle bundleIdentifier], kViciPluginID,
 			localizedName, kViciPluginDisplayName,
 			nil];

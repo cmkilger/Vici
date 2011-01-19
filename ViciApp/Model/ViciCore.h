@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "ViciConstants.h"
 
+#import "ViciPluginManager.h"
 #import "ViciPlugin.h"
 #import "ViciGamePlugin.h"
 #import "ViciMapPlugin.h"

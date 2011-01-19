@@ -9,12 +9,17 @@
 #import <Foundation/Foundation.h>
 
 @interface ViciPluginManager : NSObject {
+	NSMutableSet * pluginDirectories;
 	NSMutableArray * gameTypes;
 	NSMutableArray * maps;
 	NSMutableArray * players;
 }
 
 + (ViciPluginManager *) sharedManager;
+
+- (void) addPluginDirectory:(NSString *)path;
+
+#pragma mark -
 
 /**
  return an array of NSDictionaries.  Each NSDictionary should have at least three keys:
