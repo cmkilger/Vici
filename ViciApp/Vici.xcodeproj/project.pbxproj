@@ -298,42 +298,42 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5589A7EA108573CB0042A130 /* ViciRiskGame */;
+			remoteGlobalIDString = 5589A7EA108573CB0042A130;
 			remoteInfo = ViciRiskGame;
 		};
 		8B509FAA12E797AB00F9D524 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9AF05D55108ED6E20003548B /* ViciRiskMap */;
+			remoteGlobalIDString = 9AF05D55108ED6E20003548B;
 			remoteInfo = ViciRiskMap;
 		};
 		8B509FAC12E797AB00F9D524 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9A9587A0108F809A0075941D /* ViciUSAMap */;
+			remoteGlobalIDString = 9A9587A0108F809A0075941D;
 			remoteInfo = ViciUSAMap;
 		};
 		8B509FAE12E797AB00F9D524 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9A958870108FCA130075941D /* ViciWarcraftMap */;
+			remoteGlobalIDString = 9A958870108FCA130075941D;
 			remoteInfo = ViciWarcraftMap;
 		};
 		8B509FB012E797AB00F9D524 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 55433C96109FBBA20023DBB3 /* ViciBYUMap */;
+			remoteGlobalIDString = 55433C96109FBBA20023DBB3;
 			remoteInfo = ViciBYUMap;
 		};
 		8B509FB212E797AB00F9D524 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9AB9F4EE10BB04970083281B /* ViciHumanPlayer */;
+			remoteGlobalIDString = 9AB9F4EE10BB04970083281B;
 			remoteInfo = ViciHumanPlayer;
 		};
 		9A0810AC10AE63F100FC0C72 /* PBXContainerItemProxy */ = {
