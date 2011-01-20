@@ -99,10 +99,7 @@ static ViciPluginManager *sharedManager = nil;
 	NSString * internalPluginsDirectory = [[NSBundle mainBundle] builtInPlugInsPath];
 	NSError * error = nil;
 	NSArray * allPlugins = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:internalPluginsDirectory error:&error];
-	if (error != nil) { 
-		NSLog(@"%@", error);
-		/* something bad happened */
-	}
+	if (error != nil) { /* something bad happened */ }
 	
 	if (!allPlugins)
 		allPlugins = [NSArray array];
@@ -110,10 +107,7 @@ static ViciPluginManager *sharedManager = nil;
 	for (NSString * path in pluginDirectories) {
 		NSError * error = nil;
 		allPlugins = [allPlugins arrayByAddingObjectsFromArray:[[NSFileManager defaultManager] contentsOfDirectoryAtPath:path error:&error]];
-		if (error != nil) { 
-			NSLog(@"%@", error);
-			/* something bad happened */
-		}
+		if (error != nil) { /* something bad happened */ }
 	}
 	
 	for (NSString * foundPlugin in allPlugins) {
