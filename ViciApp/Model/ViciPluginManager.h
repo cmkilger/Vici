@@ -17,8 +17,6 @@
 
 + (ViciPluginManager *) sharedManager;
 
-- (void) addPluginDirectory:(NSString *)path;
-
 #pragma mark -
 
 /**
@@ -44,5 +42,17 @@
  kViciPluginDisplayName - a localized string for displaying to the user.  Example: Human
  */
 - (NSArray *) availablePlayers;
+
+#pragma mark -
+
+/**
+ return loads all plugins inside a directory at path.
+ */
+- (void) addPluginDirectory:(NSString *)path;
+
+/**
+ return an instance of a plugin using the plugin identifier (kViciPluginID).
+ */
+- (id) instanceOfPluginWithIdentifier:(NSString *)identifier;
 
 @end

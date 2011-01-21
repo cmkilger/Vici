@@ -73,6 +73,10 @@ static ViciPluginManager *sharedManager = nil;
     return self;
 }
 
+- (id) instanceOfPluginWithIdentifier:(NSString *)identifier {
+	return [[[[[NSBundle bundleWithIdentifier:identifier] principalClass] alloc] init] autorelease];
+}
+
 - (void) addPluginDirectory:(NSString *)path {
 	[pluginDirectories addObject:[path stringByStandardizingPath]];
 	[self findPlugins];

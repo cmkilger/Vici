@@ -133,8 +133,13 @@
 		8B509F1B12E7946C00F9D524 /* Game.h in Headers */ = {isa = PBXBuildFile; fileRef = 551629F1107FED8900C446B1 /* Game.h */; };
 		8B509F1C12E7947200F9D524 /* Game.h in Headers */ = {isa = PBXBuildFile; fileRef = 551629F1107FED8900C446B1 /* Game.h */; };
 		8B509F5912E7956100F9D524 /* libVici.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B509E6C12E78BF400F9D524 /* libVici.a */; };
-		8BA9485912E8DA5E0049A1BA /* ViciCLI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA9485812E8DA5E0049A1BA /* ViciCLI.m */; };
+		8BA9485912E8DA5E0049A1BA /* ViciCLIRunLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA9485812E8DA5E0049A1BA /* ViciCLIRunLoop.m */; };
 		8BA9489712E8E0BD0049A1BA /* ViciCLIGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA9489612E8E0BD0049A1BA /* ViciCLIGame.m */; };
+		8BA9490B12EA3A5C0049A1BA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		8BA9493B12EA3E260049A1BA /* NSBundle+ViciAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA9493A12EA3E260049A1BA /* NSBundle+ViciAdditions.m */; };
+		8BA9498012EA43580049A1BA /* ViciWarcraftMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95888C108FCE400075941D /* ViciWarcraftMap.m */; };
+		8BA94A1912EA43810049A1BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */; };
+		8BA94A1A12EA43810049A1BA /* ViciCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5589A7F9108578130042A130 /* ViciCore.framework */; };
 		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
 		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
 		8D15AC310486D014006FF6A4 /* ViciDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4ACFDCFA73011CA2CEA /* ViciDocument.m */; settings = {ATTRIBUTES = (); }; };
@@ -190,7 +195,6 @@
 		9A9587A6108F80C10075941D /* ViciUSAMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A958796108F80690075941D /* ViciUSAMap.m */; };
 		9A9587AE108F81200075941D /* ViciCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5589A7F9108578130042A130 /* ViciCore.framework */; };
 		9A9587B4108F813B0075941D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */; };
-		9A95888D108FCE400075941D /* ViciWarcraftMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95888C108FCE400075941D /* ViciWarcraftMap.m */; };
 		9A9BA2A8108EAEC10095DFF2 /* NSArray+ViciAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A9BA2A6108EAEC10095DFF2 /* NSArray+ViciAdditions.h */; };
 		9A9BA2A9108EAEC10095DFF2 /* NSArray+ViciAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9BA2A7108EAEC10095DFF2 /* NSArray+ViciAdditions.m */; };
 		9AB9F4DA10BB04970083281B /* ViciHumanPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AB9F4D810BB04970083281B /* ViciHumanPlayer.h */; };
@@ -481,11 +485,14 @@
 		8B509E5312E78A8800F9D524 /* mainCLI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainCLI.m; sourceTree = "<group>"; };
 		8B509E5D12E78BB600F9D524 /* vici */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = vici; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B509E6C12E78BF400F9D524 /* libVici.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVici.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BA9485712E8DA5E0049A1BA /* ViciCLI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViciCLI.h; sourceTree = "<group>"; };
-		8BA9485812E8DA5E0049A1BA /* ViciCLI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViciCLI.m; sourceTree = "<group>"; };
+		8BA9485712E8DA5E0049A1BA /* ViciCLIRunLoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViciCLIRunLoop.h; sourceTree = "<group>"; };
+		8BA9485812E8DA5E0049A1BA /* ViciCLIRunLoop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViciCLIRunLoop.m; sourceTree = "<group>"; };
 		8BA9487112E8DD770049A1BA /* ViciCLICommandHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViciCLICommandHandler.h; sourceTree = "<group>"; };
 		8BA9489512E8E0BD0049A1BA /* ViciCLIGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViciCLIGame.h; sourceTree = "<group>"; };
 		8BA9489612E8E0BD0049A1BA /* ViciCLIGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViciCLIGame.m; sourceTree = "<group>"; };
+		8BA9493912EA3E260049A1BA /* NSBundle+ViciAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+ViciAdditions.h"; sourceTree = "<group>"; };
+		8BA9493A12EA3E260049A1BA /* NSBundle+ViciAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+ViciAdditions.m"; sourceTree = "<group>"; };
+		8BA9496D12EA41AD0049A1BA /* ViciCLI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViciCLI.h; sourceTree = "<group>"; };
 		8D15AC360486D014006FF6A4 /* Vici-Info.plist */ = {isa = PBXFileReference; explicitFileType = text.plist.xml; fileEncoding = 4; path = "Vici-Info.plist"; sourceTree = "<group>"; };
 		8D15AC370486D014006FF6A4 /* Vici.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vici.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A080D7910AE5D0C00FC0C72 /* Vici.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vici.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -551,6 +558,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BA9490B12EA3A5C0049A1BA /* Cocoa.framework in Frameworks */,
 				8B509F5912E7956100F9D524 /* libVici.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -605,6 +613,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BA94A1912EA43810049A1BA /* Foundation.framework in Frameworks */,
+				8BA94A1A12EA43810049A1BA /* ViciCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -838,11 +848,14 @@
 			isa = PBXGroup;
 			children = (
 				8B509E5312E78A8800F9D524 /* mainCLI.m */,
-				8BA9485712E8DA5E0049A1BA /* ViciCLI.h */,
-				8BA9485812E8DA5E0049A1BA /* ViciCLI.m */,
+				8BA9496D12EA41AD0049A1BA /* ViciCLI.h */,
+				8BA9485712E8DA5E0049A1BA /* ViciCLIRunLoop.h */,
+				8BA9485812E8DA5E0049A1BA /* ViciCLIRunLoop.m */,
 				8BA9487112E8DD770049A1BA /* ViciCLICommandHandler.h */,
 				8BA9489512E8E0BD0049A1BA /* ViciCLIGame.h */,
 				8BA9489612E8E0BD0049A1BA /* ViciCLIGame.m */,
+				8BA9493912EA3E260049A1BA /* NSBundle+ViciAdditions.h */,
+				8BA9493A12EA3E260049A1BA /* NSBundle+ViciAdditions.m */,
 			);
 			name = "Mac-CLI";
 			sourceTree = "<group>";
@@ -1406,8 +1419,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B509EE512E7909D00F9D524 /* mainCLI.m in Sources */,
-				8BA9485912E8DA5E0049A1BA /* ViciCLI.m in Sources */,
+				8BA9485912E8DA5E0049A1BA /* ViciCLIRunLoop.m in Sources */,
 				8BA9489712E8E0BD0049A1BA /* ViciCLIGame.m in Sources */,
+				8BA9493B12EA3E260049A1BA /* NSBundle+ViciAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1440,7 +1454,6 @@
 				8D15AC310486D014006FF6A4 /* ViciDocument.m in Sources */,
 				8D15AC320486D014006FF6A4 /* main.m in Sources */,
 				775BDEF1067A8BF0009058FE /* ViciDocument.xcdatamodel in Sources */,
-				9A95888D108FCE400075941D /* ViciWarcraftMap.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1488,6 +1501,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BA9498012EA43580049A1BA /* ViciWarcraftMap.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

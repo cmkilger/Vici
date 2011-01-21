@@ -3,14 +3,14 @@
 //  Vici
 //
 //  Created by Cory Kilger on 1/20/11.
-//  Copyright 2011 Rivetal, Inc. All rights reserved.
+//  Copyright 2011 Cory Kilger All rights reserved.
 //
 
-#import "ViciCLI.h"
+#import "ViciCLIRunLoop.h"
 #import "ViciCore.h"
 #import "ViciCLIGame.h"
 
-@interface ViciCLI ()
+@interface ViciCLIRunLoop ()
 
 @property (nonatomic, retain) NSArray * commandHandlers;
 @property (nonatomic, retain) id<ViciCLICommandHandler> commandHandler;
@@ -21,7 +21,7 @@
 @end
 
 
-@implementation ViciCLI
+@implementation ViciCLIRunLoop
 
 @synthesize commandHandlers, commandHandler;
 

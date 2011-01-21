@@ -1,20 +1,16 @@
-//
-//  ViciCLI.h
-//  Vici
-//
-//  Created by Cory Kilger on 1/20/11.
-//  Copyright 2011 Rivetal, Inc. All rights reserved.
-//
+/*
+ *  ViciCLI.h
+ *  Vici
+ *
+ *  Created by Cory Kilger on 1/21/11.
+ *  Copyright 2011 Cory Kilger All rights reserved.
+ *
+ */
 
-#import <Cocoa/Cocoa.h>
-#import "ViciCLICommandHandler.h"
+#import <Foundation/Foundation.h>
+#import "NSBundle+ViciAdditions.h"
 
-@interface ViciCLI : NSObject {
-	NSArray * commandHandlers;
-	id<ViciCLICommandHandler> commandHandler;
-	BOOL needsMore;
+static inline NSString * ViciApplicationSupportPath() {
+	NSString * path = [NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES) lastObject];
+	return [path stringByAppendingPathComponent:@"Vici"];
 }
-
-- (void) run;
-
-@end
