@@ -29,6 +29,7 @@
 	if (![super init])
 		return nil;
 	
+	// All command handlers should be created and added to this array
 	self.commandHandlers = [NSArray arrayWithObjects:
 							[[[ViciCLIGame alloc] init] autorelease],
 							nil];
@@ -43,6 +44,7 @@
 
 #pragma mark -
 
+// This is the main loop, asking the user for input
 - (void) run {
 	while (YES) {;
 		NSAutoreleasePool * subpool = [[NSAutoreleasePool alloc] init];
@@ -51,6 +53,7 @@
 	}
 }
 
+// This reads in the user commands
 - (NSString *) prompt {
 	char command[256];
 	memset(command, 0, 256);
@@ -64,6 +67,7 @@
 	return [NSString stringWithCString:command encoding:NSUTF8StringEncoding];
 }
 
+// This handles the parsing of the user commands
 - (void) parse:(NSString *)command {
 	if ([command isEqualToString:@"help"]) {
 		if (needsMore) {
